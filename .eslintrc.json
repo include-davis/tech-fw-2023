@@ -1,3 +1,32 @@
+// significant keys for mapping
+// alt text for images
+// 2 spaces for tab for js
+// enforce prettier
+// enforce warnings as errors
+
 {
-  "extends": "next/core-web-vitals"
+  "root": true,
+  "extends": ["next/babel", "next/core-web-vitals", "prettier"],
+  "plugins": ["prettier", "lit-a11y"],
+
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "bracketSpacing": true,
+        "tabWidth": 2,
+        "singleQuote": true,
+        "printWidth": 80,
+        "useTabs": false,
+        "trailingComma": "es5",
+        "endOfLine": "auto",
+        "semi": true
+      }
+    ],
+    "lit-a11y/alt-text": ["error", 2],
+    "arrow-body-style": "off",
+    "prefer-arrow-callback": "off",
+    "max-lines-per-function": "off",
+    "block-spacing": 1
+  }
 }

@@ -1,0 +1,25 @@
+@use "src/styles/mixins.scss";
+
+:root {
+  // colors: rgba/hex
+  --color-primary: #000000;
+  
+  // spacers: px
+
+  // font sizes: rem
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
