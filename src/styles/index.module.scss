@@ -5,12 +5,11 @@
 .brand {
   font-size: 1.5rem;
 }
-.logo {
-  color: white;
+.hero {
+  text-align: center;
 }
 .nav_bar {
   padding: 20px;
-  color: rgb(255, 255, 255);
   display: flex;
   align-items: center;
   font-size: 1.75rem;;
@@ -24,16 +23,29 @@
   list-style-type: none;
   margin-left: auto;
 }
-.hero, .workshops {
-  text-align: center;
-}
 
+.workshop {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  padding: 24px;
+}
+.learningGoals {
+  list-style-type: "\1F44D";
+  list-style-position: inside;
+}
 .btn {
+  width: 200px;
   font-size: 1.5rem;
   padding: 4px 24px;
-  color: #fff;
+  color: #FFF;
   background-color: transparent;
-  border: 0.5px solid white;
+  border: 0.5px solid #FFF;
   border-radius: 16px;
 }
 
+.btn:hover {
+  color: #3C257E;
+  background-color: #ffffff;
+
+}
