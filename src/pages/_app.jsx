@@ -1,5 +1,5 @@
 import { Inter } from "next/font/google";
-import "../styles/globals.scss";
+import "@/styles/globals.scss";
 
 const inter = Inter({
   weight: ["400", "700"],

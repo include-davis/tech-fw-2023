@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 
-export default function Index() {
+// Landing page - Navbar, Hero, Instructions (How to Navigate), Footer
+
+export default function Home() {
   return (
     <div>
       <h1>
         hello
         <div>yes</div>
-        <img src="" />
       </h1>
     </div>
   );
