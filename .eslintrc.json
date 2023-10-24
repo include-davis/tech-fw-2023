@@ -6,7 +6,7 @@
 
 {
   "root": true,
-  "extends": ["next/babel", "next/core-web-vitals", "prettier"],
+  "extends": ["next/core-web-vitals", "prettier"],
   "plugins": ["prettier", "lit-a11y"],
 
   "rules": {
@@ -23,7 +23,7 @@
         "semi": true
       }
     ],
-    "lit-a11y/alt-text": ["error", 2],
+    "lit-a11y/alt-text": [2],
     "arrow-body-style": "off",
     "prefer-arrow-callback": "off",
     "max-lines-per-function": "off",

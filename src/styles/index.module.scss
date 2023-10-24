@@ -1,0 +1,39 @@
+.body {
+  background: linear-gradient(68deg, #332950 10.09%, #3C257E 50.92%, #322D41 93.48%);
+  color: #FFF;
+}
+.brand {
+  font-size: 1.5rem;
+}
+.logo {
+  color: white;
+}
+.nav_bar {
+  padding: 20px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  font-size: 1.75rem;;
+}
+
+.nav_links {
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+  list-style-type: none;
+  margin-left: auto;
+}
+.hero, .workshops {
+  text-align: center;
+}
+
+.btn {
+  font-size: 1.5rem;
+  padding: 4px 24px;
+  color: #fff;
+  background-color: transparent;
+  border: 0.5px solid white;
+  border-radius: 16px;
+}
+
