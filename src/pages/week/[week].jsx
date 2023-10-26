@@ -1,24 +1,31 @@
 // manually import weekly components
+import Test from "@/components/workshops/week 1/test.jsx";
 
 import styles from "@/styles/week/week.module.scss";
 
 // Insert weekly components in separate variables; Render based on week param.
-const week1 = [];
+const weekContent = {
+  1: [<Test key="first" />],
+  2: [<Test key="second" />],
+  3: [<Test key="three" />],
+  4: [<Test key="four" />],
+  5: [<Test key="five" />],
+};
 
 export default function WorkshopContent({ week }) {
   return (
     <div className={styles.workshopContainer}>
-      <section className={styles.workshopContent}>{week}</section>
+      <section className={styles.workshopContent}>{weekContent[week]}</section>
     </div>
   );
 }
 
-const numWeeks = [1, 2, 3, 4, 5];
+const numWeeks = Object.keys(weekContent);
 
 // Get static paths for each week
 export async function getStaticPaths() {
   return {
-    paths: numWeeks.map((week) => ({ params: { week: week.toString() } })),
+    paths: numWeeks.map((weekNum) => ({ params: { week: weekNum } })),
     fallback: false,
   };
 }
