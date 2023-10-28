@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 export default function About() {
     return (
-      <div>about</div>
+      <div>
+        Hello, my name is Cristian.
+      </div>
     )
 }
