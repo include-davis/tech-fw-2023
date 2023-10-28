@@ -9,12 +9,22 @@ const nav = [
   { link: "Resources", href: "resources" },
 ];
 
+const dropDown_items = [1, 2, 3, 4, 5]
 export default function Navbar() {
   const [active, setActive] = useState(false);
 
+
+  const dropDown = () => {
+    return (
+    <ul className={styles.dropDown}>
+      {dropDown_items.map((numWeek, index) => (
+      <li key={index}>Week {numWeek}</li>))}
+    </ul>
+      )}
+
   return (
     <nav className={styles.navbar}>
-      <Link href="/">
+      <Link href="https://includedavis.com/about" target="_blank">
         <Image
           src="/Vector.svg"
           width={40}
@@ -29,6 +39,7 @@ export default function Navbar() {
         {nav.map((item, index) => {
           return (
             <li key={index}>
+              {(item.link) === "Workshops" && dropDown()}
               <Link
                 href={`/${item.href.toLowerCase()}`}
                 className={styles.link}
