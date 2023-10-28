@@ -9,18 +9,19 @@ const nav = [
   { link: "Resources", href: "resources" },
 ];
 
-const dropDown_items = [1, 2, 3, 4, 5]
+const dropDown_items = [1, 2, 3, 4, 5];
 export default function Navbar() {
   const [active, setActive] = useState(false);
 
-
   const dropDown = () => {
     return (
-    <ul className={styles.dropDown}>
-      {dropDown_items.map((numWeek, index) => (
-      <li key={index}>Week {numWeek}</li>))}
-    </ul> //TODO: ADD LINKS HEREEE :)))
-      )}
+      <ul className={styles.dropDown}>
+        {dropDown_items.map((numWeek, index) => (
+          <li key={index}>Week {numWeek}</li>
+        ))}
+      </ul> //TODO: ADD LINKS HEREEE :)))
+    );
+  };
 
   return (
     <nav className={styles.navbar}>
@@ -29,17 +30,17 @@ export default function Navbar() {
           src="/Vector.svg"
           width={40}
           height={40}
-          sizes={"{max-width: 1048px} 30px, 40px"} 
+          sizes={"{max-width: 1048px} 30px, 40px"}
           alt="logo"
           className={styles.logo}
         />
       </Link>
-      
+
       <ul className={styles.links}>
         {nav.map((item, index) => {
           return (
             <li key={index}>
-              {(item.link) === "Workshops" && dropDown()}
+              {item.link === "Workshops" && dropDown()}
               <Link
                 href={`/${item.href.toLowerCase()}`}
                 className={styles.link}
