@@ -1,7 +1,5 @@
 import React, { Component } from "react";
-import Image from "next/image";
 import styles from "../styles/index.module.scss";
-import Link from "next/link";
 
 /*
 landing page:
@@ -11,21 +9,6 @@ landing page:
 export default function Index() {
   return (
     <div className={styles.body}>
-      <nav className={styles.nav_bar}>
-        <Image
-          src="/Vector.svg"
-          width={40}
-          height={40}
-          alt=""
-          className={styles.logo}
-        ></Image>
-        <h1 className={styles.brand}>include</h1>
-        <ul className={`${styles.list} ${styles.nav_links}`}>
-          <li>Home</li>
-          <li>Workshops</li>
-          <li>Resources</li>
-        </ul>
-      </nav>
       <h1 className={styles.hero}>
         Welcome developers to the 2023-2024 Technical Cohort!
       </h1>

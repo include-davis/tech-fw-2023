@@ -1,13 +1,6 @@
-<<<<<<< HEAD
 {
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
   "eslint.validate": ["javascript"]
-=======
-{"editor.codeActionsOnSave": {
-  "source.fixAll.eslint": true
-},
-"eslint.validate": ["javascript"]
->>>>>>> 1b290d4c63298c9f6db3e857ab7f0fb042de65b7
 }

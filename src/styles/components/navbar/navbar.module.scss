@@ -1,0 +1,76 @@
+@use 'src/styles/mixins';
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 80px;
+    padding: 24px;
+
+    background-color: black;
+
+    @include mixins.phone {
+        justify-content: space-between;
+    }
+
+    .logo:hover {
+        filter: brightness(0.8);
+    }
+
+    .links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        font-size: 1.2rem;
+        
+        gap: 36px;
+
+        @include mixins.tablet {
+            gap: 24px;
+            font-size: 0.8rem;
+        }
+
+        li {
+            color: var(--font-white);
+            padding: 16px;
+            border-radius: 8px;
+            transform: translateY(0);
+            transition: transform 0.4s ease;
+        }
+        
+        li:hover {
+            transform: translateY(-2px);
+            background-color: rgb(27, 25, 25);
+        }
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        a > .btn {
+            background: none;
+            border: none;
+            text-decoration: none;
+            
+            font-size: 1rem;
+            padding: 12px;
+            border-radius: 8px;
+            color: var(--font-white);
+
+            @include mixins.tablet {
+                font-size: 0.6rem;
+
+            }
+        }
+
+        a > .btn:hover {
+            background-color: var(--include-purple);
+        }
+    }
+}
