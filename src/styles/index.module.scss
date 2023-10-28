@@ -37,6 +37,7 @@
       flex-direction: column;
       align-items: flex-start;
       width: 33%;
+      text-align: center;
     }
 
     .heroImg {
@@ -81,6 +82,6 @@
 }
 
 .btn:hover {
-  color: #3c257e;
-  background-color: #ffffff;
+  color: black;
+  background-color: rgb(155, 155, 155);
 }

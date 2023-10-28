@@ -13,6 +13,9 @@ export default function Index() {
       <section className={styles.hero}>
         <h1>Welcome to the 2023-2024 Technical Cohort! 🎉🎉🎉</h1>
         <div className={styles.heroContent}>
+          <div className={styles.heroImg}>
+            <Image src="/hero.jpg" width={450} height={450} alt="heroImg" />
+          </div>
           <div className={styles.heroText}>
             <h2>
               We are so excited to have you join us on this journey of
@@ -23,9 +26,6 @@ export default function Index() {
               back here often!
             </h2>
           </div>
-          <div className={styles.heroImg}>
-            <Image src="/hero.png" width={450} height={450} alt="heroImg" />
-          </div>
         </div>
       </section>
       <div className={styles.workshops}>
@@ -35,14 +35,13 @@ export default function Index() {
             <li>How The Internet Works</li>
             <li>Overview of Web Development</li>
             <li>Workspace Set Up</li>
-            <li>Basic HTML & CSS</li>
+            <li>Basic HTML & CSS (box model)</li>
           </ul>
           <button className={styles.btn}>Get Started</button>
         </div>
         <div className={styles.workshop}>
           <h2>Workshop #2: Intro to HTML and CSS</h2>
           <ul className={styles.learningGoals}>
-            <li>Box Model</li>
             <li>Flexbox</li>
             <li>Responsiveness</li>
             <li>Media Queries</li>

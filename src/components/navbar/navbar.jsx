@@ -19,7 +19,7 @@ export default function Navbar() {
     <ul className={styles.dropDown}>
       {dropDown_items.map((numWeek, index) => (
       <li key={index}>Week {numWeek}</li>))}
-    </ul>
+    </ul> //TODO: ADD LINKS HEREEE :)))
       )}
 
   return (
