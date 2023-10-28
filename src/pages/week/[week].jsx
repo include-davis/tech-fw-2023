@@ -1,5 +1,5 @@
 // manually import weekly components
-import Test from "@/components/workshops/week 1/test.jsx";
+import Test from "@/components/week 1/test.jsx";
 
 import styles from "@/styles/week/week.module.scss";
 

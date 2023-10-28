@@ -1,12 +1,11 @@
 import React, { Component } from "react";
 import Image from "next/image";
 import styles from "../styles/index.module.scss";
+import Link from "next/link";
 
 /*
 landing page:
-  header
-  hero
-  navbar
+  need to replace buttons with links
 ;
 */
 export default function Index() {
@@ -31,16 +30,48 @@ export default function Index() {
         Welcome developers to the 2023-2024 Technical Cohort!
       </h1>
       <div className={styles.workshops}>
-        <h2>Workshop #1: Initial Set Up</h2>
-        <button className={styles.btn}>Get Started</button>
-        <h2>Workshop #2: Intro to HTML and CSS</h2>
-        <button className={styles.btn}>Get Started</button>
-        <h2>Workshop #3: Advanced HTML and CSS</h2>
-        <button className={styles.btn}>Get Started</button>
-        <h2>Workshop #4: Next.js and Backend</h2>
-        <button className={styles.btn}>Get Started</button>
-        <h2>Workshop #5: I don't know</h2>
-        <button className={styles.btn}>Get Started</button>
+        <div className={styles.workshop}>
+          <h2>Workshop #1: Initial Set Up</h2>
+          <ul className={styles.learningGoals}>
+            <li>How The Internet Works</li>
+            <li>Overview of Web Development</li>
+            <li>Workspace Set Up</li>
+            <li>Basic HTML & CSS</li>
+          </ul>
+          <button className={styles.btn}>Get Started</button>
+        </div>
+        <div className={styles.workshop}>
+          <h2>Workshop #2: Intro to HTML and CSS</h2>
+          <ul className={styles.learningGoals}>
+            <li>Box Model</li>
+            <li>Flexbox</li>
+            <li>Responsiveness</li>
+            <li>Media Queries</li>
+            <li>Positioning</li>
+          </ul>
+          <button className={styles.btn}>Get Started</button>
+        </div>
+        <div className={styles.workshop}>
+          <h2>Workshop #3: Javascript + Next.js Frontend</h2>
+          <ul className={styles.learningGoals}>
+            <li>Coming Soon</li>
+          </ul>
+          <button className={styles.btn}>Get Started</button>
+        </div>
+        <div className={styles.workshop}>
+          <h2>Workshop #4: Next.js Backend</h2>
+          <ul className={styles.learningGoals}>
+            <li>Coming Soon</li>
+          </ul>
+          <button className={styles.btn}>Get Started</button>
+        </div>
+        <div className={styles.workshop}>
+          <h2>Workshop #5: TBD</h2>
+          <ul className={styles.learningGoals}>
+            <li>TBD</li>
+          </ul>
+          <button className={styles.btn}>Get Started</button>
+        </div>
       </div>
     </div>
   );
