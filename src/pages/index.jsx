@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Image from "next/image";
 import styles from "../styles/index.module.scss";
 
 /*
@@ -9,9 +10,24 @@ landing page:
 export default function Index() {
   return (
     <div className={styles.body}>
-      <h1 className={styles.hero}>
-        Welcome developers to the 2023-2024 Technical Cohort!
-      </h1>
+      <section className={styles.hero}>
+        <h1>Welcome to the 2023-2024 Technical Cohort! 🎉🎉🎉</h1>
+        <div className={styles.heroContent}>
+          <div className={styles.heroText}>
+            <h2>
+              We are so excited to have you join us on this journey of
+              exploration and learning! This year, we will be learning about
+              full stack web development, and we will be using Next.js and
+              React.js to build our projects. We will be using this website to
+              host all of our resources and workshops, so make sure to check
+              back here often!
+            </h2>
+          </div>
+          <div className={styles.heroImg}>
+            <Image src="/hero.png" width={450} height={450} alt="heroImg" />
+          </div>
+        </div>
+      </section>
       <div className={styles.workshops}>
         <div className={styles.workshop}>
           <h2>Workshop #1: Initial Set Up</h2>
