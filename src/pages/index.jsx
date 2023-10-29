@@ -13,9 +13,13 @@ export default function Index() {
       <section className={styles.hero}>
         <h1>Welcome to the 2023-2024 Technical Cohort! 🎉🎉🎉</h1>
         <div className={styles.heroContent}>
-          <div className={styles.heroImg}>
-            <Image src="/hero.jpg" width={450} height={450} alt="heroImg" />
-          </div>
+          <Image
+            src="/hero.jpg"
+            className={styles.heroImg}
+            width={450}
+            height={450}
+            alt="heroImg"
+          />
           <div className={styles.heroText}>
             <h2>
               We are so excited to have you join us on this journey of

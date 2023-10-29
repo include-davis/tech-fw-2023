@@ -17,9 +17,11 @@ export default function Navbar() {
     return (
       <ul className={styles.dropDown}>
         {dropDown_items.map((numWeek, index) => (
-          <li key={index}>Week {numWeek}</li>
+          <Link href={`/week/${numWeek}`}>
+            <li key={index}>Week {numWeek}</li>
+          </Link>
         ))}
-      </ul> //TODO: ADD LINKS HEREEE :)))
+      </ul>
     );
   };
 
