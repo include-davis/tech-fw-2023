@@ -2,6 +2,6 @@ import React, { Component } from 'react';
 
 export default function About() {
     return (
-      <div>about</div>
+      <div>this is krishna s page</div>
     )
 }
