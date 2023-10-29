@@ -4,7 +4,7 @@ import React from 'react';
 export default function Personal() {
   return (
     <div>
-      hello
+      hi
       <About></About>
     </div>
   );
