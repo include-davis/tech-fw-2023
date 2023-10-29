@@ -5,7 +5,10 @@ export default function Personal() {
   return (
     <div>
       hi
-      <About></About>
+      <About>My name is Catelyn</About>
     </div>
+
+
+
   );
 }
