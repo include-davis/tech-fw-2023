@@ -1,14 +1,13 @@
 import About from '@/components/personal/about';
 import React from 'react';
+import styles from '@/styles/components/personal/about.module.scss'
 
-export default function Personal() {
+export default function About() {
   return (
-    <div>
-      hi
-      <About>My name is Catelyn</About>
+  
+   <div>
+      <About></About>
     </div>
-
-
 
   );
 }
