@@ -1,6 +1,44 @@
-.outer{
-    font-size: 50px;
+.style {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    h1 {
+        margin: 20px;
+        font-weight: 900;
+        font-size: 48px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    h2 {
+        margin: 16px;
+        font-weight: 100;
+        font-size: 28px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .icons{
+        scale: 0.4;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: stretch;
+        justify-content: space-between;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .line{
+        height: 50px;
+    }
+    text{
+        line-height:24px;
+    }
+    animation-name: fade;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
 }
-.inner{
-    font-size: 20px;
+
+@keyframes fade{
+    from {color: rgba(145, 31, 132, 0.649);}
+    to {color: rgba(74, 56, 113);}
 }
