@@ -16,14 +16,22 @@
     }
 
     .icons{
-        scale: 0.4;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         align-content: stretch;
-        justify-content: space-between;
+        justify-content: space-around;
         margin-top: 20px;
         margin-bottom: 20px;
+        img{
+            scale: 0.5;
+        }
+        img:hover{
+            animation-name: iconHover;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
     }
     .line{
         height: 50px;
@@ -41,4 +49,8 @@
 @keyframes fade{
     from {color: rgba(145, 31, 132, 0.649);}
     to {color: rgba(74, 56, 113);}
+}
+@keyframes iconHover{
+    from {scale: 0.4;}
+    to {scale: 1;}
 }
