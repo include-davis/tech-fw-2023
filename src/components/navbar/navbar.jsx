@@ -18,7 +18,7 @@ export default function Navbar() {
       <ul className={styles.dropDown}>
         {dropDown_items.map((numWeek, index) => (
           <Link href={`/week/${numWeek}`}>
-            <li key={index}>Week {numWeek}</li>
+            <li key={`Week ${index}`}>Week {numWeek}</li>
           </Link>
         ))}
       </ul>
@@ -41,7 +41,7 @@ export default function Navbar() {
       <ul className={styles.links}>
         {nav.map((item, index) => {
           return (
-            <li key={index}>
+            <li key={`dropdown ${index}`}>
               {item.link === "Workshops" && dropDown()}
               <Link
                 href={`/${item.href.toLowerCase()}`}

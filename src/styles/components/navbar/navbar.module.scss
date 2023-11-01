@@ -61,6 +61,7 @@
       left: 0;
       overflow-y: hidden;
       transition: max-height 0.7s ease; /* Add a smooth transition effect */
+      z-index: 3;
 
       a {
         display: flex;
@@ -70,14 +71,14 @@
           width: 100%;
           border-radius: 0px;
           padding-left: 16px;
-          color: var(--include-purple);
-          background-color: var(--font-white);
+          color: white;
+          background-color: var(--include-purple);
 
           flex-grow: 1;
         }
 
         li:hover {
-          background-color: rgb(209, 209, 209);
+          background-color: rgb(33, 33, 33);
         }
       }
     }
