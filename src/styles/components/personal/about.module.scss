@@ -1,7 +1,37 @@
-.outer{
-    font-size: 150px;
-
-    .inner{
-        font-size: 100px;
+.body{
+    color: white;
+    background-color: black;
+    min-height: 100vh;
+    min-width: 100vh;
+    
+    .header{
+        font-size: 50px;
+        font-weight: bold;
+        text-align: center;
+        // margin: 100px;
     }
+
+    .introduction{
+        font-weight: normal;
+        margin: 50px;
+        font-size: 20px;
+    }
+
+    .hobbies{
+        font-weight: normal;
+        margin: 50px;
+        font-size: 20px;
+    }
+
+    .endingParagraph{
+        font-weight: normal;
+        margin: 50px;
+        font-size: 20px;
+    }
+
+    .closing{
+        font-size: 35px;
+    }
+
 }
+
