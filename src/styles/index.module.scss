@@ -3,8 +3,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: black;
-  color: #fff;
+  background-color: white;
+  color: var(--include-purple);
+  padding: 48px;
 }
 
 .brand {
@@ -16,38 +17,124 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 80px - 48px);
   animation: fadeIn 1s ease-in-out;
 
   h1 {
     padding-top: 48px;
   }
 
-  .heroContent {
-    width: 80%;
+  .heroContainer {
     height: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 72px;
+    justify-content: space-evenly;
 
-    .heroText {
+    .heroContent {
+      width: 80%;
+      // height: 100%;
       display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      width: 33%;
-      text-align: center;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 72px;
+
+      .heroImg {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        border-radius: 24px;
+        box-shadow: 0px 0px 16px 0px rgba(255, 255, 255, 0.75);
+      }
+
+      .heroText {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 33%;
+        text-align: center;
+      }
     }
 
-    .heroImg {
+    .heroButton {
       display: flex;
       flex-direction: column;
+      align-items: center;
       justify-content: center;
+      gap: 8px;
+      font-size: 1.2rem;
+      scroll-behavior: smooth;
+      background: none;
+      text-decoration: none;
+      border: none;
+
+      animation: bounce 2s ease-in-out infinite;
     }
   }
+
   h1 {
     font-size: 2rem;
+  }
+}
+
+.workshops {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+
+  .workshopTitle {
+    font-size: 2rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .workshopContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+
+    .workshop {
+      width: 25%;
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      row-gap: 24px;
+      padding: 24px;
+      border: 2px solid black;
+      border-radius: 16px;
+      background: var(--gradient-purple);
+      color: white;
+
+      .learningGoals {
+        list-style-type: "\1F44D";
+        list-style-position: inside;
+      }
+
+      .btn {
+        // width: 100%;
+        align-self: center;
+        font-size: 1.5rem;
+        padding: 4px 24px;
+        color: #fff;
+        background-color: transparent;
+        border: 0.5px solid #fff;
+        border-radius: 4px;
+        transition: all 0.4s ease-in-out;
+        
+      }
+
+      .btn:hover {
+        color: black;
+        background-color: rgb(232, 228, 228);
+      }
+    }
   }
 }
 
@@ -61,27 +148,16 @@
   }
 }
 
-.workshop {
-  display: flex;
-  flex-direction: column;
-  row-gap: 24px;
-  padding: 24px;
-}
-.learningGoals {
-  list-style-type: "\1F44D";
-  list-style-position: inside;
-}
-.btn {
-  width: 200px;
-  font-size: 1.5rem;
-  padding: 4px 24px;
-  color: #fff;
-  background-color: transparent;
-  border: 0.5px solid #fff;
-  border-radius: 16px;
-}
+@keyframes bounce {
+  0% {
+    transform: translateY(0px);
+  }
 
-.btn:hover {
-  color: black;
-  background-color: rgb(155, 155, 155);
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
 }
