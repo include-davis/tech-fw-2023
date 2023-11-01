@@ -1,0 +1,28 @@
+.box {
+    position: left;
+    padding-left: 100px;
+    padding-top: 80px;
+}
+
+.profession {
+    color: rgb(205, 127, 205);
+    box-sizing: content-box;
+    width: 30%;
+    position: left;
+    margin-bottom: 15px;
+}
+
+.name {
+    box-sizing: content-box;
+    font-size: 50px;
+    width: 40%;
+    position: left;
+    margin-bottom: 15px;
+}
+
+.description {
+    box-sizing: content-box;
+    font-size: 18px;
+    width: 40%;
+    position: left;
+}
