@@ -90,14 +90,15 @@ export default function Index() {
         <div className={styles.workshopContent}>
           {workshopInfo?.map((workshop, workshopNum) => {
             return (
-              <div
-                className={styles.workshop}
-                key={`Workshop ${workshopNum}`}
-              >
+              <div className={styles.workshop} key={`Workshop ${workshopNum}`}>
                 <h2>{workshop.title}</h2>
                 <ul className={styles.learningGoals}>
                   {workshop.goals.map((goal, index) => {
-                    return <li key={`Week 1: Goal ${index}`}>{goal}</li>;
+                    return (
+                      <li key={`Week ${workshopNum + 1}: Goal ${index}`}>
+                        {goal}
+                      </li>
+                    );
                   })}
                 </ul>
                 <button className={styles.btn}>

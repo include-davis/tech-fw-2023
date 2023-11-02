@@ -5,7 +5,7 @@ import styles from "@/styles/components/navbar/navbar.module.scss";
 
 const nav = [
   { link: "Home", href: "" },
-  { link: "Workshops", href: "workshop" },
+  { link: "Workshops", href: "workshops" },
   { link: "Resources", href: "resources" },
 ];
 

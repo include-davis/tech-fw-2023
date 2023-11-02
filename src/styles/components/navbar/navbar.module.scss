@@ -35,7 +35,7 @@
     }
 
     li {
-      color: var(--font-white);
+      color: var(--color-white);
       border-radius: 8px;
       padding: 16px;
     }
@@ -98,7 +98,7 @@
       font-size: 1rem;
       padding: 12px;
       border-radius: 8px;
-      color: var(--font-white);
+      color: var(--color-white);
 
       @include mixins.tablet {
         font-size: 0.6rem;

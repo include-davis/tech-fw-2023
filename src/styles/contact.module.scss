@@ -28,6 +28,7 @@
         position: relative;
         width: 250px;
         height: 250px;
+        cursor: pointer;
 
         @include mixins.tablet {
           width: 200px;
@@ -40,7 +41,7 @@
         }
       }
 
-      h1 {
+      > h1 {
         font-size: 1.5rem;
       }
     }
@@ -87,8 +88,16 @@
             align-items: center;
             justify-content: space-around;
 
-            li {
-                list-style: none;
+            > li {
+              list-style: none;
+            }
+
+            > li > a > img {
+              transition: transform 0.5s ease;
+            }
+
+            > li > a > img:hover {
+              transform: scale(1.1);
             }
           }
 
@@ -115,5 +124,17 @@
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-16px);
   }
 }

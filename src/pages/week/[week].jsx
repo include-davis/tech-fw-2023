@@ -1,21 +1,54 @@
 // manually import weekly components
-import Test from "@/components/week 1/test.jsx";
+import Flexbox from "@/components/week 2/flexbox.jsx";
+import Position from "@/components/week 2/position.jsx";
+import Responsiveness from "@/components/week 2/responsiveness.jsx";
 
 import styles from "@/styles/week/week.module.scss";
 
 // Insert weekly components in separate variables; Render based on week param.
 const weekContent = {
-  1: [<Test key="first" />],
-  2: [<Test key="second" />],
-  3: [<Test key="three" />],
-  4: [<Test key="four" />],
-  5: [<Test key="five" />],
+  1: [
+    {
+      component: <Flexbox key="flexbox" />,
+      title: "Flexbox",
+      desc: "Tutorial on how flexbox works!",
+    },
+    {
+      component: <Position key="position" />,
+      title: "Position",
+      desc: "Example of positioning in CSS",
+    },
+    {
+      component: <Responsiveness key="responsiveness" />,
+      title: "Responsiveness",
+      desc: "Example of responsiveness in CSS",
+    }
+  ],
+  2: [],
+  3: [],
+  4: [],
+  5: [],
 };
 
 export default function WorkshopContent({ week }) {
   return (
     <div className={styles.workshopContainer}>
-      <section className={styles.workshopContent}>{weekContent[week]}</section>
+      <h1 className={styles.workshopTitle}>Week {week} Workshops</h1>
+      <section className={styles.workshopContent}>
+        {weekContent[week]?.map((item, index) => {
+          return (
+            <div className={styles.example} key={`Example ${week} ${index}`}>
+              {item.component}
+              <div className={styles.exampleContent}>
+                <h1>{item.title}</h1>
+                <ul>
+                  <li>{item.desc}</li>
+                </ul>
+              </div>
+            </div>
+          );
+        })}
+      </section>
     </div>
   );
 }

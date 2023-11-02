@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  .parent {
+    width: 600px;
+    height: 600px;
+
+    position: relative; // absolute, fixed, sticky, relative
+
+    font-size: 2rem;
+    color: var(--color-white);
+
+    background-color: grey;
+    border: 16px black solid;
+
+    p {
+        padding: 8px;
+    }
+
+    .child {
+        width: 200px;
+        height: 200px;
+
+        position: absolute; // absolute, fixed, sticky, relative
+        // top: -10%;
+        // left: 0;
+        // right: -10%;
+        // bottom: 0;
+
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+    
+        font-size: 1.5rem;
+        color: var(--color-white);
+
+        p {
+            padding: 8px;
+        }
+    
+        background-color: purple;
+        border: 16px var(--include-purple) solid;
+    }
+  }
+}
