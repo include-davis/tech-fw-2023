@@ -1,0 +1,119 @@
+@use "src/styles/mixins";
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: 64px;
+  padding: 72px;
+
+  .about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-wrap: nowrap;
+    gap: 48px;
+
+    .lead {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+
+      .leadImg {
+        position: relative;
+        width: 250px;
+        height: 250px;
+
+        @include mixins.tablet {
+          width: 200px;
+          height: 200px;
+        }
+
+        @include mixins.phone {
+          width: 150px;
+          height: 150px;
+        }
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+
+    .backdrop {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: calc(100vh - 80px);
+      background-color: white;
+      z-index: 2;
+
+      .info {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .panel {
+          width: 50%;
+          height: 50%;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 24px;
+          border-radius: 8px;
+          background: rgb(118, 255, 136);
+          background: linear-gradient(
+            135deg,
+            rgba(118, 255, 136, 0.37296925606179976) 28%,
+            rgba(9, 213, 222, 0.6166667350533963) 84%
+          );
+          box-shadow: 0 0 48px rgba(0, 0, 0, 0.2);
+          animation: fadeIn 0.3s ease-in-out;
+
+          .socials {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+
+            li {
+                list-style: none;
+            }
+          }
+
+          button {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            font-size: 2rem;
+            background: none;
+            text-decoration: none;
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-16px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
