@@ -1,3 +1,79 @@
-.container {
-    
+@use "src/styles/mixins";
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  background: rgb(118, 255, 136);
+  background: linear-gradient(
+    135deg,
+    rgba(118, 255, 136, 0.37296925606179976) 28%,
+    rgba(222, 9, 217, 0.6166667350533963) 84%
+  );
+  padding: 48px;
+  border-radius: 16px;
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.25);
+  gap: 48px;
+  transition: transform 0.7s ease-in-out;
+
+  @include mixins.tablet {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  @include mixins.phone {
+    padding: 24px;
+  }
+}
+
+.card:hover {
+  transform: rotate3d(1, 1, 1, 10deg)
+}
+
+.headshot {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+
+  @include mixins.phone {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+
+  > h1 {
+    font-size: 1.5rem;
+
+    @include mixins.phone {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.facts {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+
+  > li {
+    font-size: 1.2rem;
+    color: var(--include-purple);
+    font-weight: bold;
+
+    @include mixins.phone {
+      font-size: 1rem;
+    }
+  }
 }

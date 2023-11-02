@@ -4,12 +4,6 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "@/styles/index.module.scss";
 
-/*
-landing page:
-  need to replace buttons with links
-;
-*/
-
 const workshopInfo = [
   {
     week: "Week 1",

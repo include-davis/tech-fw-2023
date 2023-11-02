@@ -8,7 +8,7 @@ export default function Contact() {
   const [active, setActive] = useState(null);
 
   return (
-    <article className={styles.contact}>
+    <div className={styles.contact}>
       <h1>Contact Us</h1>
       <section className={styles.about}>
         {contact?.info.map((lead, index) => {
@@ -77,6 +77,6 @@ export default function Contact() {
           );
         })}
       </section>
-    </article>
+    </div>
   );
 }

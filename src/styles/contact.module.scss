@@ -52,7 +52,8 @@
       left: 0;
       width: 100%;
       height: calc(100vh - 80px);
-      background-color: white;
+      // background-color: rgba(0,0,0,.47);
+      background-color: var(--color-white);
       z-index: 2;
 
       .info {

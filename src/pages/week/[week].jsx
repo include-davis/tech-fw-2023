@@ -9,22 +9,32 @@ import styles from "@/styles/week/week.module.scss";
 const weekContent = {
   1: [
     {
+      component: <h1>No components were made for this week</h1>,
+      title: "N/A",
+      desc: "N/A",
+      resources: null,
+    },
+  ],
+  2: [
+    {
       component: <Flexbox key="flexbox" />,
       title: "Flexbox",
       desc: "Tutorial on how flexbox works!",
+      resources: ["link1", "link2"],
     },
     {
       component: <Position key="position" />,
       title: "Position",
       desc: "Example of positioning in CSS",
+      resources: ["link1", "link2"],
     },
     {
       component: <Responsiveness key="responsiveness" />,
       title: "Responsiveness",
       desc: "Example of responsiveness in CSS",
-    }
+      resources: ["link1", "link2"],
+    },
   ],
-  2: [],
   3: [],
   4: [],
   5: [],
@@ -37,13 +47,30 @@ export default function WorkshopContent({ week }) {
       <section className={styles.workshopContent}>
         {weekContent[week]?.map((item, index) => {
           return (
-            <div className={styles.example} key={`Example ${week} ${index}`}>
+            <div
+              className={styles.example}
+              key={`Example ${index} Week ${week}`}
+            >
               {item.component}
               <div className={styles.exampleContent}>
-                <h1>{item.title}</h1>
-                <ul>
-                  <li>{item.desc}</li>
-                </ul>
+                <div className={styles.exampleInfo}>
+                  <h1>{item.title}</h1>
+                  <ul>
+                    <li>{item?.desc}</li>
+                  </ul>
+                </div>
+                <div className={styles.exampleResources}>
+                  <h1>{item.resources ? "Resources" : ""}</h1>
+                  <ul>
+                    {item.resources?.map((resource, index) => {
+                      return (
+                        <li key={`Resource ${index} Week ${week}`}>
+                          {resource}
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </div>
               </div>
             </div>
           );

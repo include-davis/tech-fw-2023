@@ -7,6 +7,7 @@ const nav = [
   { link: "Home", href: "" },
   { link: "Workshops", href: "workshops" },
   { link: "Resources", href: "resources" },
+  { link: "Personal", href: "personal" },
 ];
 
 const dropDown_items = [1, 2, 3, 4, 5];
@@ -17,8 +18,8 @@ export default function Navbar() {
     return (
       <ul className={styles.dropDown}>
         {dropDown_items.map((numWeek, index) => (
-          <Link href={`/week/${numWeek}`}>
-            <li key={`Week ${index}`}>Week {numWeek}</li>
+          <Link href={`/week/${numWeek}`} key={`Week ${index}`}>
+            <li>Week {numWeek}</li>
           </Link>
         ))}
       </ul>
