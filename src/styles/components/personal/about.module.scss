@@ -4,27 +4,35 @@
 
 p.job_title {
     margin-left: 20px;
-    padding: 3em;
+    padding-left: 3em;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    font-size: 1.1em;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 h1.greeting{
-    width: 30em;
+    width: 500px;
     padding-left: 50px;
     margin-left: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif
+    //padding-bottom: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3em;
 }
 
 p.subgreeting{
     padding-left: 3em;
-    width: 500px;
-    padding: 50px;
+    width: 470px;
+    padding-top: 20px;
+    padding-bottom: 50px;
     margin-left: 20px;
+    font-size: 1.2em;
+    line-height: 1.5;
 }
 
 button.contact_button{
     padding-left: 50px;
-    background-color: #c7d47b; /* Green */
+    background-color: #c7d47b;
     border: none;
     padding: 15px 32px;
     text-align: center;
@@ -32,4 +40,5 @@ button.contact_button{
     font-size: 16px;    
     color: black;
     font-weight: bold;
+   // box-shadow: inset;
 }
