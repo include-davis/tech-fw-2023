@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import styles from '@styles/components/personal/about.module.scss'
 
 
-export default function About() {
-    return (
       <div className={styles.container}>
         <div className={styles.body}>
           
@@ -18,5 +16,3 @@ export default function About() {
 
         </div>
       </div>
-    )
-}
