@@ -20,7 +20,9 @@ export default function About() {
           </h2>
           <h1 className={styles.name}>Hello, my name is Cristian Embleton</h1>
           <p className={styles.description}>Currently studying computer software and hardware engineering. Always looking for ways to learn more.</p>
-        
+          <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0">
+            <button type="button" className={styles.button}>Contact me</button>
+          </a>
         </div>
         
         <div className={styles.img_container}>
