@@ -4,14 +4,18 @@
   // colors: rgba/hex
   --font-primary: #000000;
   --font-white: #ffffff;
-  --include-purple: #3C257E;
-  
+  --include-purple: #3c257e;
+  --gradient-purple: linear-gradient(
+    68deg,
+    #332950 10.09%,
+    #3c257e 50.92%,
+    #322d41 93.48%
+  );
+
   // spacers: px
   --edge-spacer: 24px;
 
   // font sizes: rem
-
-
 }
 
 * {
@@ -27,5 +31,5 @@ a {
 }
 
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
