@@ -1,12 +1,35 @@
-.title{
-    background-color: lightblue;
-    padding: 20px;
+.styles.webpage{
+    background-color: rgb(142, 152, 161);
 }
 
-.subtitle{
-    font-size: 16em;
+p.job_title {
+    margin-left: 20px;
+    padding: 3em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.button{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+h1.greeting{
+    width: 30em;
+    padding-left: 50px;
+    margin-left: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+p.subgreeting{
+    padding-left: 3em;
+    width: 500px;
+    padding: 50px;
+    margin-left: 20px;
+}
+
+button.contact_button{
+    padding-left: 50px;
+    background-color: #c7d47b; /* Green */
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;    
+    color: black;
+    font-weight: bold;
 }
