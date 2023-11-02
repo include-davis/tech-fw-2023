@@ -1,14 +1,14 @@
 .box {
-    position: left;
-    padding-left: 100px;
-    padding-top: 80px;
+    box-sizing: content-box;
+    position: relative;
+    left: 100px;
+    top: 100px;
 }
 
 .profession {
     color: rgb(205, 127, 205);
     box-sizing: content-box;
     width: 30%;
-    position: left;
     margin-bottom: 15px;
 }
 
@@ -16,7 +16,6 @@
     box-sizing: content-box;
     font-size: 50px;
     width: 40%;
-    position: left;
     margin-bottom: 15px;
 }
 
@@ -24,5 +23,26 @@
     box-sizing: content-box;
     font-size: 18px;
     width: 40%;
-    position: left;
+    margin-bottom: 20px;
+}
+
+.img_container {
+    width: 30vw;
+    height: 30vh;
+    position: relative;
+    left: 60%;
+    bottom: 120px;
+}
+
+.image {
+    position: absolute;
+    top: 12px;
+    right: 80px;
+    object-fit: fill;
+}
+
+.image_bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
