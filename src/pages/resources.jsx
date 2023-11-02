@@ -31,19 +31,22 @@ export default function Resources() {
       <div className={styles.resources}>
         <h1>Resource Glossary</h1>
         {content?.map((resource, resourceNum) => {
-
           const webLinks = [];
           resource.tags.forEach((tag) => {
-            data[`week ${resource.week}`]["content"][tag]?.web.forEach((item) => {
-              webLinks.push(item);
-            });
+            data[`week ${resource.week}`]["content"][tag]?.web.forEach(
+              (item) => {
+                webLinks.push(item);
+              }
+            );
           });
 
           const videoLinks = [];
           resource.tags.forEach((tag) => {
-            data[`week ${resource.week}`]["content"][tag]?.video.forEach((item) => {
-              videoLinks.push(item);
-            });
+            data[`week ${resource.week}`]["content"][tag]?.video.forEach(
+              (item) => {
+                videoLinks.push(item);
+              }
+            );
           });
 
           {
@@ -56,7 +59,7 @@ export default function Resources() {
               key={`Resource ${resourceNum}`}
             >
               <h1>
-                Workshop {resource.week}: {data.title}
+                Workshop {resource.week}: {data[`week ${resource.week}`].title}
               </h1>
               <section className={styles.resourceList}>
                 <section className={styles.websites}>
