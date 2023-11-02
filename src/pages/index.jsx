@@ -6,7 +6,7 @@ import styles from "@/styles/index.module.scss";
 
 const workshopInfo = [
   {
-    week: "Week 1",
+    week: 1,
     title: "Initial Set Up",
     goals: [
       "How The Internet Works",
@@ -16,22 +16,22 @@ const workshopInfo = [
     ],
   },
   {
-    week: "Week 2",
+    week: 2,
     title: "Intro to HTML and CSS",
     goals: ["Flexbox", "Responsiveness", "Media Queries", "Positioning"],
   },
   {
-    week: "Week 3",
+    week: 3,
     title: "Javascript + Next.js Frontend",
     goals: ["Coming Soon"],
   },
   {
-    week: "Week 4",
+    week: 4,
     title: "Next.js Backend",
     goals: ["Coming Soon"],
   },
   {
-    week: "Week 5",
+    week: 5,
     title: "TBD",
     goals: ["TBD"],
   },
@@ -89,14 +89,14 @@ export default function Index() {
                 <ul className={styles.learningGoals}>
                   {workshop.goals.map((goal, index) => {
                     return (
-                      <li key={`Week ${workshopNum + 1}: Goal ${index}`}>
+                      <li key={`Week ${workshop.week}: Goal ${index}`}>
                         {goal}
                       </li>
                     );
                   })}
                 </ul>
                 <button className={styles.btn}>
-                  <Link href={`/week/${workshopNum + 1}`}>Learn More</Link>
+                  <Link href={`/week/${workshop.week}`}>Learn More</Link>
                 </button>
               </div>
             );

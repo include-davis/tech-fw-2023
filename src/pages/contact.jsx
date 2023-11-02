@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { MdClose } from "react-icons/md";
-import contact from "@/json/contact.json";
+import contact from "@/data/contact.json";
 import styles from "@/styles/contact.module.scss";
 
 export default function Contact() {
@@ -25,8 +25,10 @@ export default function Contact() {
                     objectPosition: "center",
                     borderRadius: "50%",
                   }}
-                  // sizes={"(max-width: 1024px) 200px, 300px"}
+                  blurDataURL={lead.blurDataURL}
+                  placeholder="blur"
                   onClick={() => setActive(index)}
+                  priority={true}
                 />
               </div>
               {active == index && (

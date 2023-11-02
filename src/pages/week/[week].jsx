@@ -3,6 +3,7 @@ import Flexbox from "@/components/week 2/flexbox.jsx";
 import Position from "@/components/week 2/position.jsx";
 import Responsiveness from "@/components/week 2/responsiveness.jsx";
 
+import resources from "@/data/resources.json";
 import styles from "@/styles/week/week.module.scss";
 
 // Insert weekly components in separate variables; Render based on week param.
@@ -12,7 +13,7 @@ const weekContent = {
       component: <h1>No components were made for this week</h1>,
       title: "N/A",
       desc: "N/A",
-      resources: null,
+      tags: null,
     },
   ],
   2: [
@@ -20,19 +21,19 @@ const weekContent = {
       component: <Flexbox key="flexbox" />,
       title: "Flexbox",
       desc: "Tutorial on how flexbox works!",
-      resources: ["link1", "link2"],
+      tags: ["flexbox"],
     },
     {
       component: <Position key="position" />,
       title: "Position",
       desc: "Example of positioning in CSS",
-      resources: ["link1", "link2"],
+      tags: ["position"],
     },
     {
       component: <Responsiveness key="responsiveness" />,
       title: "Responsiveness",
       desc: "Example of responsiveness in CSS",
-      resources: ["link1", "link2"],
+      tags: ["responsiveness"],
     },
   ],
   3: [],
@@ -60,15 +61,39 @@ export default function WorkshopContent({ week }) {
                   </ul>
                 </div>
                 <div className={styles.exampleResources}>
-                  <h1>{item.resources ? "Resources" : ""}</h1>
+                  <h1>{item.tags ? "Resources" : ""}</h1>
                   <ul>
-                    {item.resources?.map((resource, index) => {
-                      return (
-                        <li key={`Resource ${index} Week ${week}`}>
-                          {resource}
-                        </li>
-                      );
-                    })}
+                    {item.tags
+                      ? item.tags.map((component, index) => {
+                          const webLinks =
+                            resources[`week ${week}`][component]?.web;
+                          const videoLinks =
+                            resources[`week ${week}`][component]?.video;
+                          const allLinks = webLinks.concat(videoLinks);
+
+                          return (
+                            <div
+                              className={styles.links}
+                              key={`${component} resource list ${index}`}
+                            >
+                              {allLinks
+                                ? allLinks.map((link, index) => {
+                                    return (
+                                      <a
+                                        href={link}
+                                        key={`Resource ${index} Week ${week}`}
+                                      >
+                                        <li className={styles.resourceLink}>
+                                          {link}
+                                        </li>
+                                      </a>
+                                    );
+                                  })
+                                : null}
+                            </div>
+                          );
+                        })
+                      : null}
                   </ul>
                 </div>
               </div>

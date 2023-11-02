@@ -1,36 +1,32 @@
+import resources from "@/data/resources.json";
 import styles from "@/styles/resources.module.scss";
 
 // Insert full links to resources in webLinks and videoLinks
-const resources = [
+const content = [
   {
     week: 1,
-    title: "Intro to HTML/CSS",
-    webLinks: ["test1"],
-    videoLinks: ["test2"],
+    title: "Initial Set Up",
+    tags: ["setup"],
   },
   {
     week: 2,
-    title: "JavaScript & Next.js Frontend",
-    webLinks: ["test1"],
-    videoLinks: ["test2"],
+    title: "Intro to HTML/CSS",
+    tags: ["flexbox", "position", "responsiveness"],
   },
   {
     week: 3,
-    title: "Next.js Backend",
-    webLinks: ["test1"],
-    videoLinks: ["test2"],
+    title: "JavaScript & Next.js Frontend",
+    tags: [],
   },
   {
     week: 4,
-    title: "TBD",
-    webLinks: ["test1"],
-    videoLinks: ["test2"],
+    title: "Next.js Backend",
+    tags: [],
   },
   {
     week: 5,
     title: "TBD",
-    webLinks: ["test1"],
-    videoLinks: ["test2"],
+    tags: [],
   },
 ];
 
@@ -38,8 +34,26 @@ export default function Resources() {
   return (
     <div className={styles.wrapper}>
       <div className={styles.resources}>
-        <h1>List of Resources</h1>
-        {resources?.map((resource, resourceNum) => {
+        <h1>Resource Glossary</h1>
+        {content?.map((resource, resourceNum) => {
+          const webLinks = [];
+          resource.tags.forEach((tag) => {
+            resources[`week ${resource.week}`][tag]?.web.forEach((item) => {
+              webLinks.push(item);
+            });
+          });
+
+          const videoLinks = [];
+          resource.tags.forEach((tag) => {
+            resources[`week ${resource.week}`][tag]?.video.forEach((item) => {
+              videoLinks.push(item);
+            });
+          });
+
+          {
+            /* console.log(webLinks, videoLinks); */
+          }
+
           return (
             <section
               className={styles.resource}
@@ -52,7 +66,8 @@ export default function Resources() {
                 <section className={styles.websites}>
                   <h1>Web Links</h1>
                   <ul className={styles.websiteList}>
-                    {resource.webLinks?.map((link, index) => {
+                    {webLinks?.map((link, index) => {
+                      console.log(link);
                       return (
                         <a
                           href={link}
@@ -67,7 +82,7 @@ export default function Resources() {
                 <section className={styles.videos}>
                   <h1>Video Links</h1>
                   <ul className={styles.videoList}>
-                    {resource.videoLinks?.map((link, index) => {
+                    {videoLinks?.map((link, index) => {
                       return (
                         <a
                           href={link}
