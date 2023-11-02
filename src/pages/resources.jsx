@@ -1,31 +1,26 @@
-import resources from "@/data/resources.json";
+import data from "@/data/data.json";
 import styles from "@/styles/resources.module.scss";
 
 // Insert full links to resources in webLinks and videoLinks
 const content = [
   {
     week: 1,
-    title: "Initial Set Up",
     tags: ["setup"],
   },
   {
     week: 2,
-    title: "Intro to HTML/CSS",
     tags: ["flexbox", "position", "responsiveness"],
   },
   {
     week: 3,
-    title: "JavaScript & Next.js Frontend",
     tags: [],
   },
   {
     week: 4,
-    title: "Next.js Backend",
     tags: [],
   },
   {
     week: 5,
-    title: "TBD",
     tags: [],
   },
 ];
@@ -36,16 +31,17 @@ export default function Resources() {
       <div className={styles.resources}>
         <h1>Resource Glossary</h1>
         {content?.map((resource, resourceNum) => {
+
           const webLinks = [];
           resource.tags.forEach((tag) => {
-            resources[`week ${resource.week}`][tag]?.web.forEach((item) => {
+            data[`week ${resource.week}`]["content"][tag]?.web.forEach((item) => {
               webLinks.push(item);
             });
           });
 
           const videoLinks = [];
           resource.tags.forEach((tag) => {
-            resources[`week ${resource.week}`][tag]?.video.forEach((item) => {
+            data[`week ${resource.week}`]["content"][tag]?.video.forEach((item) => {
               videoLinks.push(item);
             });
           });
@@ -60,7 +56,7 @@ export default function Resources() {
               key={`Resource ${resourceNum}`}
             >
               <h1>
-                Workshop {resource.week}: {resource.title}
+                Workshop {resource.week}: {data.title}
               </h1>
               <section className={styles.resourceList}>
                 <section className={styles.websites}>

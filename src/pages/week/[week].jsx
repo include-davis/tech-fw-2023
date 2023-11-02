@@ -3,7 +3,7 @@ import Flexbox from "@/components/week 2/flexbox.jsx";
 import Position from "@/components/week 2/position.jsx";
 import Responsiveness from "@/components/week 2/responsiveness.jsx";
 
-import resources from "@/data/resources.json";
+import data from "@/data/data.json";
 import styles from "@/styles/week/week.module.scss";
 
 // Insert weekly components in separate variables; Render based on week param.
@@ -66,9 +66,9 @@ export default function WorkshopContent({ week }) {
                     {item.tags
                       ? item.tags.map((component, index) => {
                           const webLinks =
-                            resources[`week ${week}`][component]?.web;
+                            data[`week ${week}`]["content"][component]?.web;
                           const videoLinks =
-                            resources[`week ${week}`][component]?.video;
+                            data[`week ${week}`]["content"][component]?.video;
                           const allLinks = webLinks.concat(videoLinks);
 
                           return (

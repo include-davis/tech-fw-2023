@@ -2,40 +2,10 @@ import React, { Component } from "react";
 import { BsChevronDoubleDown } from "react-icons/bs";
 import Link from "next/link";
 import Image from "next/image";
+import data from "@/data/data.json";
 import styles from "@/styles/index.module.scss";
 
-const workshopInfo = [
-  {
-    week: 1,
-    title: "Initial Set Up",
-    goals: [
-      "How The Internet Works",
-      "Overview of Web Development",
-      "Workspace Set Up",
-      "Basic HTML & CSS (Box Model)",
-    ],
-  },
-  {
-    week: 2,
-    title: "Intro to HTML and CSS",
-    goals: ["Flexbox", "Responsiveness", "Media Queries", "Positioning"],
-  },
-  {
-    week: 3,
-    title: "Javascript + Next.js Frontend",
-    goals: ["Coming Soon"],
-  },
-  {
-    week: 4,
-    title: "Next.js Backend",
-    goals: ["Coming Soon"],
-  },
-  {
-    week: 5,
-    title: "TBD",
-    goals: ["TBD"],
-  },
-];
+const workshopInfo = [1, 2, 3, 4, 5];
 
 export default function Index() {
   const scrollToSection = function (elementId) {
@@ -82,7 +52,8 @@ export default function Index() {
       <section className={styles.workshops} id="workshops">
         <h1 className={styles.workshopTitle}>Workshops</h1>
         <div className={styles.workshopContent}>
-          {workshopInfo?.map((workshop, workshopNum) => {
+          {workshopInfo?.map((week, workshopNum) => {
+            const workshop = data[`week ${week}`];
             return (
               <div className={styles.workshop} key={`Workshop ${workshopNum}`}>
                 <h2>{workshop.title}</h2>
@@ -96,7 +67,7 @@ export default function Index() {
                   })}
                 </ul>
                 <button className={styles.btn}>
-                  <Link href={`/week/${workshop.week}`}>Learn More</Link>
+                  <Link href={`/week/${week}`}>Learn More</Link>
                 </button>
               </div>
             );
