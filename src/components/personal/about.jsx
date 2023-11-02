@@ -23,24 +23,22 @@ export default function About() {
     return (
       <div className={styles.main}>
         <div className={styles.homeContent}>
-                <h1 className={styles.greeting}>
-                    Hi There !
-                </h1>
-                <h2 className={styles.name}>I'm Emily Ng</h2>
-                <div className={styles.autoText}>
-                    I am a <span id="typer"></span>
-                </div>
-                <p className={styles.connectText}>Feel free to connect with me.</p>
-                <SocialLinks className={styles.links} />
+          <h1 className={styles.greeting}>
+            Hi There !
+          </h1>
+          <h2 className={styles.name}>I'm Emily Ng</h2>
+            <div className={styles.autoText}>
+              I am a <span id="typer"></span>
             </div>
-            <div>
-              <Image 
-                src="/hi.png"
-                width={100}
-                height={100}
-                alt="logo"
-              />
-            </div>
+          <p className={styles.connectText}>Feel free to connect with me.</p>
+            <SocialLinks className={styles.links} />
+        </div>
+        <Image className={styles.avatarImage}
+          src="/hi.png"
+          width={100}
+          height={100}
+          alt="logo"
+        />
       </div>
     )
 }
