@@ -24,6 +24,15 @@ export default function About() {
 
 <p className={styles.box}>Contact Me</p>
 
-    </div>
+
+
+<div className={styles.pic}>
+          <img src="/pic.jpeg" alt="Description" />
+        </div>
+
+        
+</div>
+
+    
   );
 }
