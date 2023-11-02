@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { MdClose } from "react-icons/md";
+import { BsLinkedin } from "react-icons/bs";
 import contact from "@/data/contact.json";
 import styles from "@/styles/contact.module.scss";
 
@@ -37,12 +38,11 @@ export default function Contact() {
                     <div className={styles.panel}>
                       <ul className={styles.socials}>
                         <li>
-                          <a href={lead.discord} target="_blank">
-                            <Image
-                              src="/discord.svg"
-                              width={100}
-                              height={100}
-                              alt={"discord"}
+                          <a href={lead.linkedIn} target="_blank">
+                            <BsLinkedin
+                              fontSize={100}
+                              color={"#0072b1"}
+                              alt={"linkedIn"}
                             />
                           </a>
                         </li>
@@ -57,7 +57,7 @@ export default function Contact() {
                           </a>
                         </li>
                         <li>
-                          <a href={`https://github.com/${lead.github}`} target="_blank">
+                          <a href={lead.github} target="_blank">
                             <Image
                               src="/github.svg"
                               width={100}

@@ -13,7 +13,7 @@ const weekContent = {
       component: <h1>No components were made for this week</h1>,
       title: "N/A",
       desc: "N/A",
-      tags: null,
+      tags: ["setup"],
     },
   ],
   2: [
