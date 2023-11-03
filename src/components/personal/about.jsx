@@ -10,6 +10,9 @@ export default function About() {
         <p className={styles.subgreeting}>I'm a third year student at UC Davis studying computer science. 
             Scroll to see more about my experience, skills, and projects :D </p>
         <button className={styles.contact_button}>Contact Me!</button>
+        <div className={styles.personalImage}>
+          <Image src="/public\personalImage.jpg" width={450} height={450} alt="personalImage"/>
+        </div>
       </div>
     )
 }
