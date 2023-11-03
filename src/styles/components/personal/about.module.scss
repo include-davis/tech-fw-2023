@@ -1,4 +1,64 @@
-.outer{
-    font-size: 200px;
-    
+$box-margin: 30px;
+$light-purple: #e3bde7;
+
+.intro{
+    background-color: #f4d5f7;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    text-align: center;
+
+    .name{
+        margin: 30px;
+        color: #3e303f;
+        
+    }
+    .descr{
+        color: #9e74a2;
+        margin: 30px;
+    }
 }
+.profilePic{
+    border-radius: 50%;
+    height: 200px;
+}
+
+.bigContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-image: url("https://images.template.net/115305/free-pastel-sea-background-74tk8.jpeg");
+}
+
+.header{
+    color: $light-purple;
+    padding-bottom: 30px;
+    text-decoration: $light-purple dotted underline;
+}
+
+.container{
+    
+    margin: $box-margin;
+    border: dashed $light-purple 5px;
+    border-radius: 5%;
+    width: fit-content;
+    height: fit-content;
+    padding: 50px;
+    padding-top: 50px;
+    color: #eed7f1;
+    background-color: #8f6295;
+
+    .bullet{
+        margin: 10px;
+    }
+    
+    .bullet:before{
+        content: '❤︎'; margin-left: -20px; margin-right: 10px;
+    }
+
+    a:hover{
+        color: rgb(89, 179, 179);
+    }
+}
+
+
+
