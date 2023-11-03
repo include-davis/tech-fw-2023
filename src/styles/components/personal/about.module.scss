@@ -1,5 +1,7 @@
 .container {
     background-color: #f0f8ff;
+    padding-top: 70px;
+    padding-bottom:20%;
 }
 
 .body {
@@ -8,12 +10,42 @@
     background-color: #C1D6FF;
     margin-left: auto;
 	margin-right: auto;
-    margin-top: 35px;
-    margin-bottom: 35px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-left: 35px;
+    padding-right: 35px;
     font-size: 1rem;
-}
+   
+    h1 {
+        font-weight: 300;
+        color: #0A1C48;
+        margin-left: 40px;
+        margin-bottom: 20px;
+    }
 
-.h1 {
-    font-weight: 300;
-    color: #0A1C48;
+    h2 {
+        color: #0A1C48;
+        margin-left: 50px;
+        margin-bottom: 15px;
+    }
+
+    p {
+        margin-left: 50px;
+        margin-bottom: 10px;
+    }
+
+    ul{
+        margin-left: 90px;
+        li {
+          a { 
+            &:hover { 
+               color: red;
+    
+            &:active { 
+               color: red;
+            }
+          } 
+        }
+      }
+    }
 }
