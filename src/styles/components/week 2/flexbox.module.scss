@@ -5,11 +5,11 @@
   position: relative;
   // alter flex properties
 
-  flex-direction: column; // main axis + cross axis
-  align-items: flex-start; // cross axis
+  flex-direction: row; // main axis + cross axis
+  align-items: center; // cross axis
   justify-content: flex-start; // main axis
 
-  flex-wrap: wrap; // wrap or nowrap
+  flex-wrap: nowrap; // wrap or nowrap
   gap: 0px;
   // align-content: stretch;
 
@@ -102,10 +102,10 @@
   align-items: center;
 
   // flex-grow: 1; // how much proportion of free space elements should take up
-  // flex-shrink: 0; // how much proportion of space elements have to give up
+  flex-shrink: 0; // how much proportion of space elements have to give up
   // flex-basis: 400px; // initial size of element
 
-  // align-self: center;
+  align-self: center;
 
   font-size: 2rem;
   color: white;
