@@ -37,9 +37,13 @@
 }
 
 .child {
+
+  // width and height are relative to the parent
   width: 200px;
   height: 200px;
 
+  // talk about left being left side of box
+  // left: 0, right: 0; -> full width | top: 0; bottom: 0; -> full height
   position: absolute; // absolute, fixed, sticky, relative
   // top: -10%;
   // left: 0;

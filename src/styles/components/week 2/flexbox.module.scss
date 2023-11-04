@@ -5,11 +5,11 @@
   position: relative;
   // alter flex properties
 
-  flex-direction: row; // main axis + cross axis
+  flex-direction: column; // main axis + cross axis
   align-items: flex-start; // cross axis
   justify-content: flex-start; // main axis
 
-  flex-wrap: nowrap; // wrap or nowrap
+  flex-wrap: wrap; // wrap or nowrap
   gap: 0px;
   // align-content: stretch;
 
@@ -71,7 +71,7 @@
 
   // flex-grow: 1; // how much proportion of free space elements should take up
   // flex-shrink: 0; // how much proportion of space elements have to give up
-  // flex-basis: 300px; // initial size of element
+  // flex-basis: 200px; // initial size of element
 
   font-size: 2rem;
   color: white;
