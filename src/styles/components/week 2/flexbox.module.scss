@@ -1,0 +1,162 @@
+@use "src/styles/mixins";
+
+.container {
+  display: flex;
+  position: relative;
+  // alter flex properties
+
+  flex-direction: row; // main axis + cross axis
+  align-items: flex-start; // cross axis
+  justify-content: flex-start; // main axis
+
+  flex-wrap: nowrap; // wrap or nowrap
+  gap: 0px;
+  // align-content: stretch;
+
+  width: calc(800px + 16px);
+  height: calc(800px + 16px);
+  background-color: orange;
+  border: 16px red solid;
+
+  @include mixins.tablet {
+    width: calc(600px + 16px);
+    height: calc(600px + 16px);
+    border: 8px red solid;
+  }
+
+  @include mixins.phone {
+    width: calc(400px + 16px);
+    height: calc(400px + 16px);
+    border: 4px red solid;
+  }
+}
+
+.mainAxis {
+  width: 100%;
+  border: 2px grey solid;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.mainText {
+  font-size: 1rem;
+  position: absolute;
+  top: 52%;
+  right: 1%;
+}
+
+.crossAxis {
+  height: 100%;
+  border: 2px grey solid;
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+
+.crossText {
+  font-size: 1rem;
+  position: absolute;
+  bottom: 1%;
+  left: 52%;
+}
+
+.item1 {
+  width: calc(200px - 4px);
+  height: calc(200px - 4px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // flex-grow: 1; // how much proportion of free space elements should take up
+  // flex-shrink: 0; // how much proportion of space elements have to give up
+  // flex-basis: 300px; // initial size of element
+
+  font-size: 2rem;
+  color: white;
+
+  background-color: rgb(58, 179, 58);
+  border: 8px green solid;
+  z-index: 2;
+
+  @include mixins.tablet {
+    width: calc(150px - 4px);
+    height: calc(150px - 4px);
+    border: 4px green solid;
+  }
+
+  @include mixins.phone {
+    width: calc(100px - 4px);
+    height: calc(100px - 4px);
+    border: 2px green solid;
+  }
+}
+
+.item2 {
+  width: calc(200px - 4px);
+  height: calc(200px - 4px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // flex-grow: 1; // how much proportion of free space elements should take up
+  // flex-shrink: 0; // how much proportion of space elements have to give up
+  // flex-basis: 400px; // initial size of element
+
+  // align-self: center;
+
+  font-size: 2rem;
+  color: white;
+
+  background-color: rgb(47, 47, 192);
+  border: 8px blue solid;
+  z-index: 2;
+
+  @include mixins.tablet {
+    width: calc(150px - 4px);
+    height: calc(150px - 4px);
+    border: 4px blue solid;
+  }
+
+  @include mixins.phone {
+    width: calc(100px - 4px);
+    height: calc(100px - 4px);
+    border: 2px blue solid;
+  }
+}
+
+.item3 {
+  width: calc(200px - 4px);
+  height: calc(200px - 4px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // flex-grow: 1; // how much proportion of free space elements should take up
+  // flex-shrink: 0; // how much proportion of space elements have to give up
+  // flex-basis: 400px; // initial size of element
+
+  // align-self: flex-end;
+
+  font-size: 2rem;
+  color: white;
+
+  background-color: rgb(93, 30, 93);
+  border: 8px purple solid;
+  z-index: 2;
+
+  @include mixins.tablet {
+    width: calc(150px - 4px);
+    height: calc(150px - 4px);
+    border: 4px purple solid;
+  }
+
+  @include mixins.phone {
+    width: calc(100px - 4px);
+    height: calc(100px - 4px);
+    border: 2px purple solid;
+  }
+}
