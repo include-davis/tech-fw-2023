@@ -4,6 +4,8 @@ import styles from "@/styles/components/personal/about.module.scss";
 
 export default function About() {
   return (
-    <div>about</div>
+    <div className="title">
+      hi, i'm erika
+    </div>
   );
 }
