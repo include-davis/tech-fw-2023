@@ -23,7 +23,7 @@ export default function Index() {
               full stack web development, and we will be using Next.js and
               React.js to build our projects. We will be using this website to
               host all of our resources and workshops, so make sure to check
-              back here often!
+              back here often!!
             </h2>
           </div>
         </div>
