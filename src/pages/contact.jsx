@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { MdClose } from "react-icons/md";
-import contact from "@/json/contact.json";
+import { BsLinkedin } from "react-icons/bs";
+import contact from "@/data/contact.json";
 import styles from "@/styles/contact.module.scss";
 
 export default function Contact() {
   const [active, setActive] = useState(null);
 
   return (
-    <article className={styles.contact}>
+    <div className={styles.contact}>
       <h1>Contact Us</h1>
       <section className={styles.about}>
         {contact?.info.map((lead, index) => {
@@ -25,8 +26,10 @@ export default function Contact() {
                     objectPosition: "center",
                     borderRadius: "50%",
                   }}
-                  // sizes={"(max-width: 1024px) 200px, 300px"}
+                  blurDataURL={lead.blurDataURL}
+                  placeholder="blur"
                   onClick={() => setActive(index)}
+                  priority={true}
                 />
               </div>
               {active == index && (
@@ -35,12 +38,11 @@ export default function Contact() {
                     <div className={styles.panel}>
                       <ul className={styles.socials}>
                         <li>
-                          <a href={lead.discord} target="_blank">
-                            <Image
-                              src="/discord.svg"
-                              width={100}
-                              height={100}
-                              alt={"discord"}
+                          <a href={lead.linkedIn} target="_blank">
+                            <BsLinkedin
+                              fontSize={100}
+                              color={"#0072b1"}
+                              alt={"linkedIn"}
                             />
                           </a>
                         </li>
@@ -55,7 +57,7 @@ export default function Contact() {
                           </a>
                         </li>
                         <li>
-                          <a href={`https://github.com/${lead.github}`} target="_blank">
+                          <a href={lead.github} target="_blank">
                             <Image
                               src="/github.svg"
                               width={100}
@@ -77,6 +79,6 @@ export default function Contact() {
           );
         })}
       </section>
-    </article>
+    </div>
   );
 }
