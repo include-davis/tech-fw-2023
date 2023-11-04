@@ -5,12 +5,12 @@
   position: relative;
   // alter flex properties
 
-  flex-direction: row; // main axis + cross axis
+  flex-direction: column; // main axis + cross axis
   align-items: flex-start; // cross axis
   justify-content: flex-start; // main axis
 
   flex-wrap: nowrap; // wrap or nowrap
-  gap: 0px;
+  gap: 40px;
   // align-content: stretch;
 
   width: calc(800px + 16px);
