@@ -1,0 +1,85 @@
+@use "src/styles/mixins";
+
+.workshopContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  padding: 48px;
+}
+
+.workshopTitle {
+  font-size: 2rem;
+  text-decoration: underline;
+
+  @include mixins.tablet {
+    font-size: 1.5rem;
+  }
+
+  @include mixins.phone {
+    font-size: 1.2rem;
+  }
+}
+
+.workshopContent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  gap: 128px;
+}
+
+.example {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+}
+
+.exampleContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  padding: 16px;
+  flex-basis: 250px;
+  gap: 48px;
+
+  @include mixins.tablet {
+    gap: 24px;
+  }
+}
+
+.exampleInfo,
+.exampleResources {
+  display: flex;
+  flex-direction: column;
+  text-wrap: none;
+  gap: 16px;
+
+  > h1 {
+    font-size: 2rem;
+
+    @include mixins.phone {
+      font-size: 1.2rem;
+    }
+  }
+
+  > ul > li {
+    font-size: 1.2rem;
+    list-style: none;
+    color: var(--include-purple);
+
+    @include mixins.phone {
+      font-size: 1rem;
+    }
+  }
+}
+
+.links {
+  list-style-type: none;
+}
