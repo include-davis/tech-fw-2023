@@ -1,16 +1,22 @@
 .page {
     background-color: #FBF9FF;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .jobtitle {
     /* margin: top right bottom*/
     padding: 16px;
+    margin-left: 32px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.3rem;
     color: #5A5C99;
     border: 2px dotted red;
     text-align: center;
-    margin-right: 16px;
+    width: fit-content;
+    
+    
 }
 
 .hello {
@@ -19,8 +25,11 @@
     font-weight: 600;
     font-size: 3.6rem;
     color: #000807;
+    margin-left: 32px;
     border: 2px dotted red;
     text-align: center;
+    width: fit-content;
+    
 }
 
 .hello_description {
@@ -28,23 +37,36 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.8rem;
     color: #5A5C99;
+    margin-left: 32px;
     border: 2px dotted red;
     text-align: center;
+    width: fit-content;
+    
 }
 
 p.button {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #5A5C99;
-    margin: 16px;
-    border: 4px solid black;
+    padding: 16px;
+    font-size: 1.3rem;
+    margin-left: 32px;
+    margin-top: 8px;
+    border: 2px solid #000807;
     text-align: center;
+    width: fit-content;
+    
     
 }
 
 
+
 .filler_image img {
-    float: right;
+    width: 400px;
     max-width: 100%;
-    max-height: 200px;
+    height: auto;
+    position: absolute;
+    right: 120px; 
+    top: 120px;
+  
 
 }
