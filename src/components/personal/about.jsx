@@ -11,7 +11,7 @@ export default function About() {
             Scroll to see more about my experience, skills, and projects :D </p>
         <button className={styles.contact_button}>Contact Me!</button>
         <div className={styles.personalImage}>
-          <Image src="/personalImage.jpg" width={450} height={450} alt="personalImage"/> {/*filler image for now - need to find good picture of myself lol*/}
+          <Image src="/personalImage.jpg" width={450} height={450} alt="personal image"/> {/*filler image for now - need to find good picture of myself lol*/}
         </div>
       </div>
     )
