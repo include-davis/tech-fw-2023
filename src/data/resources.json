@@ -1,0 +1,25 @@
+{
+  "week 1": {
+    "setup": {
+      "web": ["test"],
+      "video": ["test2"]
+    }
+  },
+  "week 2": {
+    "flexbox": {
+      "web": ["test", "test2", "test3"],
+      "video": []
+    },
+    "position": {
+      "web": ["test2"],
+      "video": ["test10"]
+    },
+    "responsiveness": {
+      "web": ["test3", "test", "test", "test", "test", "test"],
+      "video": ["test4", "test5", "test6"]
+    }
+  },
+  "week 3": {},
+  "week 4": {},
+  "week 5": {}
+}
