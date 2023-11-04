@@ -5,8 +5,9 @@ import styles from "@/styles/components/navbar/navbar.module.scss";
 
 const nav = [
   { link: "Home", href: "" },
-  { link: "Workshops", href: "workshop" },
+  { link: "Workshops", href: "workshops" },
   { link: "Resources", href: "resources" },
+  { link: "Personal", href: "personal" },
 ];
 
 const dropDown_items = [1, 2, 3, 4, 5];
@@ -17,8 +18,8 @@ export default function Navbar() {
     return (
       <ul className={styles.dropDown}>
         {dropDown_items.map((numWeek, index) => (
-          <Link href={`/week/${numWeek}`}>
-            <li key={index}>Week {numWeek}</li>
+          <Link href={`/week/${numWeek}`} key={`Week ${index}`}>
+            <li>Week {numWeek}</li>
           </Link>
         ))}
       </ul>
@@ -41,7 +42,7 @@ export default function Navbar() {
       <ul className={styles.links}>
         {nav.map((item, index) => {
           return (
-            <li key={index}>
+            <li key={`dropdown ${index}`}>
               {item.link === "Workshops" && dropDown()}
               <Link
                 href={`/${item.href.toLowerCase()}`}

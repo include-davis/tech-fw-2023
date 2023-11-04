@@ -1,0 +1,70 @@
+{
+  "week 1": {
+    "title": "Initial Set Up",
+    "desc": "Getting to understand the web in prep for the rest of the workshops.",
+    "goals": [
+      "How The Internet Works",
+      "Overview of Web Development",
+      "Workspace Set Up",
+      "Basic HTML & CSS (Box Model)"
+    ],
+    "content": {
+      "setup": {
+        "web": [],
+        "video": []
+      }
+    }
+  },
+  "week 2": {
+    "title": "Intro to HTML and CSS",
+    "desc": "Basics of HTML & CSS.",
+    "goals": ["Flexbox", "Responsiveness", "Media Queries", "Positioning"],
+    "content": {
+      "flexbox": {
+        "web": ["https://google.com"],
+        "video": []
+      },
+      "position": {
+        "web": ["test2"],
+        "video": ["test10"]
+      },
+      "responsiveness": {
+        "web": [],
+        "video": ["test4"]
+      }
+    }
+  },
+  "week 3": {
+    "title": "JavaScript and Next.js Frontend",
+    "desc": "Using JavaScript and Next.js to create a frontend for your website.",
+    "goals": ["Coming Soon"],
+    "content": {
+      "test": {
+        "web": ["test"],
+        "video": ["test2"]
+      }
+    }
+  },
+  "week 4": {
+    "title": "Next.js Backend",
+    "desc": "Using Next.js to create a backend for your website.",
+    "goals": ["Coming Soon"],
+    "content": {
+      "test2": {
+        "web": ["test"],
+        "video": ["test2"]
+      }
+    }
+  },
+  "week 5": {
+    "title": "TBD",
+    "desc": "TBD",
+    "goals": ["TBD"],
+    "content": {
+      "test3": {
+        "web": ["test"],
+        "video": ["test2"]
+      }
+    }
+  }
+}
