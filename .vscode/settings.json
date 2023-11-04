@@ -2,6 +2,11 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
-  "eslint.validate": ["javascript"]
+  "eslint.validate": ["javascript"],
+  "[javascriptreact]": {
+    "editor.indentSize": 2
+  },
+  "[typescriptreact]": {
+    "editor.indentSize": 2
+  }
 }
-

@@ -3,7 +3,7 @@ import styles from '@/styles/components/personal/about.module.scss';
 
 export default function About() {
     return (
-      <div className = {styles.page}> 
+      <div className = {styles.page}>
         <div className = {styles.title}>
           Computer Science and Engineering Student
         </div>
@@ -25,8 +25,8 @@ export default function About() {
         <div className={styles.filler_image}>
           <img src="https://cdn.discordapp.com/attachments/686370685991256171/1168472608027713546/IMG_1404.jpg?ex=6551e3ea&is=653f6eea&hm=5af355af6c50e6755e0f560dc9930bbfd8f7a44016e481bcc483db9a0770d65d&"  />
         </div>
-        
+
       </div>
-      
+
     )
 }
