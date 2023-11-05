@@ -62,8 +62,8 @@ p.button {
 
 .filler_image img {
     //add some way for image to shrink as device size shrinks --> media queries
-    width: 360px;
-    max-width: 100%;
+    width: 100%;
+    max-width: 360px;
     height: auto;
     position: absolute;
     right: 120px; 

@@ -3,7 +3,7 @@ import styles from '@/styles/components/personal/footer.module.scss';
 import { BsLinkedin } from "react-icons/bs";
 import { FiMail } from "react-icons/fi";
 import { BsGithub } from "react-icons/bs";
-import Image from "next/image";
+
 
 
 
@@ -50,7 +50,12 @@ export default function Footer() {
 
       <section className={styles.info}>
 
-        <section className={styles.logo}>#</section>
+        <section className={styles.logo}>
+          <img 
+            src= "/android-chrome-192x192.png"
+            alt= "Footer logo"
+          />
+        </section>
         <p>Made by Nandhana Selvam</p>
         
       </section>

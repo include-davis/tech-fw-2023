@@ -12,15 +12,23 @@
 
 // choose elements with logo class within .footer class elements
 .logo {
-  color: gray;
   padding-right: 24px;
 }
+
+.logo img {
+  width: 100%;
+  max-width: 16px;
+  height: auto;
+}
+
+
 
 .info {
   // apply properties for .info
   display: flex;
   width: 90%;
   justify-content: center;
+  align-items: center;
   
   
   > p {
