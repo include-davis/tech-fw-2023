@@ -3,7 +3,7 @@ import styles from '@/styles/components/personal/footer.module.scss';
 import { BsLinkedin } from "react-icons/bs";
 import { FiMail } from "react-icons/fi";
 import { BsGithub } from "react-icons/bs";
-
+import Image from "next/image";
 
 
 
@@ -25,15 +25,11 @@ export default function Footer() {
   */
   return (
     <footer className={styles.footer}>
-      <section className={styles.logo}>logo</section>
 
-      <section className={styles.info}>
-        <p>Made by Nandhana Selvam</p>
         <ul className={styles.socials}>
           <li className={styles.icon}> 
             <a href = "www.linkedin.com/in/nandhanaselvam">
               <BsLinkedin
-                //add font size / color / alt ?
               />
             </a>
           </li>
@@ -50,7 +46,17 @@ export default function Footer() {
             </a>
           </li>
         </ul>
+      
+
+      <section className={styles.info}>
+
+        <section className={styles.logo}>#</section>
+        <p>Made by Nandhana Selvam</p>
+        
       </section>
+
+      
+
     </footer>
   );
 }
