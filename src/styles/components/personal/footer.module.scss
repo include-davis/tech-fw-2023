@@ -1,4 +1,12 @@
 // use class selectors to target classes
+/*
+    Potential Colors: 
+        #2C302E - bluetoned black
+        #BADBBC - light blue green
+        #DCDBA8 - light green
+        #F5CDA7 - light orange
+        #FAA381 - orange 
+*/
 
 .footer {
   // apply some properties
@@ -35,7 +43,7 @@
     // change up the text size and style how you want
     font-size: 1rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: gray;
+    color: #68B0B4;
   }
 }
 
@@ -55,4 +63,16 @@
   // apply properties for icons
   font-size: 2.5rem;
   padding: 24px;
+}
+
+.linkedin_icon {
+  color: #A9CF9E;
+}
+
+.mail_icon {
+  color: #F5CDA7;
+}
+
+.github_icon {
+  color: #FAA381;
 }

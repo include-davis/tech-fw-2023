@@ -29,20 +29,19 @@ export default function Footer() {
         <ul className={styles.socials}>
           <li className={styles.icon}> 
             <a href = "www.linkedin.com/in/nandhanaselvam">
-              <BsLinkedin
-              />
+              <BsLinkedin className={styles.linkedin_icon}/>
             </a>
           </li>
 
           <li className={styles.icon}>
             <a href="mailto:nandhanaselvam@gmail.com">
-              <FiMail/>
+              <FiMail className={styles.mail_icon}/>
             </a>
           </li>
 
           <li className={styles.icon}>
             <a href="https://github.com/nandhanaselvam">
-              <BsGithub/>
+              <BsGithub className={styles.github_icon}/>
             </a>
           </li>
         </ul>

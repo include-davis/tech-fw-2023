@@ -1,5 +1,10 @@
+/*
+    Potential Colors: 
+        
+*/
+
 .page {
-    background-color: #FBF9FF;
+    background-color: white;
     display: flex;
     flex-direction: column;
     
@@ -11,8 +16,8 @@
     margin-left: 32px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.3rem;
-    color: #5A5C99;
-    border: 2px dotted red;
+    color: #68B0B4;
+    //border: 2px dotted red;
     text-align: center;
     width: fit-content;
     
@@ -24,9 +29,9 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 600;
     font-size: 3.6rem;
-    color: #000807;
+    color: #2C302E;
     margin-left: 32px;
-    border: 2px dotted red;
+    //border: 2px dotted red;
     text-align: center;
     width: fit-content;
     
@@ -36,9 +41,9 @@
     padding: 16px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.8rem;
-    color: #5A5C99;
+    color: #A9CF9E;
     margin-left: 32px;
-    border: 2px dotted red;
+    //border: 2px dotted red;
     text-align: center;
     width: fit-content;
     
@@ -46,16 +51,16 @@
 
 p.button {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #5A5C99;
+    background-color: #F5CDA7;
     padding: 16px;
     font-size: 1.3rem;
     margin-left: 32px;
     margin-top: 8px;
-    border: 2px solid #000807;
+    //border: 2px solid #FAA381;
     text-align: center;
     width: fit-content;
-    
-    
+    color: #FAA381;
+    border-radius: 16px;
 }
 
 
