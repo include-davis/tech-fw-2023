@@ -4,6 +4,8 @@
   // apply some properties
   display: flex;
   width: 100%;
+  align-items: center;
+  justify-content: space-around;
 }
 
 // choose elements with logo class within .footer class elements
@@ -14,15 +16,21 @@
 .info {
   // apply properties for .info
   display: flex;
+  width: 90%;
+  justify-content: space-around;
   > p {
     // change up the text size and style how you want
-    font-size: 1px;
+    font-size: 1rem;
   }
 }
 
 .socials {
   // apply properties for .socials
   display: flex;
+  width: 50%;
+  justify-content: space-between;
+  list-style: none;
+  font-size: 2rem;
 }
 
 .icon {

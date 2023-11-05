@@ -1,7 +1,10 @@
 // import SCSS file as styles for this component
 import styles from '@/styles/components/personal/footer.module.scss';
 import { BsLinkedin } from "react-icons/bs";
-import { BiLogoGmail } from "react-icons/bi";
+import { FiMail } from "react-icons/fi";
+import { BsGithub } from "react-icons/bs";
+
+
 
 
 
@@ -37,10 +40,15 @@ export default function Footer() {
 
           <li className={styles.icon}>
             <a href="mailto:nandhanaselvam@gmail.com">
-              <BiLogoGmail/>
+              <FiMail/>
             </a>
           </li>
 
+          <li className={styles.icon}>
+            <a href="https://github.com/nandhanaselvam">
+              <BsGithub/>
+            </a>
+          </li>
         </ul>
       </section>
     </footer>
