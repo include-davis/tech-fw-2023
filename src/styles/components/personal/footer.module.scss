@@ -5,27 +5,29 @@
   display: flex;
   width: 100%;
   flex-direction: column;
-  
   align-items: center;
-  justify-content: space-around;
   position: absolute;
   bottom: 8px;
 }
 
 // choose elements with logo class within .footer class elements
 .logo {
-  color: black;
+  color: gray;
+  padding-right: 24px;
 }
 
 .info {
   // apply properties for .info
   display: flex;
   width: 90%;
-  justify-content: space-around;
+  justify-content: center;
+  
   
   > p {
     // change up the text size and style how you want
     font-size: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: gray;
   }
 }
 
