@@ -19,7 +19,7 @@ export default function About() {
         </h2>
 
         <p className = {styles.button}>
-          Contact Me
+          Contact Me!
         </p>
 
         <div className={styles.filler_image}>

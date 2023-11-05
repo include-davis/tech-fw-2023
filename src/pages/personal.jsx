@@ -7,6 +7,7 @@ export default function Personal() {
   return (
     <div>
       <About></About>
+      <Footer></Footer>
     </div>
   );
 }

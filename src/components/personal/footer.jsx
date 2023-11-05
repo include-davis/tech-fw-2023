@@ -1,4 +1,9 @@
 // import SCSS file as styles for this component
+import styles from '@/styles/components/personal/footer.module.scss';
+import { BsLinkedin } from "react-icons/bs";
+import { BiLogoGmail } from "react-icons/bi";
+
+
 
 export default function Footer() {
   // Make a footer!
@@ -20,9 +25,22 @@ export default function Footer() {
       <section className={styles.logo}>logo</section>
 
       <section className={styles.info}>
-        <p>Made by #your name here#</p>
+        <p>Made by Nandhana Selvam</p>
         <ul className={styles.socials}>
-          <li className={styles.icon}> SOCIAL MEDIA ICONS + REDIRECTING </li>
+          <li className={styles.icon}> 
+            <a href = "www.linkedin.com/in/nandhanaselvam">
+              <BsLinkedin
+                //add font size / color / alt ?
+              />
+            </a>
+          </li>
+
+          <li className={styles.icon}>
+            <a href="mailto:nandhanaselvam@gmail.com">
+              <BiLogoGmail/>
+            </a>
+          </li>
+
         </ul>
       </section>
     </footer>
