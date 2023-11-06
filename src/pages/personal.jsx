@@ -1,6 +1,5 @@
 import Skills from '@/components/personal/skillset';
 import About from '@/components/personal/about';
-import Footer from '@/components/personal/footer';
 import React from 'react';
 
 export default function Personal() {
@@ -8,6 +7,7 @@ export default function Personal() {
     <div>
     
       <About></About>
+      <Footer></Footer>
     </div>
   );
 }

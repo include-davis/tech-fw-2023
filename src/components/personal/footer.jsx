@@ -1,4 +1,5 @@
 // import SCSS file as styles for this component
+import styles from '@/styles/components/personal/footer.module.scss/'
 
 export default function Footer() {
   // Make a footer!
@@ -20,10 +21,22 @@ export default function Footer() {
       <section className={styles.logo}>logo</section>
 
       <section className={styles.info}>
-        <p>Made by #your name here#</p>
+        <p>Made by Catelyn Bu</p>
+
         <ul className={styles.socials}>
-          <li className={styles.icon}> SOCIAL MEDIA ICONS + REDIRECTING </li>
+          <li className={styles.icon}>
+            <a href="mailto:cebu@ucdavis.edu">cebu@ucdavis.edu</a>
+          </li>
+
+          <li className={styles.icon}>
+            <a href="https://github.com/catelynbu">github</a>
+          </li>
+
+          <li className={styles.icon}>
+            <a href="https://www.instagram.com/catelynbu/?hl=en">instagram</a>
+          </li>
         </ul>
+
       </section>
     </footer>
   );
