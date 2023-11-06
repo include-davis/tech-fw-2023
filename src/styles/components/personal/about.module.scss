@@ -2,7 +2,7 @@
 
 .page {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     
 }
@@ -10,6 +10,7 @@
 .text {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .jobtitle {
@@ -71,4 +72,5 @@ p.button {
     width: 100%;
     max-width: 360px;
     height: auto;
+    border-radius: 10%;
 }
