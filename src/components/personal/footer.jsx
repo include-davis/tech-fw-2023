@@ -1,8 +1,8 @@
 // import SCSS file as styles for this component
 import styles from '@/styles/components/personal/footer.module.scss';
-import { BsLinkedin } from "react-icons/bs";
-import { FiMail } from "react-icons/fi";
-import { BsGithub } from "react-icons/bs";
+import { AiFillLinkedin } from "react-icons/ai";
+import { IoMdMail } from "react-icons/io";
+import { AiFillGithub } from "react-icons/ai";
 
 
 
@@ -29,19 +29,19 @@ export default function Footer() {
         <ul className={styles.socials}>
           <li className={styles.icon}> 
             <a href = "www.linkedin.com/in/nandhanaselvam">
-              <BsLinkedin className={styles.linkedin_icon}/>
+              <AiFillLinkedin className={styles.linkedin_icon}/>
             </a>
           </li>
 
           <li className={styles.icon}>
             <a href="mailto:nandhanaselvam@gmail.com">
-              <FiMail className={styles.mail_icon}/>
+              <IoMdMail className={styles.mail_icon}/>
             </a>
           </li>
 
           <li className={styles.icon}>
             <a href="https://github.com/nandhanaselvam">
-              <BsGithub className={styles.github_icon}/>
+              <AiFillGithub className={styles.github_icon}/>
             </a>
           </li>
         </ul>
