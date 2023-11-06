@@ -8,6 +8,7 @@ export default function Personal() {
     <div>
     
       <About></About>
+      <Skills></Skills>
       <Footer></Footer>
     </div>
   );

@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400&display=swap');
+
 .container {
     padding-top: 70px;
-    margin:auto;
+    padding-bottom: 75px;
+    background-color: #f8f1f3;
+    background-size: 100%;
 }
 
 .body {
@@ -12,42 +16,52 @@
     padding-bottom: 25px;
     padding-left: 35px;
     padding-right: 35px;
-    font-size: 1rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    
    
     h1 {
-        font-weight: 300;
+        font-weight: 400;
         color: #0A1C48;
         margin-left: 40px;
         margin-bottom: 20px;
-
+        font-family: 'century gothic', sans-serif;
     }
 
     h2 {
         color: #0A1C48;
         margin-left: 50px;
         margin-bottom: 25px;
-
+        font-family: 'Jost', sans-serif;
+        font-weight: 300;
     }
 
     p {
         margin-left: 50px;
         margin-bottom: 20px;
         width:70%;
-
+        font-family: 'Jost', sans-serif;
     }
 
     ul{
         margin-left: 90px;
-        li {
-          a { 
-            &:hover { 
-               color: red;
-    
-            &:active { 
-               color: red;
-            }
-          } 
-        }
-      }
+        li { 
+            a { 
+                font-family: 'Jost', sans-serif;
+                font-size: 1.2rem;
+                &:hover { 
+                color: #1a8ad5;
+                }
+                &:active { 
+                color: #1a8ad5;
+                }
+              }  
+        }  
+    }
+    .pompom{
+        float: right;
+        width: 150px;
+        height: 150px;
+        margin-right: 40px;
     }
 }
