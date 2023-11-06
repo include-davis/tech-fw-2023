@@ -1,0 +1,41 @@
+.skills_page {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    
+}
+
+.skills_list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    border-radius: 10%;
+    //border: #6D6875 solid 5px;
+    width: 50%;
+    
+}
+.title {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3.6rem;
+    padding-top: 16px;
+    color: #6D6875;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.8rem;
+    list-style: none;
+    
+    width: 50%;
+    color: #F5CDA7;
+    > p {
+        font-size: 1.3rem;
+        color: #FAA381;
+    }
+
+}
+

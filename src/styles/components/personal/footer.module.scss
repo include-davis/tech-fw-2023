@@ -43,18 +43,14 @@
     // change up the text size and style how you want
     font-size: 1rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #68B0B4;
+    color: #FFB4A2;
   }
 }
 
 .socials {
   // apply properties for .socials
   display: flex;
-  width: 50%;
-  
   justify-content: center;
-  
-  
   list-style: none;
   font-size: 2rem;
 }
@@ -62,17 +58,17 @@
 .icon {
   // apply properties for icons
   font-size: 2.5rem;
-  padding: 24px;
+  padding: 16px;
 }
 
 .linkedin_icon {
-  color: #A9CF9E;
+  color: #6D6875;
 }
 
 .mail_icon {
-  color: #F5CDA7;
+  color: #B5838D;
 }
 
 .github_icon {
-  color: #FAA381;
+  color: #E5989B;
 }
