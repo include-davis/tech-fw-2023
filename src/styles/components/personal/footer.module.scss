@@ -1,10 +1,11 @@
 // use class selectors to target classes
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400&display=swap');
 
 .footer {
   // apply some properties
   display: flex;
   width: 100%;
-  background-color: #C1D6FF;
+  background-color: black;
   margin-top: 80px;
   flex-direction: column;
   align-items: center;
@@ -16,6 +17,8 @@
 .logo {
   color: black;
   margin-top: 20px;
+  width: 100px;
+  height: 100px;
 }
 
 .info {
@@ -25,9 +28,12 @@
   width: 90%;
   justify-content: center;
   align-items: center;
+  color: white;
 
     p {
     font-size: 1rem;
+    font-family: 'Jost', sans-serif;
+    margin-top: 15px;
   }
 }
 
@@ -41,6 +47,7 @@
   justify-content: space-between;
   align-items: center;
   list-style-type: none;
+  color: white;
   
    li {
       a { 

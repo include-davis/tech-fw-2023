@@ -9,13 +9,36 @@ import styles from '@/styles/components/personal/skillset.module.scss/'
 
 export default function Skills() {
   return <section className={styles.skills}>
+    
+    <div className={styles.body}>
+        <h1>Skills</h1>
 
-    <h2>HTML</h2>
+          <div className={styles.flex}>
+     
 
-    <h2>CSS</h2>
+          <div className={styles.textcontainer}>
+            <h2>HTML</h2>
 
-    <h2>Time Management</h2>
+            <p>I have experience with html. I have so much experience that I'm so good at html.</p>
+          </div>
+          
 
+          <div className={styles.textcontainer}>
+            <h2>CSS</h2>
+
+            <p>I have experience with css. I have so mcuh experience that I'm so good at css.</p>
+          </div>
+
+          </div>
+
+
+          <div className={styles.textcontainer}>
+            <h2>Adobe Photoshop & Illustrator</h2>
+
+            <p>I have experince with Adobe products. I have so mcuh experience that I'm so good at photoshop and illustrator.</p>
+          </div>
+        
+        </div>
 
 
   </section>;

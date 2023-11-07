@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400&display=swap');
+
+.skills{
+ background-color: white;
+   
+
+  .body{
+    width: 70%;
+    background-color: #f0f8ff;
+    margin-left: auto;
+	  margin-right: auto;
+    padding-top: 35px;
+    padding-bottom: 25px;
+    padding-left: 35px;
+    padding-right: 35px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    border: 3px solid #C1D6FF;
+    border-radius: 25px;
+    
+  
+
+  }
+
+  .flex{
+    display: flex;    
+    flex-wrap: nowrap;
+	  justify-content: space-between;
+    flex-direction: row;
+  }
+
+  h1{
+    font-weight: 400;
+    color: #0A1C48;
+    font-family: 'century gothic', sans-serif;
+    margin-bottom: 20px;
+    font-size: 42px;
+    text-align: center;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #0A1C48;
+    margin-left: 42%;
+    margin-right: 42%;
+  }
+
+  .textcontainer{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    align-items: center;
+    
+
+  }
+
+  h2{
+    font-family: 'century gothic', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 1.8rem;
+   }
+
+    p{
+      font-size: 1.2rem;
+      margin-top: 5px;
+      text-align: center;
+      font-family: 'Jost', sans-serif;
+      margin-left: 20%;
+      margin-right: 20%;
+      
+      
+    }
+}

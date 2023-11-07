@@ -3,8 +3,8 @@
 .container {
     padding-top: 70px;
     padding-bottom: 75px;
-    background-color: #f8f1f3;
-    background-size: 100%;
+    background-color: white;
+    
 }
 
 .body {
@@ -13,24 +13,26 @@
     margin-left: auto;
 	margin-right: auto;
     padding-top: 35px;
-    padding-bottom: 25px;
+    padding-bottom: 35px;
     padding-left: 35px;
     padding-right: 35px;
     font-size: 1.4rem;
     font-weight: 400;
+    border: 3px solid #C1D6FF;
+    border-radius: 25px;
     
    
     h1 {
         font-weight: 400;
         color: #0A1C48;
-        margin-left: 40px;
+        margin-left: 47px;
         margin-bottom: 20px;
         font-family: 'century gothic', sans-serif;
     }
 
     h2 {
         color: #0A1C48;
-        margin-left: 50px;
+        margin-left: 47px;
         margin-bottom: 25px;
         font-family: 'Jost', sans-serif;
         font-weight: 300;
@@ -47,10 +49,12 @@
         margin-left: 90px;
         li { 
             a { 
+                color: #1a8ad5;
+                text-decoration: underline;
                 font-family: 'Jost', sans-serif;
                 font-size: 1.2rem;
                 &:hover { 
-                color: #1a8ad5;
+                color: #0A1C48;
                 }
                 &:active { 
                 color: #1a8ad5;
@@ -60,8 +64,9 @@
     }
     .pompom{
         float: right;
-        width: 150px;
-        height: 150px;
-        margin-right: 40px;
+        width: 200px;
+        height: 200px;
+        margin-right: 35px;
+        
     }
 }

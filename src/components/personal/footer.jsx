@@ -18,7 +18,10 @@ export default function Footer() {
   */
   return (
     <footer className={styles.footer}>
-      <section className={styles.logo}>logo</section>
+      <section>
+        <img className={styles.logo} src={"/android-chrome-192x192.png"} alt={"include logo"}/>
+      </section>
+
 
       <section className={styles.info}>
         <p>Made by Catelyn Bu</p>
