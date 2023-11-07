@@ -40,7 +40,7 @@ export default function Contact() {
                         <li>
                           <a href={lead.linkedIn} target="_blank">
                             <BsLinkedin
-                              fontSize={100}
+                              fontSize={100} /*to resize the icons */
                               color={"#0072b1"}
                               alt={"linkedIn"}
                             />
