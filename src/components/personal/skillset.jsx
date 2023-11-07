@@ -1,4 +1,5 @@
 // import styles from styling folder!
+import styles from "@/styles/components/personal/about.module.scss";
 
 /* Think about what you want to include for skills
     1. Some ideas might be coding languages, frameworks, libraries, etc
@@ -7,5 +8,5 @@
 */
 
 export default function Skills() {
-  return <section className={styles.skills}>skills</section>;
+  return <section className={styles.skills}></section>;
 }

@@ -3,16 +3,26 @@
   flex-direction: column;
   align-items: center;
   margin-top: 100px;
-  animation: fadeIn 2.5s;
-  -webkit-animation: fadeIn 2.5s;
-  -moz-animation: fadeIn 2.5s;
-  -o-animation: fadeIn 2.5s;
-  -ms-animation: fadeIn 2.5s;
+  animation: fadeIn 2.5s, fadeBackground 6s;
+  -webkit-animation: fadeIn 2.5s, fadeBackground 6s;
+  -moz-animation: fadeIn 2.5s, fadeBackground 6s;
+  -o-animation: fadeIn 2.5s, fadeBackground 6s;
+  -ms-animation: fadeIn 2.5s, fadeBackground 6s;
   background-color: rgb(242, 224, 242);
-  padding-top: 30px;
+  padding-top: 20px;
   padding-bottom: 30px;
-  margin-left: 130px;
-  margin-right: 130px;
+  margin-left: 180px;
+  margin-right: 180px;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1, infinite;
+}
+
+@keyframes fadeBackground {
+  0% { background-color: rgb(242, 224, 242); }
+  25% { background-color: rgb(193, 214, 229); }
+  50% { background-color:rgb(193, 229, 207); }
+  75% { background-color: rgb(249, 199, 174); }
+  100% { background-color: rgb(242, 224, 242); }
 }
 
 @keyframes fadeIn {
@@ -44,6 +54,7 @@
 .website {
   font-size: 20px;
   transition: opacity 0.2s;
+  margin-top: 15px;
 }
 
 .website:hover {
@@ -55,5 +66,21 @@
 }
 
 .bow {
-  width: 20px;
+  width: 35px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.kuromidescription {
+  // display: flex;
+  // flex-direction: row;
+}
+
+.kuromirowtop {
+  display: flex;
+  justify-content: center;
+}
+
+.kuromi {
+  width: 35px;
 }
