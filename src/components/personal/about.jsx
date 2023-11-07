@@ -6,12 +6,12 @@ export default function About() {
   return (
     <div className={styles.text}>
       <div>
-        <img src={"/personal/pixel-bow.jpeg"} alt={"bow"}
+        <img src={"/personal/pixel-bow-removebg-preview.png"} alt={"bow"}
         className={styles.bow}/>
         <element className={styles.title}>
         hello, i'm erika!
       </element>
-      <img src={"/personal/pixel-bow.jpeg"} alt={"bow"}
+      <img src={"/personal/pixel-bow-removebg-preview.png"} alt={"bow"}
         className={styles.bow}/>
       </div>
       <div className={styles.description}>
