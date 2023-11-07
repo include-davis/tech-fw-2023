@@ -1,4 +1,51 @@
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  animation: fadeIn 2.5s;
+  -webkit-animation: fadeIn 2.5s;
+  -moz-animation: fadeIn 2.5s;
+  -o-animation: fadeIn 2.5s;
+  -ms-animation: fadeIn 2.5s;
+  background-color: rgb(242, 224, 242);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-left: 130px;
+  margin-right: 130px;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.title, .description, .website {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgb(94, 94, 94);
+  text-align: center;
+}
+
 .title {
-  font-size: 200px;
-  color: blue;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.description {
+  font-size: 20px;
+  width: 400px;
+  padding: 10px;
+  border-width: 1px;
+  border-style: dashed;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.website {
+  font-size: 20px;
+  transition: opacity 0.2s;
+}
+
+.website:hover {
+  opacity: 50%;
 }
