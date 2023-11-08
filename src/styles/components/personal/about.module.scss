@@ -32,18 +32,41 @@
     align-items: flex-start;
     flex-wrap: wrap;
     row-gap: 1.5rem;
+    animation: 2s about 0.5s forwards;
+      transform:translateX(-100%);
+    border: 1px solid black;
+}
+
+@keyframes about {
+  to {
+    transform:translateX(0);
+  }
 }
 
 .picture {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    animation: 2s picture 0.5s forwards;
+      transform:translateX(130%);
+    border: 1px solid black;
 }
+
+@keyframes picture {
+    to {
+      transform:translateX(0);
+    }
+  }
 
 .profession {
     color: rgb(205, 127, 205);
     width: 30%;
     font-weight: bold;
+    font-size: 2rem;
+}
+
+.name {
+    font-size: 4rem;
 }
 
 .description {
