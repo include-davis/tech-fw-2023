@@ -8,5 +8,23 @@ import styles from "@/styles/components/personal/skillset.module.scss"
 */
 
 export default function Skills() {
-  return <section className={styles.skills}>skills</section>;
+  return  (
+    <section className={styles.container}>
+      <div className={styles.card}>
+        <h4 className={styles.skills}>C++</h4>
+        <h4 className={styles.skills}>Julia</h4>
+        <h4 className={styles.skills}>HTML5/CSS</h4>
+      </div>
+      <div className={styles.card}>
+        <h4 className={styles.skills}>C++</h4>
+        <h4 className={styles.skills}>Julia</h4>
+        <h4 className={styles.skills}>HTML5/CSS</h4>
+      </div> 
+      <div className={styles.card}>
+        <h4 className={styles.skills}>C++</h4>
+        <h4 className={styles.skills}>Julia</h4>
+        <h4 className={styles.skills}>HTML5/CSS</h4>
+      </div>
+    </section>
+  )
 }
