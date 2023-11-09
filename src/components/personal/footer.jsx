@@ -1,5 +1,8 @@
 // import SCSS file as styles for this component
 import styles from '@/styles/components/personal/footer.module.scss/'
+import { AiFillGithub } from "react-icons/ai";
+import { AiFillInstagram } from "react-icons/ai";
+import { MdEmail } from "react-icons/md";
 
 export default function Footer() {
   // Make a footer!
@@ -28,15 +31,21 @@ export default function Footer() {
 
         <ul className={styles.socials}>
           <li className={styles.icon}>
-            <a href="mailto:cebu@ucdavis.edu">cebu@ucdavis.edu</a>
+            <a href="mailto:cebu@ucdavis.edu">
+              < MdEmail className={styles.email_icon}/>
+            </a>
           </li>
 
           <li className={styles.icon}>
-            <a href="https://github.com/catelynbu">github</a>
+            <a href="https://github.com/catelynbu" target="_blank">
+              <AiFillGithub className={styles.github_icon}/>
+            </a>
           </li>
 
           <li className={styles.icon}>
-            <a href="https://www.instagram.com/catelynbu/?hl=en">instagram</a>
+            <a href="https://www.instagram.com/catelynbu/?hl=en" target="_blank">
+              <AiFillInstagram className={styles.insta_icon}/>
+            </a>
           </li>
         </ul>
 

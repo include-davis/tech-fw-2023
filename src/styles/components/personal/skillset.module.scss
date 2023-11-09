@@ -38,8 +38,9 @@
     text-align: center;
     padding-bottom: 5px;
     border-bottom: 3px solid #0A1C48;
-    margin-left: 42%;
-    margin-right: 42%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
   }
 
   .textcontainer{
@@ -55,16 +56,41 @@
     font-weight: 400;
     text-align: center;
     font-size: 1.8rem;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #0A1C48;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
    }
+
+  .h2_adobe{
+    font-family: 'century gothic', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 1.8rem;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #0A1C48;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+  }
+
 
     p{
       font-size: 1.2rem;
       margin-top: 5px;
       text-align: center;
       font-family: 'Jost', sans-serif;
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+
+    .p_adobe{
+      font-size: 1.2rem;
+      margin-top: 5px;
+      text-align: center;
+      font-family: 'Jost', sans-serif;
       margin-left: 20%;
       margin-right: 20%;
-      
-      
     }
 }

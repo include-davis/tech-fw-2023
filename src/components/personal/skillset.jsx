@@ -7,6 +7,7 @@
 */
 import styles from '@/styles/components/personal/skillset.module.scss/'
 
+
 export default function Skills() {
   return <section className={styles.skills}>
     
@@ -19,23 +20,28 @@ export default function Skills() {
           <div className={styles.textcontainer}>
             <h2>HTML</h2>
 
-            <p>I have experience with html. I have so much experience that I'm so good at html.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, assumenda?</p>
           </div>
           
 
           <div className={styles.textcontainer}>
             <h2>CSS</h2>
 
-            <p>I have experience with css. I have so mcuh experience that I'm so good at css.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, voluptatem.</p>
           </div>
 
           </div>
 
 
           <div className={styles.textcontainer}>
-            <h2>Adobe Photoshop & Illustrator</h2>
+            <h2 className={styles.h2_adobe}>
+              Adobe Photoshop & Illustrator
+            </h2>
 
-            <p>I have experince with Adobe products. I have so mcuh experience that I'm so good at photoshop and illustrator.</p>
+            <p className={styles.p_adobe}>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat odio, eveniet magni quo suscipit reiciendis consectetur.
+            </p>
+
           </div>
         
         </div>

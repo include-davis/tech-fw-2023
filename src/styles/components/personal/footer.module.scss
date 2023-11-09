@@ -16,7 +16,7 @@
 // choose elements with logo class within .footer class elements
 .logo {
   color: black;
-  margin-top: 20px;
+  margin-top: 32px;
   width: 100px;
   height: 100px;
 }
@@ -33,7 +33,7 @@
     p {
     font-size: 1rem;
     font-family: 'Jost', sans-serif;
-    margin-top: 15px;
+    margin-top: 24px;
   }
 }
 
@@ -41,8 +41,8 @@
   // apply properties for .socials
   display: flex;
   flex:auto;
-  width: 30%;
-  margin-top:25px;
+  width: 20%;
+  margin-top: 8px;
   margin-bottom: 25px;
   justify-content: space-between;
   align-items: center;
@@ -52,11 +52,11 @@
    li {
       a { 
         &:hover { 
-         color: red;
+         color: #1a8ad5;
         }
 
         &:active { 
-         color: red;
+         color: #1a8ad5;
         }
       }
     }
@@ -66,4 +66,22 @@
 .icon {
   // apply properties for icons
   font-size: big;
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+
+.github_icon{
+  height: 40px;
+  width: 40px;
+
+}
+
+.insta_icon{
+  height: 40px;
+  width: 40px; 
+}
+
+.email_icon{
+  height: 40px;
+  width: 40px;
 }
