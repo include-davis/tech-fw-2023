@@ -62,6 +62,10 @@
 
 .footerIcons{
     font-size: 50px;
+    flex-direction: row;
+    li {
+        display: inline-block;
+    }
 }
 
 @keyframes fade{
