@@ -19,12 +19,6 @@ export default function About() {
             </a>
           </div>
           <div className={styles.picture}>
-            {/* <Image className={styles.image_bg}
-              src="/purple_circle.png"
-              width={100}
-              height={100}
-              alt={"backdrop"}
-            /> */}
             <Image className={styles.image}
               src="/cristian.png"
               width={250}
