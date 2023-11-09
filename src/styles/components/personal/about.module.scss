@@ -1,17 +1,18 @@
-.style {
+.aboutWrapper {
     position: relative;
+    min-height: 100vh;
     text-align: center;
-    color: rgba(74, 56, 113);
+    color: rgb(115, 7, 67 );
     h1 {
         margin: 20px;
         font-weight: 900;
-        font-size: 48px;
+        font-size: 4rem;
         font-family: Georgia, 'Times New Roman', Times, serif;
     }
     h2 {
         margin: 16px;
         font-weight: 100;
-        font-size: 28px;
+        font-size: 2rem;
         font-family:Georgia, 'Times New Roman', Times, serif;
     }
 
@@ -23,10 +24,7 @@
 }
 
 .mainInfo {
-    animation-name: fade;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+    margin: 1em;
 }
 
 .icons{
@@ -38,7 +36,7 @@
     margin-top: 20px;
     margin-bottom: 20px;
     img{
-        scale: 0.5;
+        scale: 0.6;
     }
     img:hover{
         animation-name: iconHover;
@@ -49,11 +47,12 @@
 }
 
 .notFooter {
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 .footer{
-    background-color: pink;
+    background-color: rgb(115, 7, 67 );;
+    color: rgb(255, 239, 241);
     position: absolute;
     left: 0;
     bottom: 0;
@@ -61,18 +60,31 @@
 }
 
 .footerIcons{
-    font-size: 50px;
+    font-size: 4rem;
     flex-direction: row;
     li {
         display: inline-block;
     }
 }
 
-@keyframes fade{
-    from {color: rgba(145, 31, 132, 0.649);}
-    to {color: rgba(74, 56, 113);}
+.chickenList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //background-color: coral;
+    li {
+        background-color: rgb(255, 239, 241);
+        margin: 0.2em;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1em;
+        padding: 0.5em;
+        width: 30em;
+        border-radius: 1em;
+    }
 }
+
 @keyframes iconHover{
-    from {scale: 0.4;}
     to {scale: 1;}
 }

@@ -14,7 +14,6 @@ export default function Icons(){
           <img src="https://stardewvalleywiki.com/mediawiki/images/c/c2/Grape.png"></img>
           <img src="https://stardewvalleywiki.com/mediawiki/images/e/e2/Peach.png"></img>
           <img src="https://stardewvalleywiki.com/mediawiki/images/7/7d/Apple.png"></img>
-
         </div>
     )
 }
