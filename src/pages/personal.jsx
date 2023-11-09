@@ -8,7 +8,7 @@ export default function Personal() {
     <div>
       <Skills />
       <About />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
