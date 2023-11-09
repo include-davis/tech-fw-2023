@@ -1,24 +1,46 @@
+.professional {
+    margin-top: 300px;
+    margin-bottom: 360px;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    font-size: 2rem;
+    justify-content: center;
+    border: 1px solid black
+}
+
 .container {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     height: 400px;
     border: 1px solid black;
-    margin: 48px 0px;
 }
 
 .card {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-around;
     align-items: center;
 
     border: 1px solid black;
     border-color: black;
     border-radius: 16px;
-    width: 400px;
-    height: 300px;
+    flex-basis: 25%; // for growing the second one
+    height: 75%;
     transition: transform 0.3s ease-in-out;
+}
+
+.card:first-child {
+    justify-content: space-evenly;
+    flex-shrink: 2;
+}
+
+.card:nth-child(2) {
+    justify-content: flex-start;
+    flex-grow: 0.5;
 }
 
 .card:hover {
@@ -29,14 +51,52 @@
     align-self: flex-end;
 }
 
-// .container .card:nth-child(3) {
-//     align-self: flex-end;
+.club {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin: 1rem 0rem;
+    height: 40%;
+    width: 80%;
+    border: 1px solid black;
+}
+
+.club h2 {
+    color: rgb(205, 127, 205);
+}
+
+.club p {
+    color: rgb(92, 56, 92)
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+
+    width: 80%;
+    border: 1px solid black;
+}
+
+.project h4 {
+    color: rgb(205, 127, 205);
+}
+
+.project p {
+    color: rgb(92, 56, 92)
+}
+
+// .skills{
+
 // }
 
-.skills{
-    height: 100px;
-}
+// .projects {
+//     height: 100px;
+// }
 
-.projects {
-    height: 100px;
-}
+// .professional {
+//     height: 150px;
+// }
