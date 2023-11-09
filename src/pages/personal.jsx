@@ -6,10 +6,9 @@ import React from 'react';
 export default function Personal() {
   return (
     <div>
-    
-      <About></About>
-      <Skills></Skills>
-      <Footer></Footer>
+      <Skills />
+      <About />
+      {/* <Footer /> */}
     </div>
   );
 }
