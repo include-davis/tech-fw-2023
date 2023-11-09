@@ -1,3 +1,7 @@
+.section {
+    background-color: rgb(250, 242, 230);
+}
+
 .nav {
     display: flex;
     flex-direction: row;
@@ -34,7 +38,7 @@
     row-gap: 1.5rem;
     animation: 2s about 0.5s forwards;
       transform:translateX(-100%);
-    border: 1px solid black;
+    // border: 1px solid black;
 }
 
 @keyframes about {
@@ -48,8 +52,8 @@
     justify-content: center;
     align-items: center;
     animation: 2s picture 0.5s forwards;
-      transform:translateX(130%);
-    border: 1px solid black;
+      transform:translateX(140%);
+    // border: 1px solid black;
 }
 
 @keyframes picture {
@@ -59,7 +63,7 @@
   }
 
 .profession {
-    color: rgb(205, 127, 205);
+    color: rgb(179, 137, 75);
     width: 30%;
     font-weight: bold;
     font-size: 2rem;
@@ -67,22 +71,24 @@
 
 .name {
     font-size: 4rem;
+    color: rgb(93, 54, 93);
 }
 
 .description {
     font-size: 18px;
     width: 60%;
+    color: rgb(93, 54, 93)
 }
 
 .button {
     box-sizing: border-box;
     padding: 0.8rem;
-    border: 1px solid rgb(205, 127, 205);
-    background-color: rgb(255, 248, 255);
+    border: 1px solid rgb(255, 202, 123);
+    background-color: rgb(248, 235, 217);
     border-radius: 10px;
     font-size: 0.8rem;
 }
 
 .button:hover {
-  background-color: rgb(255, 242, 255);
+  background-color: rgb(254, 223, 175);
 }

@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function About() {
     return (
-      <section>
+      <section className={styles.section}>
         <nav className={styles.nav}>
           <div className={styles.nav_menu}><AiOutlineMenu size={28}/></div>
         </nav>
@@ -13,7 +13,7 @@ export default function About() {
           <div className={styles.about}>
             <h2 className={styles.profession}>UI/UX Designer</h2>
             <h1 className={styles.name}>Cristian Embleton</h1>
-            <p className={styles.description}>Currently studying computer software and hardware engineering at UC Davis. Always looking for ways to learn more.</p>
+            <p className={styles.description}>Second year at UC Davis studying computer science and engineering. Always looking for ways to learn more.</p>
             <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0">
               <button type="button" className={styles.button}>Contact me</button>
             </a>
