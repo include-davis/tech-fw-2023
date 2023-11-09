@@ -3,31 +3,38 @@
 .footer {
   // apply some properties
   display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 80px;
   width: 100%;
-  border-top: 1px solid grey;
-  border-top-width: 90%;
+  background-color: rgb(250, 242, 230);
+  border-top: 1px dashed rgb(204, 163, 103);
 }
 
-// choose elements with logo class within .footer class elements
-.logo {
-  color: black;
-}
-
-.info {
-  // apply properties for .info
-  display: flex;
-  > p {
-    // change up the text size and style how you want
-    font-size: 1px;
-  }
-}
+// .info {
+//   // apply properties for .info
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-evenly;
+//   > p {
+//     // change up the text size and style how you want
+//     font-size: 1rem;
+//   }
+// }
 
 .socials {
   // apply properties for .socials
-  display: flex;
+  transition: margin 0.2s ease-in-out;
+  font-size: big;
+  color: rgb(167, 124, 61);
 }
 
-.icon {
-  // apply properties for icons
-  font-size: big;
+.socials:hover {
+    margin-top: -1rem;
 }
+
+// .icon {
+//   // apply properties for icons
+//   font-size: big;
+// }
