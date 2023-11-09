@@ -5,11 +5,11 @@ import styles from "@/styles/resources.module.scss";
 const content = [
   {
     week: 1,
-    tags: ["setup"],
+    tags: ["additionalLinks"],
   },
   {
     week: 2,
-    tags: ["general", "flexbox", "position", "responsiveness"],
+    tags: ["additionalLinks", "flexbox", "position", "responsiveness"],
   },
   {
     week: 3,

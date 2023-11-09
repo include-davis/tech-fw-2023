@@ -13,16 +13,10 @@ const weekContent = {
       component: <h1>No components were made for this week</h1>,
       title: "",
       desc: "",
-      tags: ["setup"],
+      tags: [],
     },
   ],
   2: [
-    {
-      component: null,
-      title: "",
-      desc: "",
-      tags: ["general"],
-    },
     {
       component: <Flexbox key="flexbox" />,
       title: "Flexbox",

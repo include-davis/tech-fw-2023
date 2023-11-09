@@ -9,7 +9,7 @@
       "Basic HTML & CSS (Box Model)"
     ],
     "content": {
-      "setup": {
+      "additionalLinks": {
         "web": [
           {"name": "Figma", "url": "https://www.figma.com/proto/6KUxXdMClJrDtCZjqhqfVx/Personal-Portfolio-Design?node-id=1-23"},
           {"name": "Workshop Slides", "url": "https://docs.google.com/presentation/d/1CbY3OSKcWMfvrco0U_Z6pnmxEtvNUaZF/edit?usp=sharing&ouid=104829516095066094781&rtpof=true&sd=true"},
@@ -31,7 +31,7 @@
     "desc": "Basics of HTML & CSS.",
     "goals": ["Flexbox", "Responsiveness", "Media Queries", "Positioning"],
     "content": {
-      "general" : {
+      "additionalLinks" : {
         "web": [
           {"name": "Workshop Slides", "url": "https://docs.google.com/presentation/d/19xRDWqRobKuQZbGXVShH4oshbxYSzu-H/edit#slide=id.g296890ca456_0_4"},
           {"name": "HTML Tags", "url": "https://www.semrush.com/blog/html-tags-list/"},
