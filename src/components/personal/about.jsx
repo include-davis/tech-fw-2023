@@ -22,31 +22,10 @@ export default function About() {
               <li className={styles.bullet}>Online shopping</li>
             </ul> 
           </div>
-
-<<<<<<< Updated upstream
-          <div className={styles.container}>
-=======
-          {/* <div className={styles.container}>
->>>>>>> Stashed changes
-            <h1 className={styles.header}>Contacts</h1>
-            <ul>
-              <li className={styles.bullet}>GitHub: <a target="_blank" href="https://github.com/anna-c2">anna-c2</a></li>
-            </ul>
-<<<<<<< Updated upstream
-          </div>
-=======
-          </div> */}
->>>>>>> Stashed changes
         </div>
         </div>
 
         
       </div>
-
-      
     )
-<<<<<<< Updated upstream
 }
-=======
-}
->>>>>>> Stashed changes
