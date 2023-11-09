@@ -1,4 +1,6 @@
 // import SCSS file as styles for this component
+import styles from "@/styles/components/personal/footer.module.scss";
+import Image from "next/image";
 
 export default function Footer() {
   // Make a footer!
@@ -17,12 +19,19 @@ export default function Footer() {
   */
   return (
     <footer className={styles.footer}>
+      <hr/>
       <section className={styles.logo}>logo</section>
 
       <section className={styles.info}>
         <p>Made by #your name here#</p>
         <ul className={styles.socials}>
           <li className={styles.icon}> SOCIAL MEDIA ICONS + REDIRECTING </li>
+          <Image
+              src="/favicon-32x32.png"
+              width={30}
+              height={30}
+              alt={"portfolio picture"}
+            />
         </ul>
       </section>
     </footer>

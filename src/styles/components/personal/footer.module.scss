@@ -4,6 +4,8 @@
   // apply some properties
   display: flex;
   width: 100%;
+  border-top: 1px solid grey;
+  border-top-width: 90%;
 }
 
 // choose elements with logo class within .footer class elements
