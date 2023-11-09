@@ -9,7 +9,6 @@ import { FiHeart } from 'react-icons/fi'
 export default function About() {
   return (
     <div className={styles.aboutWrapper}>
-      <div className={styles.notFooter}>
         <section className={styles.mainInfo}>
           <h1>naomi zhao</h1>
           <h2>personal page</h2>
@@ -31,9 +30,8 @@ export default function About() {
         </ul>
 
         <Icons></Icons>
-        <Skills></Skills>
-      </div>
-      <Footer></Footer>
+        {/* <Skills></Skills> */}
+      {/* <Footer></Footer> */}
     </div>
   )
 }

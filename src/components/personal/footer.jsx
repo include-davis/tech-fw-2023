@@ -6,7 +6,6 @@ export default function Footer() {
     return (
         <footer className={styles.footer}>
             <section className={styles.logo}>logo</section>
-
             <section className={styles.info}>
                 <p>made by naomi <FiHeart/></p>
                 <ul className={styles.footerIcons}>

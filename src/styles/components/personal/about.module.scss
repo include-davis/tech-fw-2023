@@ -1,6 +1,6 @@
+
 .aboutWrapper {
     position: relative;
-    min-height: 100vh;
     text-align: center;
     color: rgb(115, 7, 67 );
     h1 {
@@ -15,12 +15,9 @@
         font-size: 2rem;
         font-family:Georgia, 'Times New Roman', Times, serif;
     }
-
     p{
         line-height:24px;
-        
     }
-
 }
 
 .mainInfo {
@@ -34,7 +31,7 @@
     align-content: stretch;
     justify-content: space-around;
     margin-top: 1rem;
-    margin-bottom: 1rem;
+    // margin-bottom: 1rem;
     //background-color: pink;
     img{
         scale: 0.6;
@@ -52,6 +49,7 @@
 }
 
 .footer{
+    text-align: center;
     background-color: rgb(115, 7, 67 );;
     color: rgb(255, 239, 241);
     position: absolute;
@@ -82,6 +80,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 2rem;
+
+    color: rgb(115, 7, 67 );
+    h2 {
+        margin: 1rem;
+        font-weight: 100;
+        font-size: 2rem;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+    p{
+        line-height:1rem;
+    }
 }
 
 .skills {
@@ -92,6 +102,7 @@
     flex-direction: column;
     width: 30rem;
     padding: 1rem;
+    margin: 1rem;
     li {
         margin: 0.2rem;
         display: flex;
@@ -99,10 +110,13 @@
         align-items: center;
         gap: 1rem;
         padding: 0.5rem;
-        width: 30rem;
+        width: 16rem;
         img {
             height: 2rem;
         }
+    }
+    p{
+        margin: 0.4rem;
     }
 }
 
