@@ -14,15 +14,19 @@ export default function Skills() {
         <h2>my skills</h2>
         <ul>
           <li>
-          <img src="https://stardewvalleywiki.com/mediawiki/images/6/6d/Strawberry.png"></img>
-            <p>c/c++: 1 year</p>
+            <img src="https://stardewvalleywiki.com/mediawiki/images/7/7d/Apple.png"></img>
+            <p>python: 1 year</p>
           </li>
           <li>
-          <img src="https://stardewvalleywiki.com/mediawiki/images/e/e2/Peach.png"></img>
-          <p>flutter: 1 year</p>
+            <img src="https://stardewvalleywiki.com/mediawiki/images/e/e2/Peach.png"></img>
+            <p>flutter: 6 months</p>
           </li>
           <li>
-          <img src="https://stardewvalleywiki.com/mediawiki/images/2/25/Blackberry.png"></img>
+            <img src="https://stardewvalleywiki.com/mediawiki/images/6/6d/Strawberry.png"></img>
+            <p>c/c++: 3 months</p>
+          </li>
+          <li>
+            <img src="https://stardewvalleywiki.com/mediawiki/images/2/25/Blackberry.png"></img>
             <p>html + css: 1 month</p>
           </li>
           <li>
@@ -34,7 +38,7 @@ export default function Skills() {
             <p>react native: 1 day</p>
           </li>
         </ul>
-        <p>as you can see i'm a very pro developer yep <FiSmile/></p>
+        <p>as you can see i'm a very pro developer yep <FiSmile /></p>
       </section>
     </div>
 
