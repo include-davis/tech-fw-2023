@@ -1,4 +1,5 @@
 import styles from '@/styles/components/personal/about.module.scss'
+import { FiSmile } from 'react-icons/fi'
 
 /* Think about what you want to include for skills
     1. Some ideas might be coding languages, frameworks, libraries, etc
@@ -33,7 +34,7 @@ export default function Skills() {
             <p>react native: 1 day</p>
           </li>
         </ul>
-        <p>as you can see i'm a very pro developer yep 🙂</p>
+        <p>as you can see i'm a very pro developer yep <FiSmile/></p>
       </section>
     </div>
 

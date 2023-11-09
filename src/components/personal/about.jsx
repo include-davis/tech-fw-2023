@@ -25,7 +25,7 @@ export default function About() {
           </li>
           <li>
             <img src='https://stardewvalleywiki.com/mediawiki/images/f/fd/Brown_Chicken.png'></img>
-            <p>hover on the fruit to see a css animation :)</p>
+            <p>try hovering on these chickens or on the fruits below! :)</p>
           </li>
         </ul>
 
