@@ -33,8 +33,9 @@
     flex-wrap: wrap;
     align-content: stretch;
     justify-content: space-around;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    //background-color: pink;
     img{
         scale: 0.6;
     }
@@ -54,17 +55,35 @@
     background-color: rgb(115, 7, 67 );;
     color: rgb(255, 239, 241);
     position: absolute;
-    left: 0;
-    bottom: 0;
     width: 100%;
+    .logo{
+        margin: 1rem;
+    }
+    .info {
+        margin: 1rem;
+    }
+    .footerIcons{
+        margin: 1rem;
+        font-size: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+        li {
+            display: inline-block;
+        }
+        li:hover{
+            color: rgb(251, 154, 173);
+        }
+    }
 }
 
-.footerIcons{
-    font-size: 4rem;
+.skills {
+    background-color: rgb(255, 239, 241);
+    align-items: center;
+    display: flex;
     flex-direction: row;
-    li {
-        display: inline-block;
-    }
+    width: 30rem;
 }
 
 .chickenList{
@@ -74,14 +93,14 @@
     //background-color: coral;
     li {
         background-color: rgb(255, 239, 241);
-        margin: 0.2em;
+        margin: 0.2rem;
         display: flex;
         flex-direction: row;
         align-items: center;
-        gap: 1em;
-        padding: 0.5em;
-        width: 30em;
-        border-radius: 1em;
+        gap: 1rem;
+        padding: 0.5rem;
+        width: 30rem;
+        border-radius: 1rem;
     }
 }
 

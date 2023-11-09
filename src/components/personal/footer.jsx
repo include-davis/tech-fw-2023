@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from '@/styles/components/personal/about.module.scss'
-import { FiMail, FiInstagram, FiGithub } from 'react-icons/fi';
+import { FiMail, FiInstagram, FiGithub, FiHeart } from 'react-icons/fi';
 
 export default function Footer() {
     return (
@@ -8,7 +8,7 @@ export default function Footer() {
             <section className={styles.logo}>logo</section>
 
             <section className={styles.info}>
-                <p>made by naomi</p>
+                <p>made by naomi <FiHeart/></p>
                 <ul className={styles.footerIcons}>
                     <li> <a href="mailto:naomitan.zhao@gmail.com"><FiMail/></a> </li>
                     <li> <a href="https://www.instagram.com/naomi_zhzz/"><FiInstagram/></a> </li>
@@ -18,10 +18,3 @@ export default function Footer() {
         </footer>
     );
 }
-
-/* <div className={styles.footer}>
-            <div className={styles.footerIcons}>
-                <FiMail/>
-            </div>
-            
-        </div> */

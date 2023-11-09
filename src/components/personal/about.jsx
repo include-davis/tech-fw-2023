@@ -2,17 +2,18 @@ import React, { Component } from 'react';
 import styles from '@/styles/components/personal/about.module.scss'
 import Icons from '@/components/personal/icons'
 import Footer from './footer';
+import Skills from './skillset';
 import { FiHeart } from 'react-icons/fi'
 
 export default function About() {
   return (
     <div className={styles.aboutWrapper}>
       <div className={styles.notFooter}>
-        <div className={styles.mainInfo}>
+        <section className={styles.mainInfo}>
           <h1>naomi zhao</h1>
           <h2>personal page</h2>
           <p>hi, i'm naomi! welcome to my #include personal page.</p>
-        </div>
+        </section>
         <ul className={styles.chickenList}>
           <li>
             <img src='https://stardewvalleywiki.com/mediawiki/images/f/fd/Brown_Chicken.png'></img>
@@ -29,6 +30,7 @@ export default function About() {
         </ul>
 
         <Icons></Icons>
+        <Skills></Skills>
       </div>
       <Footer></Footer>
     </div>
