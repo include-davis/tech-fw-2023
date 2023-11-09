@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react';
 import styles from '@/styles/components/personal/about.module.scss'
 import Icons from '@/components/personal/icons'
