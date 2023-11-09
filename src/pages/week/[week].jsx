@@ -11,28 +11,34 @@ const weekContent = {
   1: [
     {
       component: <h1>No components were made for this week</h1>,
-      title: "N/A",
-      desc: "N/A",
+      title: "",
+      desc: "",
       tags: ["setup"],
     },
   ],
   2: [
     {
+      component: null,
+      title: "",
+      desc: "",
+      tags: ["general"],
+    },
+    {
       component: <Flexbox key="flexbox" />,
       title: "Flexbox",
-      desc: "Tutorial on how flexbox works!",
+      desc: "Tutorial on how flexbox works! Mess around with the code!",
       tags: ["flexbox"],
     },
     {
       component: <Position key="position" />,
       title: "Position",
-      desc: "Example of positioning in CSS",
+      desc: "Example of positioning in CSS. Play with me!",
       tags: ["position"],
     },
     {
       component: <Responsiveness key="responsiveness" />,
       title: "Responsiveness",
-      desc: "Example of responsiveness in CSS",
+      desc: "Example of responsiveness in CSS. Inspect me on different screen layouts!",
       tags: ["responsiveness"],
     },
   ],
@@ -80,12 +86,11 @@ export default function WorkshopContent({ week }) {
                                 ? allLinks.map((link, index) => {
                                     return (
                                       <a
-                                        href={link}
+                                        href={link.url}
+                                        target="_blank"
                                         key={`Resource ${index} Week ${week}`}
                                       >
-                                        <li className={styles.resourceLink}>
-                                          {link}
-                                        </li>
+                                        <li className={styles.resourceLink}>{link.name}</li>
                                       </a>
                                     );
                                   })

@@ -9,7 +9,7 @@ const content = [
   },
   {
     week: 2,
-    tags: ["flexbox", "position", "responsiveness"],
+    tags: ["general", "flexbox", "position", "responsiveness"],
   },
   {
     week: 3,
@@ -69,10 +69,11 @@ export default function Resources() {
                       console.log(link);
                       return (
                         <a
-                          href={link}
+                          href={link.url}
+                          target="_blank"
                           key={`Resource ${resourceNum} Web Link ${index}`}
                         >
-                          <li className={styles.resourceLink}>{link}</li>
+                          <li className={styles.resourceLink}>{link.name}</li>
                         </a>
                       );
                     })}
@@ -84,10 +85,11 @@ export default function Resources() {
                     {videoLinks?.map((link, index) => {
                       return (
                         <a
-                          href={link}
+                          href={link.url}
+                          target="_blank"
                           key={`Resource ${resourceNum} Video Link ${index}`}
                         >
-                          <li className={styles.resourceLink}>{link}</li>
+                          <li className={styles.resourceLink}>{link.name}</li>
                         </a>
                       );
                     })}
