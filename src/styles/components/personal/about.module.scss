@@ -9,10 +9,11 @@
   -o-animation: fadeIn 2.5s, fadeBackground 6s;
   -ms-animation: fadeIn 2.5s, fadeBackground 6s;
   background-color: rgb(242, 224, 242);
-  padding-top: 20px;
-  padding-bottom: 30px;
+  padding-top: 50px;
+  padding-bottom: 70px;
   margin-left: 180px;
   margin-right: 180px;
+  border-radius: 8px;
   animation-fill-mode: forwards;
   animation-iteration-count: 1, infinite;
 }
