@@ -28,13 +28,13 @@ export default function Skills() {
           </div>
           <div className={styles.club}>
             <h2>AISC</h2>
-            <p>A club to network and learn about artificial intelligence and machine learning</p>
+            <p>A network of students fostering AI literacy through programs and events</p>
           </div>
         </div> 
         <div className={styles.card}>
           <div className={styles.project}>
             <h4>NixOS Flake</h4>
-            <p>A customizable, declarative, and portable desktop environment</p>
+            <p>A declarative desktop environment</p>
           </div>
           <div className={styles.project}>
             <h4>Knight's Tour</h4>
@@ -42,7 +42,7 @@ export default function Skills() {
           </div>
           <div className={styles.project}>
             <h4>Minesweeper</h4>
-            <p>Full scale Minesweeper clone with custom graphics and extra features</p>
+            <p>Full scale Minesweeper clone</p>
           </div>
         </div>
       </div>
