@@ -1,7 +1,7 @@
 .style {
+    position: relative;
     text-align: center;
-    margin: 10px;
-    padding: 10px;
+    color: rgba(74, 56, 113);
     h1 {
         margin: 20px;
         font-weight: 900;
@@ -15,35 +15,53 @@
         font-family:Georgia, 'Times New Roman', Times, serif;
     }
 
-    .icons{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-content: stretch;
-        justify-content: space-around;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        img{
-            scale: 0.5;
-        }
-        img:hover{
-            animation-name: iconHover;
-            animation-duration: 1s;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-        }
-    }
-    .line{
-        height: 50px;
-    }
-    text{
+    p{
         line-height:24px;
+        
     }
+
+}
+
+.mainInfo {
     animation-name: fade;
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    img{
+        scale: 0.5;
+    }
+    img:hover{
+        animation-name: iconHover;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+}
+
+.notFooter {
+    padding-bottom: 100px;
+}
+
+.footer{
+    background-color: pink;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.footerIcons{
+    font-size: 50px;
 }
 
 @keyframes fade{
