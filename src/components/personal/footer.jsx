@@ -1,6 +1,7 @@
 // import SCSS file as styles for this component
 import { BsLinkedin } from "react-icons/bs";
 import {BsGithub} from "react-icons/bs"
+import {BiLogoGmail} from "react-icons/bi"
 import contact from "@/data/contact.json";
 // import styles from "src\styles\components\personal\footer.module.scss";
 
@@ -26,7 +27,7 @@ export default function Footer() {
         <p>Made by Kashvi Dwarka</p>
         <ul className={styles.socials}>
           <li className={styles.icon}> 
-            <a href={lead.linkedIn} target="_blank">
+            <a href="https://www.linkedin.com/in/kashvi-dwarka-a107aa211/" target="_blank">
               <BsLinkedin
                 fontSize={100} /*to resize the icons */
                 color={"#0072b1"}
@@ -35,7 +36,7 @@ export default function Footer() {
             </a>
           </li>
           <li className={styles.icon}>
-            <a href={lead.github} target="_blank">
+            <a href="https://github.com/kashdw" target="_blank">
               <Image
                 src="/github.svg"
                 width={100}
@@ -45,14 +46,23 @@ export default function Footer() {
             </a>
           </li>
           <li className={styles.icon}>
-            <a href={lead.linkedIn} target="_blank">
+            <a href={lead.BsGithub} target="_blank">
               <BsGithub
                 fontSize={100} /*to resize the icons */
                 color={"#0072b1"}
                 alt={"github"}
               />
             </a>
-            </li>
+          </li>
+          <li className={styles.icon}>
+            <a href={lead.BiLogoGmail} target="_blank">
+              <BsGithub
+                fontSize={100} /*to resize the icons */
+                color={"#0072b1"}
+                alt={"gmail"}
+              />
+            </a>
+          </li> 
         </ul>
       </section>
     </footer>
