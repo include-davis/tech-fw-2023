@@ -29,40 +29,13 @@ export default function Footer() {
           <li className={styles.icon}> 
             <a href="https://www.linkedin.com/in/kashvi-dwarka-a107aa211/" target="_blank">
               <BsLinkedin
-                fontSize={100} /*to resize the icons */
-                color={"#0072b1"}
+                fontSize={20} /*to resize the icons */
+                color={"#000000"}
                 alt={"linkedIn"}
               />
             </a>
           </li>
-          <li className={styles.icon}>
-            <a href="https://github.com/kashdw" target="_blank">
-              <Image
-                src="/github.svg"
-                width={100}
-                height={100}
-                alt={"github"}
-                />
-            </a>
-          </li>
-          <li className={styles.icon}>
-            <a href="https://github.com/kashdw" target="_blank">
-              <BiLogoGmail
-                fontSize={100} /*to resize the icons */
-                color={"#0072b1"}
-                alt={"github"}
-              />
-            </a>
-          </li>
-          <li className={styles.icon}>
-            <a href={lead.BiLogoGmail} target="_blank">
-              <BsGithub
-                fontSize={100} /*to resize the icons */
-                color={"#0072b1"}
-                alt={"gmail"}
-              />
-            </a>
-          </li> 
+          
         </ul>
       </section>
     </footer>

@@ -14,8 +14,9 @@ h1.skillsHeadingText{
     font-size: 3rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    padding-bottom: 1rem;
     text-align: center;
-
+    text-decoration: underline;
 }
 
 .skillBullets{
@@ -27,6 +28,7 @@ h1.skillsHeadingText{
 .skillPoints{
     margin-top: 1rem;
     margin-bottom: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .skillExperience{
