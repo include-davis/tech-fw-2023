@@ -18,13 +18,13 @@ export default function Skills() {
       <div className={styles.skillsList}>
         <ul className={styles.skillBullets}>
           <li className={styles.skillPoints}>HTML</li>
-            <p className={styles.skillExperience}>2 years of experience</p>
+            <p className={styles.skillExperience}>2 Years of Experience</p>
           <li className={styles.skillPoints}>CSS</li>
-            <p className={styles.skillExperience}>2 years of experience</p>
+            <p className={styles.skillExperience}>2 Years of Experience</p>
           <li className={styles.skillPoints}>C++</li>
-            <p className={styles.skillExperience}>2 years of experience</p>
+            <p className={styles.skillExperience}>2 Years of Experience</p>
           <li className={styles.skillPoints}>Git</li>
-            <p className={styles.skillExperience}>2 years of experience</p>
+            <p className={styles.skillExperience}>2 Years of Experience</p>
         </ul>
       </div>
     </div> 

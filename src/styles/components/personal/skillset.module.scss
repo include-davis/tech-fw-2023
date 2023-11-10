@@ -1,14 +1,16 @@
 .skillsSection{
+    display: flex;
     background-color: rgb(231, 150, 216);
     padding-left: 3.5rem;
     margin-top: 3rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    flex-direction: column;
 }
 
 
 h1.skillsHeadingText{
-    //display: flex;
+    display: flex;
     width: 100%;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 3rem;
@@ -17,6 +19,21 @@ h1.skillsHeadingText{
     padding-bottom: 1rem;
     text-align: center;
     text-decoration: underline;
+    justify-content: center;
+}
+
+.skillsList{
+    display: flex;
+    background-color: rgb(232, 204, 246);
+    justify-content: center;
+    padding-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 50%;
+    align-content: center;
+    border-radius: 10px; 
+    //height: 100px; 
+
 }
 
 .skillBullets{

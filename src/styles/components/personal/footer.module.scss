@@ -18,7 +18,8 @@
   display: flex;
   > p {
     // change up the text size and style how you want
-    font-size: 1px;
+    font-size: 10px;
+    justify-content: center;
   }
 }
 
@@ -29,5 +30,9 @@
 
 .icon {
   // apply properties for icons
-  font-size: big;
+  // font-size: big;
+  // text-align: center;
+  margin: 0 10px;
+  text-decoration: none;
+
 }

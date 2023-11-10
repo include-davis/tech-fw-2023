@@ -35,7 +35,15 @@ export default function Footer() {
               />
             </a>
           </li>
-          
+          <li className={styles.icon}>
+            <a href="https://github.com/kashdw" target="_blank">
+              <BsGithub
+                fontSize={20} /*to resize the icons */
+                color={"#000000"}
+                alt={"github"}
+              />
+            </a>
+          </li>
         </ul>
       </section>
     </footer>
