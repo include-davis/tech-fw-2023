@@ -1,6 +1,7 @@
 .skillsSection{
     background-color: rgb(231, 150, 216);
     padding-left: 3.5rem;
+    margin-top: 3rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
@@ -19,5 +20,15 @@ h1.skillsHeadingText{
 
 .skillBullets{
     list-style: none;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.skillPoints{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.skillExperience{
+    font-size: 1rem;
 }
