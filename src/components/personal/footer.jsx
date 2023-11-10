@@ -1,9 +1,9 @@
 // import SCSS file as styles for this component
 import { BsLinkedin } from "react-icons/bs";
-import {BsGithub} from "react-icons/bs"
-import {BiLogoGmail} from "react-icons/bi"
+import {BsGithub} from "react-icons/bs";
+import {BiLogoGmail} from "react-icons/bi";
 import contact from "@/data/contact.json";
-// import styles from "src\styles\components\personal\footer.module.scss";
+import styles from "@/styles/components/personal/footer.module.scss";
 
 export default function Footer() {
   // Make a footer!
@@ -46,8 +46,8 @@ export default function Footer() {
             </a>
           </li>
           <li className={styles.icon}>
-            <a href={lead.BsGithub} target="_blank">
-              <BsGithub
+            <a href="https://github.com/kashdw" target="_blank">
+              <BiLogoGmail
                 fontSize={100} /*to resize the icons */
                 color={"#0072b1"}
                 alt={"github"}

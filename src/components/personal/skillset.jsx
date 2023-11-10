@@ -1,5 +1,7 @@
 // import styles from styling folder!
-
+import React, { Component } from "react";
+import Image from "next/image";
+import styles from "@/styles/components/personal/skillset.module.scss";
 /* Think about what you want to include for skills
     1. Some ideas might be coding languages, frameworks, libraries, etc
     2. You can also include soft skills like communication, teamwork, etc
@@ -7,5 +9,9 @@
 */
 
 export default function Skills() {
-  // return <section className={styles.skills}>skills</section>;
+  //return <section className={styles.skills}>skills</section>;
+  return (
+    <div className={styles.about_me}>
+    </div> 
+  )
 }
