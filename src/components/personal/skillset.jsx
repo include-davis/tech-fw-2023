@@ -16,7 +16,7 @@ export default function Skills() {
         <h1 className={styles.skillsHeadingText}>Skills</h1>
       </div> 
       <div className={styles.skillsList}>
-        <ul>
+        <ul className={styles.skillBullets}>
           <li>HTML</li>
           <li>CSS</li>
           <li>C++</li>
