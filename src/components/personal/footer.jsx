@@ -35,7 +35,7 @@ export default function Footer() {
               </a>
             </li>
             <li className={styles.icon}>
-              <a href="mailto:dqlee@ucdavis.edu">
+              <a href="mailto:dqlee@ucdavis.edu" target="_blank" rel="noopener noreferrer">
                 <img src={"/personal/gmail.svg"} alt={"gmail-icon"} className={styles.iconImage}/>
               </a>
             </li>
