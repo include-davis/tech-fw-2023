@@ -1,8 +1,8 @@
 // import SCSS file as styles for this component
-import { MdClose } from "react-icons/md";
 import { BsLinkedin } from "react-icons/bs";
+import {BsGithub} from "react-icons/bs"
 import contact from "@/data/contact.json";
-// import styles from "@/styles/footer.module.scss";
+// import styles from "src\styles\components\personal\footer.module.scss";
 
 export default function Footer() {
   // Make a footer!
@@ -44,6 +44,15 @@ export default function Footer() {
                 />
             </a>
           </li>
+          <li className={styles.icon}>
+            <a href={lead.linkedIn} target="_blank">
+              <BsGithub
+                fontSize={100} /*to resize the icons */
+                color={"#0072b1"}
+                alt={"github"}
+              />
+            </a>
+            </li>
         </ul>
       </section>
     </footer>

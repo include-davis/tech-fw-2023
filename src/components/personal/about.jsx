@@ -16,7 +16,7 @@ export default function About() {
         </div>  
 
         <div className={styles.personalImage} style={{ display: 'flex', justifyContent: 'center', alignItems: 'start' }}>
-          <Image src="/personalImage.jpg" width={350} height={450} alt="personal image" />
+          <Image src="/personalImage.jpg" width={300} height={400} alt="personal image" />
         </div>
         {/*end container for about me section*/}
       </div> 
