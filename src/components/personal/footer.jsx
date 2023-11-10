@@ -22,7 +22,6 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <section className={styles.logo}>logo</section>
-
       <section className={styles.info}>
         <p>Made by Kashvi Dwarka</p>
         <ul className={styles.socials}>
@@ -33,6 +32,16 @@ export default function Footer() {
                 color={"#0072b1"}
                 alt={"linkedIn"}
               />
+            </a>
+          </li>
+          <li className={styles.icon}>
+            <a href={lead.github} target="_blank">
+              <Image
+                src="/github.svg"
+                width={100}
+                height={100}
+                alt={"github"}
+                />
             </a>
           </li>
         </ul>
