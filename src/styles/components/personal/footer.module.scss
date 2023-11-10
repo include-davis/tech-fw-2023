@@ -1,5 +1,5 @@
 // use class selectors to target classes
-
+@use "src/styles/mixins";
 .footer {
   // apply some properties
   display: flex;

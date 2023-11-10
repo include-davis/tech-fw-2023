@@ -7,5 +7,5 @@
 */
 
 export default function Skills() {
-  return <section className={styles.skills}>skills</section>;
+  // return <section className={styles.skills}>skills</section>;
 }

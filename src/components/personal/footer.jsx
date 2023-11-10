@@ -1,4 +1,8 @@
 // import SCSS file as styles for this component
+import { MdClose } from "react-icons/md";
+import { BsLinkedin } from "react-icons/bs";
+import contact from "@/data/contact.json";
+// import styles from "@/styles/footer.module.scss";
 
 export default function Footer() {
   // Make a footer!
@@ -22,7 +26,15 @@ export default function Footer() {
       <section className={styles.info}>
         <p>Made by Kashvi Dwarka</p>
         <ul className={styles.socials}>
-          <li className={styles.icon}> SOCIAL MEDIA ICONS + REDIRECTING </li>
+          <li className={styles.icon}> 
+            <a href={lead.linkedIn} target="_blank">
+              <BsLinkedin
+                fontSize={100} /*to resize the icons */
+                color={"#0072b1"}
+                alt={"linkedIn"}
+              />
+            </a>
+          </li>
         </ul>
       </section>
     </footer>
