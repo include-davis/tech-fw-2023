@@ -11,7 +11,18 @@ import styles from "@/styles/components/personal/skillset.module.scss";
 export default function Skills() {
   //return <section className={styles.skills}>skills</section>;
   return (
-    <div className={styles.about_me}>
+    <div className={styles.skillsSection}>
+      <div className={styles.skillsHeading}>
+        <h1 className={styles.skillsHeadingText}>Skills</h1>
+      </div> 
+      <div className={styles.skillsList}>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>C++</li>
+          <li>Git</li>
+        </ul>
+      </div>
     </div> 
   )
 }
