@@ -34,9 +34,13 @@ Node.js is a runtime environment that is used to run Javascript code. It comes w
 3. Once the installation finishes, open a terminal on VSCode and type *node --version* to verify your node installation. Type *npm --v* to verify your npm installation. 
 
     a. If you get an error saying that node or npm is not recognized as a command, try restarting VSCode to see if the issue fixes itself. (If you had VSCode opened while installing Node, this should fix it.)
+   
     b. If the problem persists, search for *Environment variables* in your Start menu. Click on *Edit your Environment variables*. Click on *Environment Variables* in the new window that opens up.
-    c. Find the variable *Path* and click on *Edit*. 
+   
+    c. Find the variable *Path* and click on *Edit*.
+   
     d. Check for *C:\Program Files\nodejs\\* in the list of paths that appear. If it's not there, click on *New* and add it to the list.
+
     e. Restart VSCode and it should ideally work now. 
 
 

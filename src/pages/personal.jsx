@@ -1,5 +1,5 @@
-import About from '@/components/personal/about';
 import Skills from '@/components/personal/skillset';
+import About from '@/components/personal/about';
 import Footer from '@/components/personal/footer';
 
 
