@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import styles from'@/styles/components/personal/about.module.css';
+import styles from'@/styles/components/personal/about.module.scss';
 
 export default function About() {
     return (
-      <h2 classname={styles.outer}>Vivica Tran.</h2>
+      <div className={styles.outer}>Vivica Tran.</div>
     )
 }
