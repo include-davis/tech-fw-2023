@@ -7,8 +7,8 @@ export default function Personal() {
   return (
     <div>
       <About></About>
-      <Skills></Skills>
-      <Footer></Footer>
+      {/* <Skills></Skills>
+      <Footer></Footer> */}
     </div>
   );
 }
