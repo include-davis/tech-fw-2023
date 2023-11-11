@@ -1,6 +1,27 @@
+// general pointers:
+// - You did a really good job! The only fixes were things like units and some selectors, but other than that great work! I loved the color scheme you picked out too!
+
+// - I noticed you used rem units for some padding and margin. We advise to stick to rem units for text only, px for spacing (padding, margin, borders, etc.), and percentages for the rest. This allows for consistency :)
+
 .webpage{
     background-color: rgb(243, 245, 246);
 }
+
+// Noticed your image wasn't to the right of your about me, so if you wanted to, you can add a flex property to your about_me container (which has a default of row that will push your elements side by side) and use one of the following justify-contents to add spacing between the elements how you see fit. 
+
+// .about_me {
+//     display: flex;
+//     justify-content: space-around;
+//     justify-content: space-between;
+//     justify-content: space-evenly;
+// }
+
+
+// alternatively, you can add a column-gap instead. Column gaps are good but can cause issues during responsive design if not taken into account properly. Just something to keep in mind for the future :)
+// .about_me {
+//     display: flex;
+//     column-gap: 96px;
+// }
 
 .about_text{
     flex-direction: column;
@@ -11,6 +32,10 @@
     padding-bottom: 2rem;
 }
 
+//for these ones, you can remove your first selector as they are not needed. Though you are allowed to first select a specific HTML tag and add another kind of specificity to it (className), in your case there isn't a need for specifics. So, you can just get away with calling the className by itself.
+
+
+//For example, here you are saying to only pick paragraphs with the 'job_title' className, but it is equivalent to just calling elements with '.job_title' since you only have the one element. Same for the rest of the selectors.
 p.job_title {
     margin-top: 5px;
     font-size: 1.1rem;
@@ -31,21 +56,25 @@ p.subgreeting{
     margin-bottom: 20px;
 }
 
+//for your contact button, justify content has no effect since you aren't applying a display: flex property to your button. Your text-align property should work just fine, and in this case might not be needed since you are defining padding but it's better to be specific about it than to assume the document will handle it, so good job on this! 
 button.contact_button{
     background-color: rgb(231, 150, 216);
     border: none;
     padding: 15px 32px;
     justify-content: center;
-    text-align: center;
+    // text-align: center;
     font-size: 1rem;    
     color: black;
     font-weight: bold;
 }
+
+//nice use of hover!
 button.contact_button:hover{
     background-color: rgb(0, 0, 0);
     color: rgb(231, 150, 216);
 }
 
+//I think you might have forgotten to remove this so I won't comment on it since its handled in-line in the html
 Image.personalImage{
     display: 'flex';
     justify-content: 'center';
