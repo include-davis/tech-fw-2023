@@ -1,7 +1,14 @@
 import React, { Component } from "react";
-import Image from "next/image";
+import Image from "next/image"; // glad to see you using Image!
 
 import styles from "@/styles/components/personal/about.module.scss";
+
+// good work, love the picture of the puppy!
+
+// a few things i noticed in your code:
+// your classNames made me laugh but you dont want to pull that in the industry lol. you should use something that describes your element so that its easier to connect the code to the visual rendering of the code. for example, "bread" could be "name_text".
+// instead of breaking your multi-line text into two elements, you can specify the width of a single element of text and let the text adjust itself within those confines.
+// breaks are not used very often and mostly only to break long texts into paragraphs. for example, you could achieve that spacing between the title and the text using margin in the styles.
 
 export default function About() {
   return (
