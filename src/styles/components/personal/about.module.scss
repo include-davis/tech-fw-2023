@@ -1,4 +1,12 @@
+//some general pointers:
 
+//We didnt cover this until the second workshop so no worries. We will be using rem for text (font-size), px for spacing (border, margin, padding, etc.), and % for everything else
+
+//We didn't cover flexbox until the second workshop so there's no worries about not using it here. We primarily wanted you guys to put the elements on the page without worrying about styling too much yet. In the future, we will use flexbox for positioning items instead of the 'position' property (this should be used only in special cases). If you are able to at some point, remove all of the 'position' you have in your CSS. 
+
+//In your structure, I pointed out that you can move all your text into a single div. This makes it easy to implement flexBox but also so that you can position your text at the same time using margin, padding, etc, which allows everything to be aligned perfectly. I see what you meant to do with 'position: relative' and since we didn't provide a lot of material in the first workshop, no worries. You could have achieved the same effect by applying margin and padding properties on a single div instead (so putting all your text into one div, and then defining margin and padding on that div). This would ultimately erase all your position relative statements.
+
+//overall, i really appreciate you going above and beyond and getting the circle image figured out! keep up the good work!
   
 *.h{
    color: rgba(225, 144, 57, 0.918);
@@ -23,6 +31,7 @@
     font-size: 25px;
 }
 
+//next time, define your width using px instead of a percentage
 .box{
     border-style: solid;
     box-sizing: content-box;
