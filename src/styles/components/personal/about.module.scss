@@ -1,10 +1,14 @@
 // NOTE: EDIT FLEXBOX STRUCTURE! REMOVE ABSOLUTE POSITIONING FOR IMAGE
 
+//^ good catch!
+//general pointers:
+// you did really good! i have no complaints. you used the right units, applied appropriate styling, and overall great work.
+
+//the only thing i noticed was width: fit -content; these essentially have no affect on the page, so you don't need them in your CSS
 .page {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    
+    align-items: center;  
 }
 
 .text {
