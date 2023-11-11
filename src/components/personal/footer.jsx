@@ -1,4 +1,6 @@
 // import SCSS file as styles for this component
+import React, { Component } from "react";
+import styles from "@/styles/components/personal/footer.module.scss";
 
 export default function Footer() {
   // Make a footer!
@@ -15,16 +17,24 @@ export default function Footer() {
     <li> </li>: List elements (MUST BE WRAPPED AROUND UL/OL TAG)
     <div> </div>: 
   */
+  <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"></link>
   return (
     <footer className={styles.footer}>
       <section className={styles.logo}>logo</section>
-
+      
+      
+      
       <section className={styles.info}>
-        <p>Made by #your name here#</p>
+        <p>Made by Esther Whang</p>
         <ul className={styles.socials}>
-          <li className={styles.icon}> SOCIAL MEDIA ICONS + REDIRECTING </li>
+          <li className={styles.icon}> 
+            <a href=""><i class = "fa-instagram"></i></a>
+          </li>
         </ul>
       </section>
     </footer>
+
+
+
   );
 }
