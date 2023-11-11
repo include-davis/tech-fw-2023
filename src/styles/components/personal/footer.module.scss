@@ -49,7 +49,7 @@
   
   
   > a {
-    // arranging icons 
+    // arranging icons -- I struggled a lot here with the positioning
     display: flex;
     text-decoration: none;
     padding: 10px;
@@ -66,9 +66,9 @@
 }
 
 
-
-@media (min-width: 600px) {
-  .footer {
+// I attempted to work with media queries but I still struggle :( 
+@media (min-width: 600px) { 
+  .footer { 
     font-size: 1.25rem;
   }
 }
