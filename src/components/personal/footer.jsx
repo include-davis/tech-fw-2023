@@ -1,7 +1,8 @@
 // import SCSS file as styles for this component
 import React from 'react';
+import { BsInstagram } from 'react-icons/bs';
+import {SiGmail} from 'react-icons/si';
 import styles from '@/styles/components/personal/footer.module.scss';
-
 export default function Footer() {
   // Make a footer!
 
@@ -17,9 +18,29 @@ export default function Footer() {
     <li> </li>: List elements (MUST BE WRAPPED AROUND UL/OL TAG)
     <div> </div>: 
   */
+
   return (
     <footer className={styles.footer}>
       <section className={styles.logo}>logo</section>
+      <li>
+            <a href ={lead.Instagram} target="_blank">
+              <BsInstagram
+              fontSize={100}
+              color={"#0072b1"}
+              alt={"Instagram"}
+              />
+            </a>
+          </li>
+
+          <li>
+            <a href = {lead.Gmail} target='blank'>
+              <SiGmail
+              fontSize={100}
+              color={"#0072b1"}
+              alt={"Gmail"}
+            />
+            </a>
+          </li>
 
       <section className={styles.info}>
         <p>Made by #Anna Pandey#</p>
