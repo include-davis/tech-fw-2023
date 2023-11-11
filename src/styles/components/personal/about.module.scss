@@ -1,7 +1,14 @@
+// glad to see you used flexbox and animations :)
+// the page isn't responsive right now, so you can try incorporating a few media queries as needed. when you're doing that, make sure you maintain the left and right margins on the page so that the content doesn't stick to the edge.
+// I saw you used position relative in a couple places, and while it's okay, it doesn't really do much since you haven't modified the default position. usually, we just don't specify the positioning for elements unless we need it to be different from the default, say, when a child element needs absolute positioning. 
+// also, different units in CSS are generally used for certain kinds of elements for consistency: rem for fonts and line spacing, px for spacing (like padding/margin/gaps) and % for everything else. just something to keep in mind for future!
+
+
 .section {
     background-color: rgb(250, 242, 230);
 }
 
+// since this is a one-page project, we won't really have navigation links, but good to see you tried it out
 .nav {
     display: flex;
     flex-direction: row;
@@ -17,6 +24,7 @@
     color: rgb(179, 137, 75);
 }
 
+// nice use of hover
 .nav_menu:hover {
     background-color: rgb(248, 235, 217); 
 }
@@ -51,6 +59,8 @@
   }
 }
 
+// flexbox are useful when you have multiple children elements that you need to arrange linearly. since there's only one child element, flex doesn't really have any effect.
+// also, even though it's not needed here, whenever you want to use flexbox, make sure you specify display: flex first, I think you forgot that here.
 .picture {
     flex-direction: column;
     justify-content: center;
@@ -66,6 +76,7 @@
     }
   }
 
+// using weight names like bold isn't wrong but numbers are usually preferred in styles because it's easier to think in numbers. 
 .profession {
     color: rgb(179, 137, 75);
     width: 100%;
