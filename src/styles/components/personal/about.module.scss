@@ -60,11 +60,13 @@
 //for your contact button, justify content has no effect since you aren't applying a display: flex property to your button. Your text-align property should work just fine, and in this case might not be needed since you are defining padding but it's better to be specific about it than to assume the document will handle it, so good job on this! 
 button.contact_button{
     background-color: rgb(231, 150, 216);
-    border: none;
     padding: 15px 32px;
     font-size: 1rem;    
     color: black;
     font-weight: bold;
+    border-radius: 8px;
+    border: none;
+
 }
 
 //nice use of hover!
@@ -79,4 +81,27 @@ button.contact_button:hover{
     justify-content: 'center';
     margin-top: 10px;
     padding-top: 10px;
+    overflow: hidden;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+.job_title{
+    font-size: 1rem;
+}
+
+.greeting{
+    font-size: 1.5rem;
+}
+
+.subgreeting{
+    font-size: 1rem;
+}
+
+.Image{
+    width: 150px;
+    height: 150px;
+}
+
 }
