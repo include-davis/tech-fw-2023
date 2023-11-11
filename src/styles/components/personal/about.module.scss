@@ -1,0 +1,143 @@
+@use 'src/styles/mixins.scss';
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    // justify-content: center;
+}
+
+.infoCard {
+    display: flex;
+    flex-direction: column;
+    // align-items: flex-start;
+    // justify-content: center;
+
+    background-color: grey;
+    padding: 42px;
+    border-radius: 16px;
+    gap: 16px;
+
+    > h1 {
+        font-size: 1.75rem;
+        font-style: italic;
+    }
+
+    > p {
+        font-size: 1rem;
+    }
+
+    @include mixins.phone {
+        width: 400px;
+        height: 250px;
+        justify-content: center;
+        padding: 16px;
+    
+    }
+
+    @include mixins.sm-phone {
+        width: 300px;
+        // height: 20px;
+    }
+}
+
+.socials {
+    display: flex;
+    gap: 16px;
+}
+
+.logos {
+    display: flex;
+    gap: 16px;
+
+    @include mixins.phone {
+        flex-direction: column;
+        align-items: center;
+
+        gap: 4px;
+    }
+
+}
+
+.logoGroup {
+    display: flex;
+    gap: 16px;
+
+    @include mixins.phone {
+        gap: 4px;
+    }
+}
+
+.logo {
+    width: 32px;
+    height: 32px;
+    // gap: 8px;
+}
+
+.buttons {
+    display: flex;
+    gap: 8px;
+
+    @include mixins.phone {
+        flex-direction: column;
+        align-items: center;
+
+        // gap: 4px;
+    
+    }
+}
+
+.projectButton {
+    background: none;
+    text-decoration: none;
+    border: none;
+
+    background-color: white;
+    color: black;
+    padding: 8px;
+    border-radius: 24px;
+}
+
+.connectButton {
+    background: none;
+    text-decoration: none;
+    border: none;
+
+    background-color: black;
+    color: white;
+    padding: 8px;
+    border-radius: 24px;
+}
+
+.aboutMe {
+    display: flex;
+    background-color: aliceblue;
+    padding: 16px;
+    gap: 16px;
+
+    > h1 {
+        font-size: 1.75rem;
+        font-style: italic;
+        color: grey;
+    }
+
+    @include mixins.phone {
+        display: none;
+        // flex-direction: column;
+        // align-items: center;
+        // justify-content: center;
+        // text-align: center;
+    }
+}
+
+.aboutMeText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+
+    > p {
+        font-size: 0.8rem;
+    }
+}
