@@ -22,14 +22,14 @@ export default function Footer() {
   */
   return (
     <footer className={styles.footer}>
-      <section className={styles.logo}>logo</section>
+      {/* <section className={styles.logo}>logo</section> */}
       <section className={styles.info}>
         <p>Made by Kashvi Dwarka</p>
         <ul className={styles.socials}>
           <li className={styles.icon}> 
             <a href="https://www.linkedin.com/in/kashvi-dwarka-a107aa211/" target="_blank">
               <BsLinkedin
-                fontSize={20} /*to resize the icons */
+                fontSize={25} /*to resize the icons */
                 color={"#000000"}
                 alt={"linkedIn"}
               />
@@ -38,7 +38,7 @@ export default function Footer() {
           <li className={styles.icon}>
             <a href="https://github.com/kashdw" target="_blank">
               <BsGithub
-                fontSize={20} /*to resize the icons */
+                fontSize={25} /*to resize the icons */
                 color={"#000000"}
                 alt={"github"}
               />

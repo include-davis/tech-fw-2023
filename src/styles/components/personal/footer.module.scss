@@ -16,22 +16,29 @@
 .info {
   // apply properties for .info
   display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+  margin-left: 1rem;
+  padding-bottom: 1rem;
   > p {
     // change up the text size and style how you want
-    font-size: 10px;
+    font-size: 15px;
+    // width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-bottom: 1rem;
     justify-content: center;
+    text-decoration: none;
   }
 }
 
 .socials {
   // apply properties for .socials
   display: flex;
+  justify-content: center;
 }
 
 .icon {
   // apply properties for icons
-  // font-size: big;
-  // text-align: center;
   margin: 0 10px;
   text-decoration: none;
 
