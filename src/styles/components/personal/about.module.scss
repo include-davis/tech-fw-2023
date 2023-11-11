@@ -1,3 +1,10 @@
+// good work! Your page is not responsive right now so I'll check back in a week for that. Also try using a flexbox for ease of arranging some of your elements!
+
+// some things I noticed:
+// glad to see you understood how relative positioning works but you don't need to use position: relative for every element. I think you are trying to implement spacing by shifting the position from the default; if that's the case, I would recommend using paddings and margins instead as they are a lot easier to manipulate, especially in responsive designs. 
+// Additionally, we only specify positioning for elements that need something different from the default, for example, if you want to use absolute positioning for a child element. otherwise, you can let the default document flow take control.
+
+// also, the different units in CSS have generally used for certain kinds of elements for consistency: rem for fonts and line spacing, px for spacing (like padding/margin) and % for everything else.
 
 .bg{
     background-color:rgb(241, 236, 241);
@@ -11,8 +18,10 @@
 }
 .font{
     font-family: monospace;
+    // just a note in case you dont know this, if you specify the same property for an element twice, CSS implements the second value. Later code in a CSS file always takes precedence. You could use this selector again at the very end of the file and change everything you have here and you'll see that even when this snippet of code is in your file, CSS only implements the code for this class at the end of the file. 
+    // also always prefer numbers over weight names like bolder. it's always easier to think in terms of numbers.
     font-weight: bolder;
-    font-weight: 900;
+    font-weight: 900; 
     font-size: 70px;
     position: relative;
     top: 70px; left: 120px; 
@@ -26,7 +35,7 @@
     font-size: 25px;
 }
 
-
+// we prefer border-box over content-box since it adds the padding and border within the height/width we specify and the margin outside that and that's how we want think about spacing and our elements.
 .box{
     border-style: solid;
     box-sizing: content-box;
@@ -37,14 +46,15 @@
     border: 2px solid black;
     border-radius: 5px;
     position: relative;
-    top: 100px; left: 270px;
-    
-    
+    top: 100px; left: 270px;   
 }
+
+// nice use of hover
 .box:hover{
     background-color: rgb(61, 62, 63);
 }
 
+// good job on the circle image
 .pic { /*this is for the round circle around the pic*/
     position: relative;
     top: -300px; left: 1200px;
@@ -64,6 +74,7 @@
     border-color:rgba(225, 144, 57, 0.918);
 }
 
+// the following styles will also go in your skillset.module.css
 .skill{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bolder;
