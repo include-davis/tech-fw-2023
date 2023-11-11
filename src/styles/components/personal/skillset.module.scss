@@ -2,7 +2,7 @@
     display: flex;
     background-color: rgb(231, 150, 216);
     padding-left: 30px;
-    //margin-top: 30px;
+    //flex-shrink: 3;
     padding-top: 30px;
     padding-bottom: 30px;
     flex-direction: column;
@@ -22,6 +22,7 @@ h1.skillsHeadingText{
     justify-content: center;
 }
 
+// TODO: make skillsList background box less wide to match Figma design
 .skillsList{
     display: flex;
     background-color: rgb(244, 221, 245);

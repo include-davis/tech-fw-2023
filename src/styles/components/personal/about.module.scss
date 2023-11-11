@@ -27,9 +27,9 @@
     flex-direction: column;
     justify-content: space-around;
     //margin-left: 20px;
-    padding-left: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-left: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 //for these ones, you can remove your first selector as they are not needed. Though you are allowed to first select a specific HTML tag and add another kind of specificity to it (className), in your case there isn't a need for specifics. So, you can just get away with calling the className by itself.
@@ -59,7 +59,7 @@
 //for your contact button, justify content has no effect since you aren't applying a display: flex property to your button. Your text-align property should work just fine, and in this case might not be needed since you are defining padding but it's better to be specific about it than to assume the document will handle it, so good job on this! 
 button.contact_button{
     background-color: rgb(231, 150, 216);
-    padding: 15px 32px;
+    padding: 16px 32px;
     font-size: 1rem;    
     color: black;
     font-weight: bold;
@@ -79,7 +79,7 @@ button.contact_button:hover{
     display: 'flex';
     justify-content: 'center';
     margin-top: 10px;
-    padding-top: 10px;
+    padding-top: 8px;
     overflow: hidden;
 }
 
