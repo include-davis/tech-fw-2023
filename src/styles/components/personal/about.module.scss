@@ -9,12 +9,13 @@
 
 // Noticed your image wasn't to the right of your about me, so if you wanted to, you can add a flex property to your about_me container (which has a default of row that will push your elements side by side) and use one of the following justify-contents to add spacing between the elements how you see fit. 
 
-// .about_me {
-//     display: flex;
-//     justify-content: space-around;
-//     justify-content: space-between;
-//     justify-content: space-evenly;
-// }
+.about_me {  // from Sam
+    display: flex;
+    // justify-content: space-around;
+   //justify-content: space-between;
+   justify-content: space-evenly;
+   column-gap: 30px;
+ }
 
 
 // alternatively, you can add a column-gap instead. Column gaps are good but can cause issues during responsive design if not taken into account properly. Just something to keep in mind for the future :)
@@ -27,30 +28,30 @@
     flex-direction: column;
     justify-content: space-around;
     //margin-left: 20px;
-    padding-left: 3.5rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 //for these ones, you can remove your first selector as they are not needed. Though you are allowed to first select a specific HTML tag and add another kind of specificity to it (className), in your case there isn't a need for specifics. So, you can just get away with calling the className by itself.
 
 
 //For example, here you are saying to only pick paragraphs with the 'job_title' className, but it is equivalent to just calling elements with '.job_title' since you only have the one element. Same for the rest of the selectors.
-p.job_title {
+.job_title {
     margin-top: 5px;
     font-size: 1.1rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-h1.greeting{
-    width: 500px;
+.greeting{
+    width: 600px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 3rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 20px;
+    margin-bottom: 15px;
 }
 
-p.subgreeting{
+.subgreeting{
     width: 500px;
     font-size: 1.2rem;
     margin-bottom: 20px;
@@ -61,8 +62,6 @@ button.contact_button{
     background-color: rgb(231, 150, 216);
     border: none;
     padding: 15px 32px;
-    justify-content: center;
-    // text-align: center;
     font-size: 1rem;    
     color: black;
     font-weight: bold;
@@ -74,12 +73,10 @@ button.contact_button:hover{
     color: rgb(231, 150, 216);
 }
 
-//I think you might have forgotten to remove this so I won't comment on it since its handled in-line in the html
-Image.personalImage{
+
+.Image{
     display: 'flex';
     justify-content: 'center';
-    align-items: 'center'
-    // display: flex;
-    // justify-content: center; /* Horizontally center the content */
-    // align-items: center;
+    margin-top: 10px;
+    padding-top: 10px;
 }

@@ -14,10 +14,7 @@ export default function About() {
           <button className={styles.contact_button}>Contact Me!</button>
           {/*end container for about me text*/}
         </div>  
-
-        <div className={styles.personalImage} style={{ display: 'flex', justifyContent: 'center', alignItems: 'start' }}>
-          <Image src="/personalImage.jpg" width={300} height={400} alt="personal image" />
-        </div>
+        <Image src="/personalImage.jpg" width={300} height={400} alt="personal image" />
         {/*end container for about me section*/}
       </div> 
     )
