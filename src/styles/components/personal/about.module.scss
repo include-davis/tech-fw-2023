@@ -84,8 +84,11 @@ button.contact_button:hover{
 }
 
 
-@media only screen and (max-width: 600px) {
-
+@media only screen and (max-width: 700px) {
+.about_me{
+    width: 670px;
+    justify-content: space-around;
+}
 .job_title{
     font-size: 1rem;
 }
