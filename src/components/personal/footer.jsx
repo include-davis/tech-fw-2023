@@ -22,8 +22,10 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <section className={styles.logo}>logo</section>
+      <h1><BsInstagram/></h1>
+      <h1><SiGmail/></h1>
       <li>
-            <a href ={lead.Instagram} target="_blank">
+    <a href ={lead.Instagram} target="_blank">
               <BsInstagram
               fontSize={100}
               color={"#0072b1"}
@@ -43,7 +45,7 @@ export default function Footer() {
           </li>
 
       <section className={styles.info}>
-        <p>Made by #Anna Pandey#</p>
+        <p>Made by Anna Pandey</p>
         <ul className={styles.socials}>
           <li className={styles.icon}> SOCIAL MEDIA ICONS + REDIRECTING </li>
         </ul>
