@@ -14,9 +14,22 @@ export default function Skills() {
 
 
   return <section className={styles.skills}>
-    <div classname={styles.box}>
-    Skill Set
-  </div>
+    <div className={styles.container}>
+    <h1 className={styles.header}>
+        <br />
+        SKILLS
+      </h1>
+      <div className={styles.box}>
+        Python
+      </div>
+      <div className={styles.box}>
+        C/C++
+      </div>
+      <div className={styles.box}>
+        Communication
+      </div>
+  
+    </div>
   </section>;
 
 
