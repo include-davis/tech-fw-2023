@@ -18,18 +18,18 @@ h1.skillsHeadingText{
     margin-bottom: 20px;
     padding-bottom: 15px;
     text-align: center;
-    text-decoration: underline;
+    //text-decoration: underline;
     justify-content: center;
 }
 
-// TODO: make skillsList background box less wide to match Figma design
 .skillsList{
     display: flex;
     background-color: rgb(244, 221, 245);
     justify-content: center;
     padding-bottom: 30px;
-    margin-left: 30px;
-    margin-right: 30px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
     align-content: center;
     border-radius: 10px; 
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.1); 
