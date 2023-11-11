@@ -20,9 +20,9 @@ export default function About() {
           </div>
           <div className={styles.picture}>
             <Image className={styles.image}
-              src="/cristian.png"
-              width={250}
-              height={250}
+              src="/cristian_photoshop_clean.png"
+              width={500}
+              height={500}
               alt={"portfolio picture"}
             />
           </div>
