@@ -10,8 +10,8 @@ export default function About() {
         <h3 class="intro"> 
           hello, my name is 
         </h3>
-
-        <h1 class="name"> 
+{/* see how your name changes in the dev environment :) */}
+        <h1 className={styles.name}> 
           emily
         </h1> 
 
