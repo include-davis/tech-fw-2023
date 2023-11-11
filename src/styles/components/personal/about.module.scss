@@ -4,7 +4,7 @@
 // - I noticed you used rem units for some padding and margin. We advise to stick to rem units for text only, px for spacing (padding, margin, borders, etc.), and percentages for the rest. This allows for consistency :)
 
 .webpage{
-    background-color: rgb(243, 245, 246);
+    background-color: rgb(239, 209, 240);
 }
 
 // Noticed your image wasn't to the right of your about me, so if you wanted to, you can add a flex property to your about_me container (which has a default of row that will push your elements side by side) and use one of the following justify-contents to add spacing between the elements how you see fit. 

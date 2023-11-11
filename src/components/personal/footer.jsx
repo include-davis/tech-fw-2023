@@ -29,8 +29,8 @@ export default function Footer() {
           <li className={styles.icon}> 
             <a href="https://www.linkedin.com/in/kashvi-dwarka-a107aa211/" target="_blank">
               <BsLinkedin
-                fontSize={25} /*to resize the icons */
-                color={"#000000"}
+                fontSize={30} /*to resize the icons */
+                color={"#000000"}  /* change color of these once settled on color theme*/
                 alt={"linkedIn"}
               />
             </a>
@@ -38,7 +38,7 @@ export default function Footer() {
           <li className={styles.icon}>
             <a href="https://github.com/kashdw" target="_blank">
               <BsGithub
-                fontSize={25} /*to resize the icons */
+                fontSize={30} /*to resize the icons */
                 color={"#000000"}
                 alt={"github"}
               />

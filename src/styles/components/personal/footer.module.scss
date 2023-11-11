@@ -3,14 +3,13 @@
 .footer {
   // apply some properties
   display: flex;
-  width: 100%;
-  padding-top: 2rem;
-  //background-color: antiquewhite;
+  padding-top: 40px;
 }
 
 // choose elements with logo class within .footer class elements
 .logo {
   color: black;
+  
 }
 
 .info {
@@ -18,16 +17,17 @@
   display: flex;
   flex-direction: column-reverse;
   width: 100%;
-  margin-left: 1rem;
+  margin-left: 20px;
   padding-bottom: 1rem;
+  text-decoration: none;
   > p {
     // change up the text size and style how you want
     font-size: 15px;
     // width: 100%;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    padding-bottom: 1rem;
+    padding-bottom: 20px;
     justify-content: center;
-    text-decoration: none;
+
   }
 }
 
@@ -35,11 +35,10 @@
   // apply properties for .socials
   display: flex;
   justify-content: center;
+  list-style: none;
 }
 
 .icon {
   // apply properties for icons
   margin: 0 10px;
-  text-decoration: none;
-
 }
