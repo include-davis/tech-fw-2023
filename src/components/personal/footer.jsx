@@ -22,25 +22,23 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <section className={styles.logo}>logo</section>
-      <h1><BsInstagram/></h1>
-      <h1><SiGmail/></h1>
+      <BsInstagram></BsInstagram>
+      <SiGmail></SiGmail>
       <li>
     <a href ={lead.Instagram} target="_blank">
-              <BsInstagram
+              <BsInstagram></BsInstagram>
               fontSize={100}
               color={"#0072b1"}
               alt={"Instagram"}
-              />
             </a>
           </li>
 
           <li>
             <a href = {lead.Gmail} target='blank'>
-              <SiGmail
+            <SiGmail></SiGmail>
               fontSize={100}
               color={"#0072b1"}
               alt={"Gmail"}
-            />
             </a>
           </li>
 
