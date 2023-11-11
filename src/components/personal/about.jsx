@@ -3,6 +3,11 @@ import { AiOutlineMenu } from 'react-icons/ai'
 import styles from "@/styles/components/personal/about.module.scss";
 import Image from "next/image";
 
+// impressive. loved to see how creative you got with this!
+// structure is really good, classnames are meaningful, appreciate the use of Image, and the code is really clean.
+// did not appreciate the rickroll >:(  (jk)
+// one thing: you don't really need a div wrapping around your Image element, you can directly apply your styles to the image.
+
 export default function About() {
     return (
       <section className={styles.section}>
