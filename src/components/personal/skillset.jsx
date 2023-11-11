@@ -1,4 +1,6 @@
 // import styles from styling folder!
+import styles from "@/styles/components/personal/skillset.module.scss";
+
 
 /* Think about what you want to include for skills
     1. Some ideas might be coding languages, frameworks, libraries, etc
@@ -7,13 +9,18 @@
 */
 
 export default function Skills() {
-  return( 
+  return (
+  <section className={styles.skills}>
+    <h1 className={styles.header}>Skills</h1>
+      
+    <h2 className={styles.header1}>HTML</h2>
+      <p>1 Year Experience</p>  
+    <h2 className={styles.header2}>CSS</h2>
+    <p>1 Year Experience</p>
+    <h2 className={styles.header3}>Python</h2>
+    <p>1 Year of Experience</p>
+   
+  </section>
   
-  <div>
-    <body>
-      <section className={styles.skills}>skills</section>
-      <h1>EsTHER IS THE BET</h1>
-    </body>
-  </div>
-  );
+  ); 
 }

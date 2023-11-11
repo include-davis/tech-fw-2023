@@ -1,24 +1,38 @@
 // use class selectors to target classes
 
+
 .footer {
   // apply some properties
-  display: flex;
+  align-items: center;
+  text-align: center;
+  right: 200px;
   width: 100%;
 
 }
 
 // choose elements with logo class within .footer class elements
 .logo {
-  color: black;
+  margin: 10px;
+  border: 10px;
+  padding: 10px;
+  
 }
 
 .info {
   // apply properties for .info
-  display: flex;
+  
   > p {
     // change up the text size and style how you want
-    font-size: 1px;
+    font-size: 12px;
+    padding: 30px;
+    margin: 20px;
+    padding: 20px;
+    text-align: left;
+    position: relative;
+    top: 280px;
+    right: 30px;
   }
+  
 }
 
 .socials {
@@ -26,9 +40,35 @@
   display: flex;
 }
 
+
+
 .icon {
   // apply properties for icons
   font-size: big;
+  border: purple;
+  
+  
+  > a {
+    // arranging icons 
+    display: flex;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #E75480;
+    margin: 10px;
+    
+    
+  } // putting the transition when you hover icons
+  > a:hover{
+    background-color: black;
+    transition: 0.5s;
+  }
 }
 
 
+
+@media (min-width: 600px) {
+  .footer {
+    font-size: 1.25rem;
+  }
+}
