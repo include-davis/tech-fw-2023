@@ -64,9 +64,11 @@ button.contact_button:hover {
 }
 
 .Image {
+  // none of these seem to affect image?
+  //using .heroPic also doesnt work
   display: "flex";
   justify-content: "center";
-  overflow: hidden;
+  overflow: hidden; //TODO: when screen is partially minimized, image overflows outside the screen - need to fix
 }
 
 @media only screen and (max-width: 700px) {
@@ -98,13 +100,16 @@ button.contact_button:hover {
 
   .button.contact_button {
     display: flex;
-    // justify-content: center;  //TODO: figure out how to center button
+    // justify-content: center; //TODO: figure out how to center button
     // margin-left: auto;
     // margin-right: auto;
+    // align-content: center;
   }
 
   .Image {
     max-width: 50%; //TODO: figure our how to center image + make image smaller
     height: 50%;
+    //margin-left: auto;
+    //margin-right: auto;
   }
 }
