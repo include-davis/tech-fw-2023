@@ -23,6 +23,7 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       {/* <section className={styles.logo}>logo</section> */}
+      {/*TODO: IMPORT INCLUDE LOGO? */}
       <section className={styles.info}>
         <p>Made by Kashvi Dwarka</p>
         <ul className={styles.socials}>
@@ -33,7 +34,7 @@ export default function Footer() {
             >
               <BsLinkedin alt={"linkedIn"} />
             </a>
-          </li>{" "}
+          </li>
           {/*target="_blank" opens link in new tab */}
           <li className={styles.icon}>
             <a href="https://github.com/kashdw" target="_blank">

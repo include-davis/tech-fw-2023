@@ -23,6 +23,7 @@ export default function About() {
         {/*end container for about me text*/}
       </div>
       <Image
+        className="heroPic"
         src="/personalImage.jpg"
         width={300}
         height={400}

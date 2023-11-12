@@ -11,7 +11,7 @@
   // justify-content: space-around;
   //justify-content: space-between;
   justify-content: space-evenly;
-  column-gap: 30px;
+  column-gap: 32px;
   background-color: rgb(244, 221, 245);
 }
 
@@ -24,8 +24,8 @@
 .about_text {
   flex-direction: column;
   justify-content: space-around;
-  //margin-left: 20px;
-  padding-left: 32px;
+  padding-left: 24px;
+  padding-right: 24px;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -43,18 +43,19 @@
   width: 600px;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 3rem;
-  margin-top: 20px;
-  margin-bottom: 15px;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .subgreeting {
   width: 500px;
   font-size: 1.2rem;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 //for your contact button, justify content has no effect since you aren't applying a display: flex property to your button. Your text-align property should work just fine, and in this case might not be needed since you are defining padding but it's better to be specific about it than to assume the document will handle it, so good job on this!
 button.contact_button {
+  display: flex;
   background-color: rgb(231, 150, 216);
   padding: 16px 32px;
   font-size: 1rem;
@@ -73,18 +74,18 @@ button.contact_button:hover {
 .Image {
   display: "flex";
   justify-content: "center";
-  margin-top: 10px;
-  padding-top: 8px;
   overflow: hidden;
 }
 
 @media only screen and (max-width: 700px) {
   .about_me {
-    width: 670px;
     justify-content: space-around;
+    flex-direction: column;
   }
+
   .job_title {
     font-size: 1rem;
+    padding-left: 16px;
   }
 
   .greeting {
@@ -95,8 +96,23 @@ button.contact_button:hover {
     font-size: 1rem;
   }
 
+  .greeting,
+  .subgreeting {
+    width: 100%;
+    padding-right: 16px;
+    padding-left: 16px;
+    //text-align: center;
+  }
+
+  .button.contact_button {
+    display: flex;
+    // justify-content: center;  //TODO: figure out how to center button
+    // margin-left: auto;
+    // margin-right: auto;
+  }
+
   .Image {
-    width: 150px;
-    height: 150px;
+    max-width: 50%; //TODO: figure our how to center image + make image smaller
+    height: auto;
   }
 }
