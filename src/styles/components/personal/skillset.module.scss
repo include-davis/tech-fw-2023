@@ -1,10 +1,9 @@
 .skillsSection {
   display: flex;
   background-color: rgb(231, 150, 216);
-  padding-left: 30px;
-  //flex-shrink: 3;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-left: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   flex-direction: column;
 }
 
@@ -13,9 +12,9 @@ h1.skillsHeadingText {
   width: 100%;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 3rem;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding-bottom: 15px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
   text-align: center;
   //text-decoration: underline;
   justify-content: center;
@@ -25,7 +24,7 @@ h1.skillsHeadingText {
   display: flex;
   background-color: rgb(244, 221, 245);
   justify-content: center;
-  padding-bottom: 30px;
+  padding-bottom: 32px;
   width: 50%;
   margin-left: auto;
   margin-right: auto;
@@ -41,8 +40,8 @@ h1.skillsHeadingText {
 }
 
 .skillPoints {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 24px;
+  margin-bottom: 24px;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
