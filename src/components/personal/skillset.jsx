@@ -7,5 +7,13 @@
 */
 
 export default function Skills() {
-  return <section className={styles.skills}>skills</section>;
+  return <section className={styles.skills}>
+    <div> 
+      <h1> Skills </h1>
+    </div>
+    
+
+
+
+  </section>;
 }

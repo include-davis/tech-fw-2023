@@ -6,19 +6,17 @@ import styles from "@/styles/components/personal/about.module.scss";
 
 export default function About() {
     return (
-      <div>
-        <h3 class="intro"> 
-          hello, my name is 
-        </h3>
-
-        <h1 class="name"> 
-          emily
-        </h1> 
-
-        <p class="about_me"> 
-        I'm an undergraduate student majoring in computer science. 
-        </p>
-
+      <div className = {styles.about_main_container}>
+        <div className = {styles.image_container}> </div> 
+        <div className = {styles.about_container}> 
+          <div className = {styles.intro}>
+            <p  className = {styles.greeting}> Hello, my name is </p>
+            <h1  className = {styles.name}> Emily Gomez </h1>
+            </div> 
+            <div className = {styles.desc}> 
+              <p> Programmer and problem solver based in Davis, California. </p> 
+            </div> 
+          </div>
       </div>
     )
 }
