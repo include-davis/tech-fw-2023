@@ -19,13 +19,15 @@ export default function About() {
         <button className={styles.contact_button}>Contact Me!</button>
         {/*end container for about me text*/}
       </div>
-      <Image
-        className="heroPic"
-        src="/personalImage.jpg"
-        width={300}
-        height={400}
-        alt="personal image"
-      />
+      <div className={styles.heroImg}>
+        <Image
+          src="/personalImage.jpg"
+          width={300}
+          height={400}
+          objectFit="cover"
+          alt="personal image"
+        />
+      </div>
       {/*end container for about me section*/}
     </div>
   );

@@ -45,7 +45,7 @@
   margin-bottom: 16px;
 }
 
-button.contact_button {
+.contact_button {
   display: flex;
   background-color: rgb(231, 150, 216);
   padding: 16px 32px;
@@ -55,20 +55,17 @@ button.contact_button {
   border-radius: 8px;
   border: none;
   text-align: center;
+  align-self: center;
 }
 
 //nice use of hover!
-button.contact_button:hover {
+.contact_button:hover {
   background-color: rgb(0, 0, 0);
   color: rgb(231, 150, 216);
 }
 
-.Image {
-  // none of these seem to affect image?
-  //using .heroPic also doesnt work
-  display: "flex";
-  justify-content: "center";
-  overflow: hidden; //TODO: when screen is partially minimized, image overflows outside the screen - need to fix
+.heroImg {
+  overflow: hidden;
 }
 
 @media only screen and (max-width: 700px) {
@@ -106,10 +103,9 @@ button.contact_button:hover {
     // align-content: center;
   }
 
-  .Image {
-    max-width: 50%; //TODO: figure our how to center image + make image smaller
-    height: 50%;
-    //margin-left: auto;
-    //margin-right: auto;
+  .heroImg {
+    margin-left: auto;
+    margin-right: auto;
+    //width:;
   }
 }
