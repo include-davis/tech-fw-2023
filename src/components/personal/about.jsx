@@ -42,7 +42,7 @@ export default function About() {
       <div className={styles.aboutMe}>
         <h1>About Me</h1>
         <div className={styles.aboutMeText}>
-          <p>I'm a 3rd year CS Major who start off with Economics</p>
+          <p>I'm a 3rd year CS Major who started off with Economics</p>
           <p>
             I love all things green, especially <span>Matcha</span> 🍵
           </p>
