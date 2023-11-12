@@ -5,19 +5,16 @@ import styles from "@/styles/components/personal/about.module.scss";
 export default function About() {
   return (
     <div className={styles.about_me}>
-      {" "}
       {/*container for entire about me section*/}
       <div className={styles.about_text}>
-        {" "}
         {/*container for about me text*/}
         {/* about_text items*/}
         <p className={styles.job_title}>Computer Science Student</p>
         <h1 className={styles.greeting}>Hello, my name is Kashvi Dwarka!</h1>
         <p className={styles.subgreeting}>
-          {" "}
           Welcome to my portfolio website! I'm a third year student at UC Davis
           studying computer science. Scroll to see more about my experience,
-          skills, and projects{" "}
+          skills, and projects
         </p>
         <button className={styles.contact_button}>Contact Me!</button>
         {/*end container for about me text*/}
