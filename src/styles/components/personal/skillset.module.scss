@@ -1,17 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+
 .skills {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-content: center;
     background-color: rgb(0, 0, 0);
+    padding: 50px;
+    border-style:double;
+    border-color:beige;
 }
 
 .skills_title {
-
+    margin: auto;
+    font-family: "Dancing Script", cursive;
+    color: rgb(255, 255, 191);
+    font-size: 3rem;
+    text-decoration: underline overline;
 }
 
 .skills_container {
     margin: auto;
+    padding: 50px;
     border-radius: 25px;
     width: 80%;
     display: flex;

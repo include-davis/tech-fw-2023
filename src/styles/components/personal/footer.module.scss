@@ -1,14 +1,23 @@
 // use class selectors to target classes
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
 
 .footer {
   // apply some properties
   display: flex;
+  flex-direction: row;
+  justify-content: center;
   width: 100%;
+  padding: 20px;
+  //background: -webkit-linear-gradient(rgb(0, 0, 0), rgb(224, 167, 199), rgb(224, 167, 199), rgb(251, 228, 243));
+  background: -webkit-linear-gradient(black, rgb(176, 189, 195), #fcfcf1, rgb(252, 249, 251));
 }
 
 // choose elements with logo class within .footer class elements
 .logo {
-  color: black;
+  color: rgb(248, 186, 186);
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
 }
 
 .info {
@@ -16,16 +25,24 @@
   display: flex;
   > p {
     // change up the text size and style how you want
-    font-size: 1px;
+    font-size: 1.5rem;
+    font-family: "Dancing Script", cursive;
+    margin-right: 10px;
   }
 }
 
 .socials {
   // apply properties for .socials
   display: flex;
+  list-style-type: none;
 }
 
 .icon {
   // apply properties for icons
   font-size: big;
+  //color: rgb(248, 186, 186);
+  color: purple;
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
 }

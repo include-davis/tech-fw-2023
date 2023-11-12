@@ -1,13 +1,46 @@
 // general pointers:
 //really good work here! I really like how your page is coming out!
 //the only thing i noticed was the % used for font-size. We use rem for font-size and line height essentially, px for spacing, and % for the rest
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
 
-.about {
+
+.container {
     width: 100%;
-    padding: 100px;
-    background: -webkit-linear-gradient(rgb(10, 10, 10), #efefc1, rgb(241, 211, 230));
+    background-image: url("./about-bg.jpg");
+    padding-top: 100px;
+    padding-bottom: 100px;
+    justify-content: center;
+    //background-repeat: no-repeat;
 }
 
+.about {
+    margin: auto;
+    width: 80%;
+    padding: 20px;
+    //background-color: rgb(27, 24, 58);
+    border-radius: 25px;
+    //background-image: url("./about-bg.jpg");
+    //background: -webkit-linear-gradient(black, #e1b769, rgb(148, 113, 31), black);
+    //background: -webkit-linear-gradient(rgb(255, 255, 255), #e1b769, rgb(241, 225, 211));
+    background: -webkit-linear-gradient(rgb(10, 10, 10), rgb(241, 211, 230), rgb(241, 211, 230), black);
+    //background: -webkit-linear-gradient(rgb(176, 189, 195), #fcfcf1, rgb(252, 249, 251));
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.selfie {
+    width: 20%;
+    aspect-ratio: 1 / 1;
+    background-image: url("./about-selfie.jpg");
+    background-position: center;
+    border-radius: 25px;
+}
+
+.text{
+    width: 70%;
+}
 
 .title {
     box-sizing: content-box;
@@ -15,25 +48,27 @@
     margin: 40px 50px 20px;
     display: flex;
     flex-direction: row;
+    //border-style: dotted;
+    //border-color:rgb(255, 255, 191);
 }
 
 .titleText {
     margin-right: 20px;
-    font-family: "Lucida Handwriting", cursive;
+    font-family: "Dancing Script", cursive;
     color: rgb(247, 247, 208);
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .titleName {
     margin-right: 20px;
-    font-family: "Lucida Handwriting", cursive;
+    font-family: "Dancing Script", cursive;
     color: rgb(255, 255, 191);
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 .summary {
     box-sizing: content-box;
-    width: 50%;
+    //width: 50%;
     margin: 40px 50px;
     font-family: "Garamond", serif;
     line-height: 150%;

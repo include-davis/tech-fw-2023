@@ -1,4 +1,7 @@
 // import SCSS file as styles for this component
+import styles from "../../styles/components/personal/footer.module.scss";
+import { FaGithubAlt } from "react-icons/fa";
+import { PiLinkedinLogoDuotone } from "react-icons/pi";
 
 export default function Footer() {
   // Make a footer!
@@ -17,12 +20,17 @@ export default function Footer() {
   */
   return (
     <footer className={styles.footer}>
-      <section className={styles.logo}>logo</section>
+      <img
+        className={styles.logo}
+        src="/favicon-32x32.png"
+        alt="include-logo"
+      />
 
       <section className={styles.info}>
-        <p>Made by #your name here#</p>
+        <p>Made by #Sreya Mathew#</p>
         <ul className={styles.socials}>
-          <li className={styles.icon}> SOCIAL MEDIA ICONS + REDIRECTING </li>
+          <li> <a href="https://github.com/tiramisuuuuuuu/" target="_blank"><FaGithubAlt className={styles.icon} /></a> </li>
+          <li> <a href="https://www.linkedin.com/in/sreya-mathew-884509293/" target="_blank"><PiLinkedinLogoDuotone className={styles.icon} /></a> </li>
         </ul>
       </section>
     </footer>
