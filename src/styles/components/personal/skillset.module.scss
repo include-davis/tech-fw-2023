@@ -1,53 +1,51 @@
-.skillsSection{
-    display: flex;
-    background-color: rgb(231, 150, 216);
-    padding-left: 30px;
-    //flex-shrink: 3;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    flex-direction: column;
+.skillsSection {
+  display: flex;
+  background-color: rgb(231, 150, 216);
+  padding-left: 30px;
+  //flex-shrink: 3;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  flex-direction: column;
 }
 
-
-h1.skillsHeadingText{
-    display: flex;
-    width: 100%;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 3rem;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding-bottom: 15px;
-    text-align: center;
-    //text-decoration: underline;
-    justify-content: center;
+h1.skillsHeadingText {
+  display: flex;
+  width: 100%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 3rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  text-align: center;
+  //text-decoration: underline;
+  justify-content: center;
 }
 
-.skillsList{
-    display: flex;
-    background-color: rgb(244, 221, 245);
-    justify-content: center;
-    padding-bottom: 30px;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    align-content: center;
-    border-radius: 10px; 
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1); 
-
+.skillsList {
+  display: flex;
+  background-color: rgb(244, 221, 245);
+  justify-content: center;
+  padding-bottom: 30px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  align-content: center;
+  border-radius: 10px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
 }
 
-.skillBullets{
-    list-style: none;
-    font-size: 2rem;
-    text-align: center;
+.skillBullets {
+  list-style: none;
+  font-size: 2rem;
+  text-align: center;
 }
 
-.skillPoints{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.skillPoints {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-.skillExperience{
-    font-size: 1rem;
+.skillExperience {
+  font-size: 1rem;
 }
