@@ -3,7 +3,7 @@
 .footer {
   // apply some properties
   display: flex;
-  padding-top: 40px;
+  padding-top: 36px;
   background-color: rgb(244, 221, 245);
 }
 
@@ -17,15 +17,16 @@
   display: flex;
   flex-direction: column-reverse;
   width: 100%;
-  margin-left: 20px;
+  margin-left: 16px;
   padding-bottom: 1rem;
   text-decoration: none;
   > p {
     // change up the text size and style how you want
     font-size: 15px;
-    // width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8px;
     font-family: Georgia, "Times New Roman", Times, serif;
-    padding-bottom: 20px;
     justify-content: center;
   }
 }
@@ -39,7 +40,7 @@
 
 .icon {
   // apply properties for icons
-  margin: 0 10px;
+  margin: 0 8px;
   font-size: 30px;
   color: black;
 }
