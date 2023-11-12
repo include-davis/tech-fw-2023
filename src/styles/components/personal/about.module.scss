@@ -15,12 +15,14 @@
 }
 
 .about_text {
+  display: flex;
   flex-direction: column;
   justify-content: space-around;
   padding-left: 24px;
   padding-right: 24px;
   padding-top: 32px;
   padding-bottom: 32px;
+  align-items: flex-start; // to keep button at preferred width - from Sam (from when had issues with responsiveness
 }
 
 //for these ones, you can remove your first selector as they are not needed. Though you are allowed to first select a specific HTML tag and add another kind of specificity to it (className), in your case there isn't a need for specifics. So, you can just get away with calling the className by itself.
@@ -55,7 +57,6 @@
   border-radius: 8px;
   border: none;
   text-align: center;
-  align-self: center;
 }
 
 //nice use of hover!
@@ -95,17 +96,16 @@
     //text-align: center;
   }
 
-  .button.contact_button {
-    display: flex;
-    // justify-content: center; //TODO: figure out how to center button
-    // margin-left: auto;
-    // margin-right: auto;
-    // align-content: center;
+  .contact_button {
+    align-self: center;
+    margin-top: 8px;
+    //margin-bottom: 8px;
   }
 
   .heroImg {
     margin-left: auto;
     margin-right: auto;
-    //width:;
+    // object-fit: scale-down;
+    margin-bottom: 24px;
   }
 }
