@@ -10,11 +10,10 @@ export default function About() {
   return (
     <div className={styles.about}>
       <div className={styles.infoCard}>
-        <h1>hello!</h1>
-        <p>
-          I'm Ryan, and I currently attend UCD for CS. Welcome to my first web
-          dev project
-        </p>
+        <div className={styles.infoCardText}>
+          <h1>Welcome! 👋</h1>
+          <p>My name is Ryan and this is my portfolio. 😎</p>
+        </div>
         <div className={styles.socials}>
           <div className={styles.logos}>
             <div className={styles.logoGroup}>
@@ -43,16 +42,13 @@ export default function About() {
       <div className={styles.aboutMe}>
         <h1>About Me</h1>
         <div className={styles.aboutMeText}>
-          <p>HDSAOIHDSAIODHSAOIDHO</p>
-          <p>ASAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p>
-          <p>help</p>
+          <p>I'm a 3rd year CS Major who start off with Economics</p>
+          <p>
+            I love all things green, especially <span>Matcha</span> 🍵
+          </p>
+          <p>Gib more plushes {"(>._.)>"} 🧸</p>
         </div>
       </div>
-      {/* <img src={"/personal/emily.jpg"} /> */}
-      {/* <a href={"https://www.google.com"} target="_blank"> */}
-        {/* <img src={"/personal/emily.jpg"} /> */}
-      {/* </a> */}
-      
     </div>
   );
 }

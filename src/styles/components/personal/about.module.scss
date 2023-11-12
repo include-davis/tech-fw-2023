@@ -1,143 +1,179 @@
-@use 'src/styles/mixins.scss';
+@use "src/styles/mixins.scss";
 
 .about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 48px;
-    // justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  background-color: var(--color-black);
+
+  padding: 48px;
+  // justify-content: center;
 }
 
 .infoCard {
-    display: flex;
-    flex-direction: column;
-    // align-items: flex-start;
-    // justify-content: center;
+  display: flex;
+  flex-direction: column;
+  // align-items: flex-start;
+  // justify-content: center;
 
-    background-color: grey;
-    padding: 42px;
-    border-radius: 16px;
+  background-color: var(--color-white);
+  padding: 72px 80px;
+  border-radius: 16px;
+  gap: 32px;
+
+  > h1 {
+    font-size: 1.75rem;
+    font-style: italic;
+  }
+
+  > p {
+    font-size: 1rem;
+  }
+
+  @include mixins.phone {
+    width: 400px;
+    height: 250px;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 16px;
+
     gap: 16px;
+  }
 
-    > h1 {
-        font-size: 1.75rem;
-        font-style: italic;
-    }
+  @include mixins.sm-phone {
+    width: 300px;
+    // height: 20px;
+    padding: 18px 20px;
+  }
+}
 
-    > p {
-        font-size: 1rem;
-    }
+.infoCardText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 
-    @include mixins.phone {
-        width: 400px;
-        height: 250px;
-        justify-content: center;
-        padding: 16px;
-    
-    }
-
-    @include mixins.sm-phone {
-        width: 300px;
-        // height: 20px;
-    }
+  gap: 8px;
 }
 
 .socials {
-    display: flex;
-    gap: 16px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+
+  @include mixins.phone {
+    flex-wrap: nowrap;
+  }
 }
 
 .logos {
-    display: flex;
-    gap: 16px;
+  display: flex;
+  gap: 16px;
 
-    @include mixins.phone {
-        flex-direction: column;
-        align-items: center;
+  @include mixins.phone {
+    flex-direction: column;
+    align-items: center;
 
-        gap: 4px;
-    }
-
+    gap: 4px;
+  }
 }
 
 .logoGroup {
-    display: flex;
-    gap: 16px;
+  display: flex;
+  gap: 16px;
 
-    @include mixins.phone {
-        gap: 4px;
-    }
+  @include mixins.phone {
+    gap: 4px;
+  }
 }
 
 .logo {
-    width: 32px;
-    height: 32px;
-    // gap: 8px;
+  width: 32px;
+  height: 32px;
 }
 
 .buttons {
-    display: flex;
+  display: flex;
+  flex-shrink: 0;
+  gap: 24px;
+
+  @include mixins.phone {
+    flex-direction: column;
+    align-items: center;
+
+    justify-content: center;
     gap: 8px;
-
-    @include mixins.phone {
-        flex-direction: column;
-        align-items: center;
-
-        // gap: 4px;
-    
-    }
+  }
 }
 
-.projectButton {
-    background: none;
-    text-decoration: none;
-    border: none;
+.projectButton,
+.connectButton {
+  background: none;
+  text-decoration: none;
+  border: none;
+  flex-shrink: 0;
 
-    background-color: white;
-    color: black;
-    padding: 8px;
-    border-radius: 24px;
+  border: 1px black solid;
+  background-color: white;
+  color: black;
+  font-size: 1.1rem;
+  padding: 4px 24px;
+  font-weight: 600;
+  border-radius: 24px;
+
+  @include mixins.phone {
+    width: 100%;
+  }
 }
 
 .connectButton {
-    background: none;
-    text-decoration: none;
-    border: none;
-
-    background-color: black;
-    color: white;
-    padding: 8px;
-    border-radius: 24px;
+  // border: none;
+  background-color: black;
+  color: white;
 }
 
 .aboutMe {
-    display: flex;
-    background-color: aliceblue;
-    padding: 16px;
-    gap: 16px;
+  display: flex;
+  // background-color: aliceblue;
+  padding: 16px;
+  gap: 16px;
 
-    > h1 {
-        font-size: 1.75rem;
-        font-style: italic;
-        color: grey;
-    }
+  > h1 {
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 400;
+    color: var(--color-white);
+  }
 
-    @include mixins.phone {
-        display: none;
-        // flex-direction: column;
-        // align-items: center;
-        // justify-content: center;
-        // text-align: center;
-    }
+  @include mixins.phone {
+    // display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // text-align: center;
+  }
 }
 
 .aboutMeText {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
 
-    > p {
-        font-size: 0.8rem;
-    }
+  > p {
+    font-size: 0.8rem;
+    color: var(--color-white);
+  }
+
+  > p > span {
+    color: greenyellow;
+    text-decoration: double;
+    // line-height: 16px;
+  }
+
+  @include mixins.phone {
+    align-items: center;
+    text-align: center;
+  }
 }
