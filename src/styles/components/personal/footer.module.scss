@@ -18,7 +18,8 @@
   flex-direction: column-reverse;
   width: 100%;
   margin-left: 16px;
-  padding-bottom: 1rem;
+  margin-right: 16px;
+  padding-bottom: 16px;
   text-decoration: none;
   > p {
     // change up the text size and style how you want
@@ -48,4 +49,10 @@
 .icon:hover {
   // apply properties for icons
   color: rgb(231, 150, 216);
+}
+
+@media only screen and (max-width: 700px) {
+  .icon {
+    font-size: 28px;
+  }
 }

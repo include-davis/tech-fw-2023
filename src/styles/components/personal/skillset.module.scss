@@ -1,9 +1,7 @@
 .skillsSection {
   display: flex;
   background-color: rgb(231, 150, 216);
-  padding-left: 32px;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding: 32px;
   flex-direction: column;
 }
 
@@ -16,7 +14,6 @@ h1.skillsHeadingText {
   margin-bottom: 24px;
   padding-bottom: 16px;
   text-align: center;
-  //text-decoration: underline;
   justify-content: center;
 }
 
@@ -47,4 +44,14 @@ h1.skillsHeadingText {
 
 .skillExperience {
   font-size: 1rem;
+}
+
+@media only screen and (max-width: 700px) {
+  .h1.skillsHeadingText {
+    font-size: 1rem;
+  }
+  .skillsList {
+    width: 75%;
+    font-size: 0.75rem;
+  }
 }
