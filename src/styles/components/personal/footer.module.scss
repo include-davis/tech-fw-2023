@@ -29,8 +29,8 @@
     padding: 20px;
     text-align: left;
     position: relative;
-    top: 280px;
-    right: 30px;
+    top: 130px;
+    right: 20px;
   }
   
 }
@@ -50,12 +50,13 @@
   
   > a {
     // arranging icons -- I struggled a lot here with the positioning
-    display: flex;
+    display: inline-flex;
     text-decoration: none;
     padding: 10px;
     border-radius: 50%;
     background-color: #E75480;
     margin: 10px;
+    
     
     
   } // putting the transition when you hover icons
