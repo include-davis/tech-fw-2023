@@ -69,7 +69,7 @@ export default function About() {
           className={styles.kuromi}/>
         </div>
       </div>
-      <a href="https://www.erikagosti.com" className={styles.website}>
+      <a href="https://www.erikagosti.com" target="_blank" className={styles.website}>
         check out my website --&#62;
       </a>
     </div>

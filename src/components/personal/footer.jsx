@@ -1,4 +1,5 @@
 // import SCSS file as styles for this component
+import styles from "@/styles/components/personal/footer.module.scss";
 
 export default function Footer() {
   // Make a footer!
@@ -17,10 +18,11 @@ export default function Footer() {
   */
   return (
     <footer className={styles.footer}>
-      <section className={styles.logo}>logo</section>
-
+      <section className={styles.logo}>
+        <img src={"/public/android-chrome-512x512.png"} />
+      </section>
       <section className={styles.info}>
-        <p>Made by #your name here#</p>
+        <p>Made by Erika</p>
         <ul className={styles.socials}>
           <li className={styles.icon}> SOCIAL MEDIA ICONS + REDIRECTING </li>
         </ul>

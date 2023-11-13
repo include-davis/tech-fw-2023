@@ -1,3 +1,43 @@
 .skills {
-  
+  background-color: rgb(215, 231, 244);
+  padding: 130px;
+  margin-bottom: 32px;
+}
+
+.skillSet {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  border-width: 1px;
+  border-style: dashed;
+  border-radius: 4px;
+  padding: 16px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+}
+
+.title, .languages, .languagesDescription {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgb(94, 94, 94);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.languages {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+}
+
+.languagesDescription {
+  color: rgb(133, 133, 133);
 }
