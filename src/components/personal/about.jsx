@@ -12,7 +12,7 @@ export default function About() {
           <div className={styles.textContainer}>
             <h1>About Me</h1>
 
-            <h2>Hi, my name is Catelyn Bu!</h2>
+            <h2>Hey there! My name is <span>Catelyn Bu</span>.</h2>
 
 
             <p>I am a 3rd year student at UC Davis and I am a Design major. I'm excited to participate in Include and to experience what has to come!</p>

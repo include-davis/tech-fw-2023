@@ -14,36 +14,28 @@ export default function Skills() {
     <div className={styles.body}>
         <h1>Skills</h1>
 
-          <div className={styles.flex}>
-     
+          <img className={styles.helloKitty} src={"/personal/hellokitty.png"} alt={"Hello Kitty"}/>
+          <img className={styles.chocoCat} src={"/personal/chocoCat.png"} alt={"Choco Cat"}/>
 
-          <div className={styles.textcontainer}>
-            <h2>HTML</h2>
+          <div className={styles.textContainer}>
+            <div className={styles.textHTML}>
+              <h2>HTML</h2>
+              <p>10 months</p>
+            </div>
+            
+            <div className={styles.textCSS}>
+              <h2>CSS</h2>
+              <p>10 months</p>
+            </div>
 
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, assumenda?</p>
-          </div>
-          
-
-          <div className={styles.textcontainer}>
-            <h2>CSS</h2>
-
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, voluptatem.</p>
-          </div>
-
-          </div>
-
-
-          <div className={styles.textcontainer}>
-            <h2 className={styles.h2_adobe}>
-              Adobe Photoshop & Illustrator
-            </h2>
-
-            <p className={styles.p_adobe}>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat odio, eveniet magni quo suscipit reiciendis consectetur.
-            </p>
+            <div className={styles.textAdobe}>
+              <h2>Adobe Photoshop & Illustrator</h2>
+              <p>2.5 years</p>
+            </div>
 
           </div>
         
+
         </div>
 
 

@@ -10,12 +10,13 @@
 
 .body {
     width: 70%;
-    background-color: #f0f8ff;
+    background-color: #E2ECFF;
     padding: 48px;
     font-size: 1.4rem;
     font-weight: 400;
-    border: 3px solid #C1D6FF;
+    border: 3px solid #AEBCFA;
     border-radius: 25px;
+    color: #342B47;
 
    .textContainer{
         margin-left: 40px;
@@ -26,18 +27,26 @@
    
     h1 {
         font-weight: 400;
-        color: #0A1C48;
+        color: #6E5FDC;
         font-family: 'century gothic', sans-serif;
-        padding-bottom: 3px;
-        border-bottom: 3px solid #0A1C48;
+        border-bottom: 3px solid #6E5FDC;
         width: 224px;
         
     }
-
+    
     h2 {
         color: #0A1C48;
         font-family: 'Jost', sans-serif;
+        //font-family: 'century gothic', sans-serif;
         font-weight: 300;
+        //font-size: 1.rem;
+
+        span{
+            color: #6E5FDC;
+            font-weight: 400;
+            font-family: 'century gothic', sans-serif;
+            //font-family: 'Jost', sans-serif;
+        }
     }
 
     p {
@@ -52,7 +61,7 @@
     }
 
         .buttonPortal, .buttonPortfolio{
-            background: #C1D6FF;
+            background: white;
             font-size: 1.3rem;
             border: none;
             border-radius: 25px;
@@ -62,10 +71,13 @@
             padding-right: 16px;
             font-family: 'Jost', sans-serif;
             transition: 0.4s;
+            border-bottom: 1px solid #6E5FDC;
+            color: #6E5FDC;
         }
 
         .buttonPortal:hover, .buttonPortfolio:hover {
-            background-color: #3e8e41
+            background-color: #AEBCFA;
+            color: #342B47;
         }
 
 
@@ -76,5 +88,13 @@
         float: right;
         margin-top: 48px;
         margin-right: 32px;
+        border: 8px solid white;
+        border-radius: 150px;
+        padding: 8px;
+
+        //@include mixins.phone {
+            //width: 50px;
+            //height: 50px;
+        //}
     }
 }

@@ -3,6 +3,7 @@ import styles from '@/styles/components/personal/footer.module.scss/'
 import { AiFillGithub } from "react-icons/ai";
 import { AiFillInstagram } from "react-icons/ai";
 import { MdEmail } from "react-icons/md";
+import { AiFillBehanceSquare } from "react-icons/ai";
 
 export default function Footer() {
   // Make a footer!
@@ -32,19 +33,25 @@ export default function Footer() {
         <ul className={styles.socials}>
           <li className={styles.icon}>
             <a href="mailto:cebu@ucdavis.edu">
-              < MdEmail className={styles.email_icon}/>
+              < MdEmail className={styles.emailIcon}/>
             </a>
           </li>
 
           <li className={styles.icon}>
             <a href="https://github.com/catelynbu" target="_blank">
-              <AiFillGithub className={styles.github_icon}/>
+              <AiFillGithub className={styles.githubIcon}/>
             </a>
           </li>
 
           <li className={styles.icon}>
             <a href="https://www.instagram.com/catelynbu/?hl=en" target="_blank">
-              <AiFillInstagram className={styles.insta_icon}/>
+              <AiFillInstagram className={styles.instaIcon}/>
+            </a>
+          </li>
+
+          <li className={styles.icon}>
+            <a href="https://www.behance.net/catelyn-bu" target="_blank">
+              <AiFillBehanceSquare className={styles.behanceIcon}/>
             </a>
           </li>
         </ul>

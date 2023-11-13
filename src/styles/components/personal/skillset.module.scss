@@ -1,99 +1,99 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400&display=swap');
 
 .skills{
+ padding-bottom: 72px;
  background-color: white;
  display: flex;
  justify-content: center;
- margin-bottom: 72px;
    
 
-  .body{
-    width: 70%;
-    background-color: #f0f8ff;
-    //margin-left: auto;
-	  //margin-right: auto;
-    padding-top: 35px;
-    padding-bottom: 25px;
-    padding-left: 35px;
-    padding-right: 35px;
-    font-size: 1.4rem;
-    font-weight: 400;
-    border: 3px solid #C1D6FF;
-    border-radius: 25px;
-    
-  
+.body{
+  width: 70%;
+  background-color: #E2ECFF;
+  font-size: 1.4rem;
+  font-weight: 400;
+  border: 3px solid #AEBCFA;
+  border-radius: 25px;
+  color: #342B47;
+  padding: 24px;
+}
 
+
+h1{
+  font-weight: 400;
+  color: #6E5FDC;
+  font-family: 'century gothic', sans-serif;
+  //margin-bottom: 20px;
+  font-size: 2.8rem;
+  text-align: center;
+  padding-bottom: 3px;
+  border-bottom: 3px solid #6E5FDC;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+}
+
+.textContainer{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  align-items: center;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: white;
+  border-radius: 25px;
+  padding: 16px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  .textHTML, .textCSS, .textAdobe{
+      margin-top: 8px;
+      margin-bottom: 8px;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      justify-content: center;
+      //width: 200px;
+    }
+
+}
+
+
+h2{
+  font-family: 'century gothic', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #6E5FDC;
+  color: #342B47;
   }
 
-  .flex{
-    display: flex;    
-    flex-wrap: nowrap;
-	  justify-content: space-between;
-    flex-direction: row;
+
+  p{
+    font-size: 1.2rem;
+    margin-top: 5px;
+    font-family: 'Jost', sans-serif;
   }
 
-  h1{
-    font-weight: 400;
-    color: #0A1C48;
-    font-family: 'century gothic', sans-serif;
-    margin-bottom: 20px;
-    font-size: 42px;
-    text-align: center;
-    padding-bottom: 5px;
-    border-bottom: 3px solid #0A1C48;
-    margin-left: auto;
-    margin-right: auto;
-    width: 200px;
-  }
-
-  .textcontainer{
-    margin-top: 30px;
-    margin-bottom: 30px;
-    align-items: center;
-    
-
-  }
-
-  h2{
-    font-family: 'century gothic', sans-serif;
-    font-weight: 400;
-    text-align: center;
-    font-size: 1.8rem;
-    padding-bottom: 2px;
-    border-bottom: 1px solid #0A1C48;
-    margin-left: auto;
-    margin-right: auto;
+  .helloKitty{
+    display: flex;
+    height: 150px;
     width: 150px;
-   }
-
-  .h2_adobe{
-    font-family: 'century gothic', sans-serif;
-    font-weight: 400;
-    text-align: center;
-    font-size: 1.8rem;
-    padding-bottom: 2px;
-    border-bottom: 1px solid #0A1C48;
-    margin-left: auto;
-    margin-right: auto;
-    width: 500px;
+    float: left;
+    margin: 24px;
   }
 
+  .chocoCat{
+    display: flex;
+    height: 150px;
+    width: 150px;
+    float: right;
+    margin: 24px;
+  }
 
-    p{
-      font-size: 1.2rem;
-      margin-top: 5px;
-      text-align: center;
-      font-family: 'Jost', sans-serif;
-      margin-left: 10%;
-      margin-right: 10%;
-    }
-
-    .p_adobe{
-      font-size: 1.2rem;
-      margin-top: 5px;
-      text-align: center;
-      font-family: 'Jost', sans-serif;
-      margin-left: 20%;
-      margin-right: 20%;
-    }
 }

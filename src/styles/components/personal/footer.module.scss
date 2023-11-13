@@ -8,7 +8,7 @@
   background-color: black;
   flex-direction: column;
   align-items: center;
-  position: absolute;
+  gap: 24px;
   
 }
 
@@ -22,40 +22,27 @@
 
 .info {
   // apply properties for .info
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-  justify-content: center;
-  align-items: center;
   color: white;
+  text-align: center;
 
     p {
     font-size: 1rem;
     font-family: 'Jost', sans-serif;
-    margin-top: 24px;
   }
 }
 
 .socials {
   // apply properties for .socials
   display: flex;
-  flex:auto;
-  width: 20%;
-  margin-top: 8px;
-  margin-bottom: 25px;
-  justify-content: space-between;
   align-items: center;
   list-style-type: none;
   color: white;
+  gap: 24px;
   
    li {
       a { 
         &:hover { 
-         color: #1a8ad5;
-        }
-
-        &:active { 
-         color: #1a8ad5;
+          color: #6E5FDC;
         }
       }
     }
@@ -69,18 +56,12 @@
   margin-bottom: 8px;
 }
 
-.github_icon{
+.githubIcon, .instaIcon, .emailIcon, .behanceIcon{
   height: 40px;
   width: 40px;
-
+  transition: 0.3s;
 }
 
-.insta_icon{
-  height: 40px;
-  width: 40px; 
-}
-
-.email_icon{
-  height: 40px;
-  width: 40px;
+.githubIcon:hover, .instaIcon:hover, .emailIcon:hover, .behanceIcon:hover{
+  color: #6E5FDC
 }
