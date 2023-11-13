@@ -6,9 +6,9 @@ import React from 'react';
 export default function Personal() {
   return (
     <div>
-      {/* <Skills  */}
       <About />
-      {/* <Footer /> */}
+      <Skills  />
+      <Footer />
     </div>
   );
 }

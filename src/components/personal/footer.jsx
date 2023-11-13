@@ -1,4 +1,7 @@
 // import SCSS file as styles for this component
+import styles from '@/styles/components/personal/footer.module.scss'
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import { BiLogoGmail } from 'react-icons/bi';
 
 export default function Footer() {
   // Make a footer!
@@ -17,12 +20,30 @@ export default function Footer() {
   */
   return (
     <footer className={styles.footer}>
-      <section className={styles.logo}>logo</section>
+      <section className={styles.logo}>
+        <a href="https://includedavis.com/">
+          <img src="Vector.svg" alt="Include logo" className='svg'/>
+        </a>
+      </section>
 
       <section className={styles.info}>
-        <p>Made by #your name here#</p>
+        <p>Made by Keena Vasiloff</p>
         <ul className={styles.socials}>
-          <li className={styles.icon}> SOCIAL MEDIA ICONS + REDIRECTING </li>
+          <li className={styles.icon}>
+            <a href="https://www.linkedin.com/in/keena-vasiloff/">
+              <FaLinkedin />
+            </a>
+          </li>
+          <li className={styles.icon}>
+            <a href="mailto:khvasiloff@ucdavis.edu">
+              <BiLogoGmail />
+            </a>
+          </li>
+          <li className={styles.icon}>
+            <a href="https://github.com/TheGhostCoder0/">
+              <FaGithub />
+            </a>
+          </li>
         </ul>
       </section>
     </footer>

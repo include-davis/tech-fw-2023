@@ -3,20 +3,58 @@
 .footer {
   // apply some properties
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 100%;
+  background-color: #f5f5f5;
+  padding-top: 20px;
+  
+  .icon {
+    margin: 0 10px;
+    color: #333;
+    font-size: 3rem;
+    transition: color 0.3s;
+
+  }
+
+  .icon:hover {
+    color: #0096FF; 
+  }
 }
 
 // choose elements with logo class within .footer class elements
 .logo {
-  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  scale: 200%;
+  padding: 2.5px;
+  margin-bottom: 32px;
+  margin-top: 16px;
+  border-radius: 8px;
 }
+
+.logo:hover {
+  background-color: #0096FF; /* Example hover color */
+}
+
 
 .info {
   // apply properties for .info
   display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 16px;
   > p {
     // change up the text size and style how you want
-    font-size: 1px;
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  > ul {
+    list-style-type: none
   }
 }
 
@@ -29,3 +67,5 @@
   // apply properties for icons
   font-size: big;
 }
+
+
