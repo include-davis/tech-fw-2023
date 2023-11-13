@@ -1,7 +1,4 @@
 // import SCSS file as styles for this component
-import styles from '@/styles/components/personal/footer.module.scss'
-import { FaLinkedin, FaGithub } from 'react-icons/fa';
-import { BiLogoGmail } from 'react-icons/bi';
 
 export default function Footer() {
   // Make a footer!

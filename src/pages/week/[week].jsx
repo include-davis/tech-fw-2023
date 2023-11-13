@@ -1,7 +1,10 @@
-// manually import weekly components
+// week 2
 import Flexbox from "@/components/week 2/flexbox.jsx";
 import Position from "@/components/week 2/position.jsx";
 import Responsiveness from "@/components/week 2/responsiveness.jsx";
+import About from "@/components/week 2/about-example.jsx";
+
+// week 3
 
 import data from "@/data/data.json";
 import styles from "@/styles/week/week.module.scss";
@@ -34,6 +37,12 @@ const weekContent = {
       title: "Responsiveness",
       desc: "Example of responsiveness in CSS. Inspect me on different screen layouts!",
       tags: ["responsiveness"],
+    },
+    {
+      component: <About key="about" />,
+      title: "About",
+      desc: "Creating an About Section using HTML and CSS from past workshops.",
+      tags: ["about"],
     },
   ],
   3: [],
@@ -84,7 +93,9 @@ export default function WorkshopContent({ week }) {
                                         target="_blank"
                                         key={`Resource ${index} Week ${week}`}
                                       >
-                                        <li className={styles.resourceLink}>{link.name}</li>
+                                        <li className={styles.resourceLink}>
+                                          {link.name}
+                                        </li>
                                       </a>
                                     );
                                   })
