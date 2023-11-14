@@ -1,0 +1,119 @@
+{
+  "week 1": {
+    "title": "Initial Set Up",
+    "desc": "Getting to understand the web in prep for the rest of the workshops.",
+    "goals": [
+      "How The Internet Works",
+      "Overview of Web Development",
+      "Workspace Set Up",
+      "Basic HTML & CSS (Box Model)"
+    ],
+    "content": {
+      "additionalLinks": {
+        "web": [
+          {"name": "Figma", "url": "https://www.figma.com/proto/6KUxXdMClJrDtCZjqhqfVx/Personal-Portfolio-Design?node-id=1-23"},
+          {"name": "Workshop Slides", "url": "https://docs.google.com/presentation/d/1CbY3OSKcWMfvrco0U_Z6pnmxEtvNUaZF/edit?usp=sharing&ouid=104829516095066094781&rtpof=true&sd=true"},
+          {"name": "Installing Git", "url": "https://github.com/git-guides/install-git"},
+          {"name": "HTML Elements", "url":"https://www.codecademy.com/learn/learn-html/modules/learn-html-elements/cheatsheet"},
+          {"name": "CSS Cheat Sheet", "url": "https://adam-marsden.co.uk/css-cheat-sheet"},
+          {"name": "CSS Selectors Game", "url": "https://flukeout.github.io/"}          
+],
+        "video": [
+          {"name": "Sam & Jay Cohort Recording", "url": "https://drive.google.com/file/d/1YjuaSBeIydMqBzbRqBK1B7sPv0wey2-d/view?usp=sharing"},
+          {"name": "What is Front-End?", "url" : "https://www.youtube.com/watch?v=WG5ikvJ2TKA"},
+          {"name": "What is Back-End?", "url" : "https://www.youtube.com/watch?v=XBu54nfzxAQ"}
+      ]
+      }
+    }
+  },
+  "week 2": {
+    "title": "Intro to HTML and CSS",
+    "desc": "Basics of HTML & CSS.",
+    "goals": ["Flexbox", "Responsiveness", "Media Queries", "Positioning"],
+    "content": {
+      "additionalLinks" : {
+        "web": [
+          {"name": "Workshop Slides", "url": "https://docs.google.com/presentation/d/19xRDWqRobKuQZbGXVShH4oshbxYSzu-H/edit#slide=id.g296890ca456_0_4"},
+          {"name": "HTML Tags", "url": "https://www.semrush.com/blog/html-tags-list/"},
+          {"name": "HTML Attributes", "url": "https://www.w3schools.com/tags/ref_attributes.asp"},
+          {"name": "CSS Units", "url": "https://www.freecodecamp.org/news/css-unit-guide/"},
+          {"name": "More CSS Units", "url": "https://www.digitalocean.com/community/tutorials/css-css-units-explained"},
+          {"name": "Box Model Cheat Sheet", "url": "https://www.codecademy.com/learn/learn-css/modules/learn-css-box-model/cheatsheet"},
+          {"name": "Display Property", "url": "https://css-tricks.com/almanac/properties/d/display/"},
+          {"name": "Overflow Property", "url": "https://blog.hubspot.com/website/css-overflow"},
+          {"name": "PseudoClasses", "url": "https://css-tricks.com/pseudo-class-selectors/"},
+          {"name": "Transforms", "url": "https://www.joshwcomeau.com/css/transforms/"},
+          {"name": "Transitions", "url": "https://www.joshwcomeau.com/animation/css-transitions/"},
+          {"name": "React Icons", "url": "https://react-icons.github.io/react-icons"}
+        ],
+        "video": [
+          {"name": "Sam and Jay Cohort Recording", "url": "https://ucdavis.zoom.us/rec/share/UjSJIUApj9ociFp_Y0QXoi0LUnxGgwgUuI_mWuQSSVAmN1dmsTnx2TMmJRVwIm91.WGbQlYd6ZN52bBut?startTime=1699059963000"},
+          {"name" : "CSS Unit Deep-Dive", "url": "https://www.youtube.com/watch?v=fzZTvLmmTzM"},
+          {"name": "CSS Animations", "url":"https://youtu.be/SgmNxE9lWcY?si=DRHUVzNEQahO-Qgv"}
+        ]
+      },
+      "flexbox": {
+        "web": [
+          {"name": "FlexBox Cheat Sheet", "url":"https://css-tricks.com/snippets/css/a-guide-to-flexbox/"},
+          {"name": "Interactive Guide to FlexBox", "url": "https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/"}
+        ],
+        "video": [
+          {"name": "Learn Flex in 15 Mins", "url": "https://www.youtube.com/watch?v=fYq5PXgSsbE"}
+        ]
+      },
+      "position": {
+        "web": [
+          {"name": "Position by CSS-Tricks", "url": "https://css-tricks.com/almanac/properties/p/position/"},
+          {"name": "Practical Guide to CSS Positioning", "url": "https://www.digitalocean.com/community/tutorials/css-practical-guide-position-relative-absolute"},
+          {"name": "Position Absolute & Relative Simple Guide", "url": "https://dev.to/domagojvidovic/position-absolute-and-relative-the-simplest-guide-5169"}
+          ],
+        "video": [
+          {"name": "Positioning Real World Example", "url": "https://www.youtube.com/watch?v=MxEtxo_AaZ4"}
+        ]
+      },
+      "responsiveness": {
+        "web": [
+          {"name": "Media Query Cheat Sheet", "url": "https://gist.github.com/bartholomej/8415655"},
+          {"name": "Media Query Tutorial", "url": "https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Media_queries"},
+          {"name": "CSS3 Media Query & Cheat Sheet", "url": "https://medium.com/@sawanrathod/css3-media-query-cheat-sheet-1fab77ea3cb8"}
+        ],
+        "video": [
+          {"name": "Master Responsive Design", "url": "https://youtu.be/K24lUqcT0Ms?si=WZDUyaX_YNQyY-zr"}
+        ]
+      }
+    }
+  },
+  "week 3": {
+    "title": "JavaScript and Next.js Frontend",
+    "desc": "Using JavaScript and Next.js to create a frontend for your website.",
+    "goals": ["Coming Soon"],
+    "content": {
+      "test": {
+        "web": ["test"],
+        "video": ["test2"]
+      }
+    }
+  },
+  "week 4": {
+    "title": "Next.js Backend",
+    "desc": "Using Next.js to create a backend for your website.",
+    "goals": ["Coming Soon"],
+    "content": {
+      "test2": {
+        "web": ["test"],
+        "video": ["test2"]
+      }
+    }
+  },
+  "week 5": {
+    "title": "TBD",
+    "desc": "TBD",
+    "goals": ["TBD"],
+    "content": {
+      "test3": {
+        "web": ["test"],
+        "video": ["test2"]
+      }
+    }
+  }
+}

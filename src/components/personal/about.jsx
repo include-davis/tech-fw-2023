@@ -3,6 +3,10 @@ import styles from'@/styles/components/personal/about.module.scss';
 
 export default function About() {
     return (
-      <div className={styles.outer}>Vivica Tran.</div>
+      <div className={styles.outer}>Vivica Tran
+        <div className={styles.infoCard}>
+          text
+        </div>
+      </div>
     )
 }

@@ -1,6 +1,10 @@
 .outer{
-    font-size: 100px;
-    h2{
-        font-size: 100px;
+    font-size: 20px;
+    .infoCard{
+        justify-content: center;
+        border-radius: 1.25;
+        background-color: darkgray;
+        width: 200px;
+        height: 200px;
     }
 }
