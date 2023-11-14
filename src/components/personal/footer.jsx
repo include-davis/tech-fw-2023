@@ -19,12 +19,23 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <section className={styles.logo}>
-        <img src={"/public/android-chrome-512x512.png"} />
+        <img src={"/public/android-chrome-192x192.png"} />
       </section>
       <section className={styles.info}>
-        <p>Made by Erika</p>
+        <p>made by erika</p>
         <ul className={styles.socials}>
-          <li className={styles.icon}> SOCIAL MEDIA ICONS + REDIRECTING </li>
+          <li className={styles.github}>
+            github
+          </li>
+          <li className={styles.linkedin}>
+            linkedin
+          </li>
+          <li className={styles.facebook}>
+            facebook
+          </li>
+          <li className={styles.handshake}>
+            handshake
+          </li>
         </ul>
       </section>
     </footer>
