@@ -19,13 +19,17 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <section className={styles.logo}>
-        <img src={"/public/android-chrome-192x192.png"} />
+        <img src={"../public/android-chrome-192x192.png"} />
       </section>
       <section className={styles.info}>
         <p>made by erika</p>
         <ul className={styles.socials}>
           <li className={styles.github}>
-            github
+            <a href={"https://github.com/erikagosti"} target="_blank">
+              <div className={styles.icon}>
+                github
+              </div>
+            </a>
           </li>
           <li className={styles.linkedin}>
             linkedin
