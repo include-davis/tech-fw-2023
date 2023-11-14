@@ -15,14 +15,14 @@ export default function About() {
         </p>
 
         <h1 className={styles.hello}>
-          Hello, my name is<br></br> Nandhana Selvam
+          Hello, my name is Nandhana Selvam
         </h1>
 
         <h2 className={styles.hello_description}>
-          I am a third year Computer Science <br></br>and Engineering student at
+          I am a third year Computer Science and Engineering student at
           UC Davis!
         </h2>
-        {/* Since this is a button, I recommend using the <button> tag instead and if you have a link you want to add in here then you can do <a><button></button></a> or ultimalteyl just use <a> and style that instead */}
+        {/* DONE: Since this is a button, I recommend using the <button> tag instead and if you have a link you want to add in here then you can do <a><button></button></a> or ultimalteyl just use <a> and style that instead */}
         <a href="mailto:nandhanaselvam@gmail.com"className={styles.contact_button}>
           <button>
           Contact Me!
