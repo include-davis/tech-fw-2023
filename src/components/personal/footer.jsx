@@ -24,22 +24,34 @@ export default function Footer() {
       <section className={styles.info}>
         <p>made by erika</p>
         <ul className={styles.socials}>
-          <li className={styles.github}>
+          <div className={styles.github}>
             <a href={"https://github.com/erikagosti"} target="_blank">
               <div className={styles.icon}>
                 github
               </div>
             </a>
-          </li>
-          <li className={styles.linkedin}>
-            linkedin
-          </li>
-          <li className={styles.facebook}>
-            facebook
-          </li>
-          <li className={styles.handshake}>
-            handshake
-          </li>
+          </div>
+          <div className={styles.linkedin}>
+            <a href={"https://www.linkedin.com/in/erika-gosti-233a05209/"} target="_blank">
+              <div className={styles.icon}>
+                <img className={styles.linkedinIcon} src={"/personal/linkedin-logo-removebg-preview.png"}/>
+              </div>
+            </a>
+          </div>
+          <div className={styles.facebook}>
+            <a href={"https://www.facebook.com/erikagostii/"} target="_blank">
+              <div className={styles.icon}>
+                <img className={styles.facebookIcon} src={"/personal/facebook-logo-removebg-preview.png"}/>
+              </div>
+            </a>
+          </div>
+          <div className={styles.handshake}>
+            <a href={"https://ucdavis.joinhandshake.com/stu/users/49430444"} target="_blank">
+              <div className={styles.icon}>
+                <img className={styles.handshakeIcon} src={"/personal/handshake-logo.png"}/>
+              </div>
+            </a>
+          </div>
         </ul>
       </section>
     </footer>
