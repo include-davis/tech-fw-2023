@@ -59,13 +59,14 @@
     
 }
 
-p.button {
+.contact_button button {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #FFB4A2;
     padding: 16px;
     font-size: 1.3rem;
     margin-left: 32px;
     margin-top: 8px;
+    border: none; 
     //border: 2px solid #FAA381;
     text-align: center;
     width: fit-content;

@@ -23,7 +23,11 @@ export default function About() {
           UC Davis!
         </h2>
         {/* Since this is a button, I recommend using the <button> tag instead and if you have a link you want to add in here then you can do <a><button></button></a> or ultimalteyl just use <a> and style that instead */}
-        <p className={styles.button}>Contact Me!</p>
+        <a href="mailto:nandhanaselvam@gmail.com"className={styles.contact_button}>
+          <button>
+          Contact Me!
+          </button>
+        </a>
       </div>
       {/* we didnt cover this yet but in Next.js, there is an Image component which is what we'll be using in the future, i added the import line at the top in case you wanted to use it.  */}
       <div className={styles.filler_image}>
