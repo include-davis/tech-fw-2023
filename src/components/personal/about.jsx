@@ -23,14 +23,13 @@ export default function About() {
               <button type="button" className={styles.button}>Contact me</button>
             </a>
           </div>
-          <div className={styles.picture}>
-            <Image className={styles.image}
-              src="/cristian_photoshop_clean.png"
-              width={500}
-              height={500}
-              alt={"portfolio picture"}
-            />
-          </div>
+          <Image className={styles.picture}
+            src="/cristian_photoshop_clean.png"
+            width={500}
+            height={500}
+            alt={"portfolio picture"}
+            style={styles.picture}
+          />
         </div>
       </section>
     )
