@@ -18,7 +18,7 @@ export default function Skills() {
           java
         </div>
         <div className={styles.languagesDescription}>
-          some experience
+          jun 2020 - present
         </div>
       </div>
       <div className={styles.divider}>
@@ -29,7 +29,7 @@ export default function Skills() {
           python
         </div>
         <div className={styles.languagesDescription}>
-          some experience
+          dec 2020 - present
         </div>
       </div>
       <div className={styles.divider}>
@@ -40,7 +40,7 @@ export default function Skills() {
           html
         </div>
         <div className={styles.languagesDescription}>
-          some experience
+          aug 2023 - present
         </div>
       </div>
       <div className={styles.divider}>
@@ -51,7 +51,7 @@ export default function Skills() {
           css
         </div>
         <div className={styles.languagesDescription}>
-          some experience
+          aug 2023 - present
         </div>
       </div>
       <div className={styles.divider}>
@@ -62,7 +62,7 @@ export default function Skills() {
           unity game engine
         </div>
         <div className={styles.languagesDescription}>
-          some experience
+          aug 2022 - ...
         </div>
       </div>
     </div>

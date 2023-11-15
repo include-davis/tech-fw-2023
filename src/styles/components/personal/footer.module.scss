@@ -6,8 +6,26 @@
   width: 100%;
   justify-content: center;
   height: 160px;
-  background-color: rgb(62, 62, 62);
+  background-color: rgb(255, 255, 255);
   padding-top: 32px;
+  margin-bottom: 24px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+
+  animation: fadeIn 2.5s;
+  -webkit-animation: fadeIn 2.5s;
+  -moz-animation: fadeIn 2.5s;
+  -o-animation: fadeIn 2.5s;
+  -ms-animation: fadeIn 2.5s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 // choose elements with logo class within .footer class elements
@@ -23,20 +41,33 @@
   color: rgb(0, 0, 0);
   > p {
     // change up the text size and style how you want
-    font-size: 1rem;
+    font-size: 1.3rem;
     margin-bottom: 24px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
 }
 
 .socials {
   // apply properties for .socials
   display: flex;
-  gap: 56px;
+  gap: 36px;
 }
 
 .icon {
   // apply properties for icons
-  display: flex;
+  background-color: transparent;
+  border-color: transparent;
+  border-radius: 40px;
+  padding: 16px;
+  transition: background-color 0.15s;
+}
+
+.icon:hover {
+  background-color: rgb(233, 233, 233);
+}
+
+.icon:active {
+  background-color: rgb(206, 206, 206);
 }
 
 .github {

@@ -1,9 +1,19 @@
 .skills {
   background-color: rgb(215, 231, 244);
   padding: 130px;
-  padding-bottom: 164px;
+  padding-bottom: 200px;
   margin-bottom: 64px;
   background: linear-gradient(to bottom, rgb(215, 231, 244) 0%,rgb(215, 231, 244) 90%, rgba(255,255,255,1) 100%);
+  animation: fadeIn 2.5s;
+  -webkit-animation: fadeIn 2.5s;
+  -moz-animation: fadeIn 2.5s;
+  -o-animation: fadeIn 2.5s;
+  -ms-animation: fadeIn 2.5s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 .skillSet {

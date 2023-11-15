@@ -26,9 +26,9 @@ export default function Footer() {
         <ul className={styles.socials}>
           <div className={styles.github}>
             <a href={"https://github.com/erikagosti"} target="_blank">
-              <div className={styles.icon}>
-                github
-              </div>
+              <button className={styles.icon}>
+                <img className={styles.githubIcon} src={"/personal/github-logo.png"}/>
+              </button>
             </a>
           </div>
           <div className={styles.linkedin}>
