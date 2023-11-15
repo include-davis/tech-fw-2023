@@ -34,10 +34,11 @@
 .body {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     // column-gap: 10%;
     height: 400px;
+    // border: 1px solid black
 }
 
 .about {
@@ -64,9 +65,6 @@
 // flexbox are useful when you have multiple children elements that you need to arrange linearly. since there's only one child element, flex doesn't really have any effect.
 // also, even though it's not needed here, whenever you want to use flexbox, make sure you specify display: flex first, I think you forgot that here.
 .picture {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     animation: 2s picture 0.5s forwards;
       transform:translateX(130%);
     // border: 1px solid black;
@@ -89,10 +87,11 @@
 .name {
     font-size: 4rem;
     color: rgb(89, 0, 22);
+    // border: 1px solid black;
 }
 
 .description {
-    font-size: 18px;
+    font-size: 1rem;
     width: 80%;
     color: rgb(89, 0, 22);
 }
