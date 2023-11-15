@@ -19,7 +19,7 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <section className={styles.logo}>
-        <img src={"../public/android-chrome-192x192.png"} />
+        <img src={""} />
       </section>
       <section className={styles.info}>
         <p>made by erika</p>
