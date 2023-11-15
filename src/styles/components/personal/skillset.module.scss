@@ -95,14 +95,34 @@
     color: rgb(89, 0, 22);
 }
 
-// .skills{
+@media screen and (max-width: 780px) {
+    .professional {
+        padding-top: 100px;
+        padding-bottom: 150px;
+        background-color: rgb(250, 242, 230);
+        color: rgb(167, 124, 61);
+    }
+    .container {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 800px;
+    }
+    .card {
+        width: 90%;
+        height: 300px;
+    }
+    .container .card:nth-child(2) {
+        align-self: center;
+    }
+    .card:nth-child(2) {
+        justify-content: flex-start;
+        flex-grow: 0;
+    }
+}
 
-// }
-
-// .projects {
-//     height: 100px;
-// }
-
-// .professional {
-//     height: 150px;
-// }
+@media screen and (max-width: 540px) {
+    .title {
+        font-size: 1.6rem;
+    }
+}
