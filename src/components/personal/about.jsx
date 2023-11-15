@@ -43,6 +43,27 @@ export default function About() {
           i'm a first-year compsci student. i love
           dance and all things artsy. i also really
           like sanrio, especially kuromi ...
+
+          <div className={styles.clubs}>
+            <ul className={styles.clubInfo}>
+              currently part of
+              <div className={styles.clubNames}>
+              <li>ucd design interactive fellowship</li>
+              <li>ucd #include cohort</li>
+              <li>ucd mobility dance team</li>
+              </div>
+            </ul>
+            <div className={styles.interests}>
+              <ul className={styles.clubInfo}>
+                interests
+                <div className={styles.clubNames}>
+                <li>ucd design interactive fellowship</li>
+                <li>ucd #include cohort</li>
+                <li>ucd mobility dance team</li>
+                </div>
+              </ul>
+            </div>
+          </div>
         </div>
         <div className={styles.kuromirowtop}>
           <img src={"/personal/kuromi-img.png"} alt={"kuromi"}

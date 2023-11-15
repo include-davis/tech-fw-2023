@@ -28,9 +28,12 @@
   100% { opacity: 1; }
 }
 
-.title, .description, .website {
+.title, .description, .clubInfo, .clubInfo li, .website {
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   color: rgb(94, 94, 94);
+}
+
+.title, .description, .website {
   text-align: center;
 }
 
@@ -46,6 +49,18 @@
   border-style: dashed;
   border-radius: 4px;
   margin-bottom: 15px;
+}
+
+.clubs {
+  margin-top: 24px;
+  display: flex;
+  gap: 48px;
+}
+
+.clubNames {
+  font-size: 1.1rem;
+  margin-top: 4px;
+  text-align: start;
 }
 
 .website {
