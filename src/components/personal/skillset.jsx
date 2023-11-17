@@ -16,17 +16,17 @@ export default function Skills() {
     <ul className={styles.skills_list}>
       <li className={styles.skill}>
         <h2> C++ </h2>
-        <p> description </p>
+        <p> 3+ years </p>
       </li>
 
       <li className={styles.skill}>
         <h2> Python </h2>
-        <p> description </p>
+        <p> 3+ years </p>
       </li>
 
       <li className={styles.skill}>
         <h2> HTML </h2>
-        <p> description </p>
+        <p> 1+ years </p>
       </li>
 
     </ul>
