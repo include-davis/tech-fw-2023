@@ -6,7 +6,6 @@ import React from 'react';
 export default function Personal() {
   return (
     <div>
-
       <About />
       <Skills />
       <Footer />
