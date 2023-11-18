@@ -71,7 +71,7 @@
 
   // flex-grow: 1; // how much proportion of free space elements should take up
   // flex-shrink: 0; // how much proportion of space elements have to give up
-  // flex-basis: 300px; // initial size of element
+  // flex-basis: 200px; // initial size of element
 
   font-size: 2rem;
   color: white;
@@ -102,10 +102,10 @@
   align-items: center;
 
   // flex-grow: 1; // how much proportion of free space elements should take up
-  // flex-shrink: 0; // how much proportion of space elements have to give up
+  flex-shrink: 0; // how much proportion of space elements have to give up
   // flex-basis: 400px; // initial size of element
 
-  // align-self: center;
+  align-self: center;
 
   font-size: 2rem;
   color: white;

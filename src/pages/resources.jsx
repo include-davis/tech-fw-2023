@@ -5,23 +5,23 @@ import styles from "@/styles/resources.module.scss";
 const content = [
   {
     week: 1,
-    tags: ["setup"],
+    tags: ["additionalLinks"],
   },
   {
     week: 2,
-    tags: ["flexbox", "position", "responsiveness"],
+    tags: ["additionalLinks", "flexbox", "position", "responsiveness", "about"],
   },
   {
     week: 3,
-    tags: [],
+    tags: ["additionalLinks"],
   },
   {
     week: 4,
-    tags: [],
+    tags: ["additionalLinks"],
   },
   {
     week: 5,
-    tags: [],
+    tags: ["additionalLinks"],
   },
 ];
 
@@ -69,10 +69,11 @@ export default function Resources() {
                       console.log(link);
                       return (
                         <a
-                          href={link}
+                          href={link.url}
+                          target="_blank"
                           key={`Resource ${resourceNum} Web Link ${index}`}
                         >
-                          <li className={styles.resourceLink}>{link}</li>
+                          <li className={styles.resourceLink}>{link.name}</li>
                         </a>
                       );
                     })}
@@ -84,10 +85,11 @@ export default function Resources() {
                     {videoLinks?.map((link, index) => {
                       return (
                         <a
-                          href={link}
+                          href={link.url}
+                          target="_blank"
                           key={`Resource ${resourceNum} Video Link ${index}`}
                         >
-                          <li className={styles.resourceLink}>{link}</li>
+                          <li className={styles.resourceLink}>{link.name}</li>
                         </a>
                       );
                     })}
