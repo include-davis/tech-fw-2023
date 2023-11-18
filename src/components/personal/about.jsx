@@ -7,14 +7,17 @@ import styles from "@/styles/components/personal/about.module.scss";
 export default function About() {
     return (
       <div className = {styles.about_main_container}>
-        <div className = {styles.image_container}> </div> 
-        <div className = {styles.about_container}> 
+        <div className = {styles.image_container}> 
+          <img src="Users/emilygomez/Documents/include/placeholder.jpg " alt = "placeholder_image"/>
+        </div> 
+        
+        <div className = {styles.about_container}>
           <div className = {styles.intro}>
-            <p  className = {styles.greeting}> Hello, my name is </p>
+            <p  className = {styles.greeting}> Hello! My name is </p>
             <h1  className = {styles.name}> Emily Gomez </h1>
             </div> 
             <div className = {styles.desc}> 
-              <p> Programmer and problem solver based in Davis, California. </p> 
+              <p> Programmer and <b> problem </b> solver. </p> 
             </div> 
           </div>
       </div>
