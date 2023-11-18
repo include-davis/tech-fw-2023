@@ -1,7 +1,12 @@
-// manually import weekly components
+// week 2
 import Flexbox from "@/components/week 2/flexbox.jsx";
 import Position from "@/components/week 2/position.jsx";
 import Responsiveness from "@/components/week 2/responsiveness.jsx";
+import About from "@/components/week 2/about-example.jsx";
+import Map from "@/components/week3/map.jsx";
+import Form from "@/components/week3/state.jsx";
+
+// week 3
 
 import data from "@/data/data.json";
 import styles from "@/styles/week/week.module.scss";
@@ -11,33 +16,52 @@ const weekContent = {
   1: [
     {
       component: <h1>No components were made for this week</h1>,
-      title: "N/A",
-      desc: "N/A",
-      tags: ["setup"],
+      title: "",
+      desc: "",
+      tags: [],
     },
   ],
   2: [
     {
       component: <Flexbox key="flexbox" />,
       title: "Flexbox",
-      desc: "Tutorial on how flexbox works!",
+      desc: "Tutorial on how flexbox works! Mess around with the code!",
       tags: ["flexbox"],
     },
     {
       component: <Position key="position" />,
       title: "Position",
-      desc: "Example of positioning in CSS",
+      desc: "Example of positioning in CSS. Play with me!",
       tags: ["position"],
     },
     {
       component: <Responsiveness key="responsiveness" />,
       title: "Responsiveness",
-      desc: "Example of responsiveness in CSS",
+      desc: "Example of responsiveness in CSS. Inspect me on different screen layouts!",
       tags: ["responsiveness"],
+    },
+    {
+      component: <About key="about" />,
+      title: "About",
+      desc: "Creating an About Section using HTML and CSS from past workshops.",
+      tags: ["about"],
     },
   ],
   3: [],
-  4: [],
+  4: [
+    {
+      component: <Map key="map" />,
+      title: "Map Function Example",
+      desc: "Follow along with the comments in the code to create a list using map.",
+      tags: ["map"],
+    },
+    {
+      component: <Form key="form" />,
+      title: "State Example",
+      desc: "Follow along with the comments in the code to create a simple form with useState.",
+      tags: ["state"],
+    },
+  ],
   5: [],
 };
 
@@ -66,9 +90,11 @@ export default function WorkshopContent({ week }) {
                     {item.tags
                       ? item.tags.map((component, index) => {
                           const webLinks =
-                            data[`week ${week}`]["content"][component]?.web;
+                            data[`week ${week}`]["content"][component]?.web ||
+                            [];
                           const videoLinks =
-                            data[`week ${week}`]["content"][component]?.video;
+                            data[`week ${week}`]["content"][component]?.video ||
+                            [];
                           const allLinks = webLinks.concat(videoLinks);
 
                           return (
@@ -80,11 +106,12 @@ export default function WorkshopContent({ week }) {
                                 ? allLinks.map((link, index) => {
                                     return (
                                       <a
-                                        href={link}
+                                        href={link.url}
+                                        target="_blank"
                                         key={`Resource ${index} Week ${week}`}
                                       >
                                         <li className={styles.resourceLink}>
-                                          {link}
+                                          {link.name}
                                         </li>
                                       </a>
                                     );
