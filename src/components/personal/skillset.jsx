@@ -14,15 +14,13 @@ export default function Skills() {
     
     <div className={styles.skills_container}>
       <div className={styles.skills_set}>
-        <h1 className={styles.set_title}>languages = [</h1>
+        <h1 className={styles.set_title}>languages</h1>
         <p>C++,<br></br>Javascript,<br></br></p>
-        <h1 className={styles.set_title}>]</h1>
       </div>
 
       <div className={styles.skills_set}>
-        <h1 className={styles.set_title}>soft_skills = [</h1>
+        <h1 className={styles.set_title}>soft_skills</h1>
         <p>Planning,<br></br>Communication,<br></br></p>
-        <h1 className={styles.set_title}>]</h1>
       </div>
     </div>
   </section>;

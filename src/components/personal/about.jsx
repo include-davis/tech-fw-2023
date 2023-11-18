@@ -16,10 +16,7 @@ export default function About() {
 
           This just reduces the code down a bit and I wanted you to know that it is something you can do too
           */}
-            <p className={about.titleText}>~</p>
-            <p className={about.titleText}>my name is</p>
-            <p className={about.titleName}>Sreya Mathew</p>
-            <p className={about.titleText}>~</p>
+            <p className={about.titleText}> ~ my name is <span className={about.titleName}> Sreya Mathew</span> ~</p>
           </div>
           <p className={about.summary}>
             I am a 2nd year Computer Science & Engineering student at UCD, who would
