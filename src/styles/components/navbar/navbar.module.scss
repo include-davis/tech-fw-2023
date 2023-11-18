@@ -14,95 +14,99 @@
   @include mixins.phone {
     justify-content: space-between;
   }
+}
 
-  .logo:hover {
-    filter: brightness(0.8);
+.logo:hover {
+  filter: brightness(0.8);
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  font-size: 1.2rem;
+
+  gap: 36px;
+
+  @include mixins.tablet {
+    gap: 24px;
+    font-size: 0.8rem;
   }
 
-  .links {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    list-style: none;
-    font-size: 1.2rem;
+  > li {
+    color: var(--color-white);
+    border-radius: 8px;
+    padding: 16px;
+  }
 
-    gap: 36px;
-
-    @include mixins.tablet {
-      gap: 24px;
-      font-size: 0.8rem;
-    }
-
-    li {
-      color: var(--font-white);
-      border-radius: 8px;
-      padding: 16px;
-    }
+  > li:hover {
+    background-color: rgb(27, 25, 25);
 
     .dropDown {
-      //   border-radius: 8px;
-      list-style-type: none;
-      max-height: 0px;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      position: absolute;
-      top: 80px;
-      left: 0;
-      overflow-y: hidden;
-      transition: max-height 0.7s ease; /* Add a smooth transition effect */
-
-      li {
-        width: 100%;
-        border-radius: 0px;
-        padding-left: 16px;
-        color: var(--include-purple);
-        background-color: var(--font-white);
-
-        flex-grow: 1;
-      }
-
-      li:hover {
-        background-color: rgb(209, 209, 209);
-      }
+      max-height: 600px;
+      border-radius: 0;
     }
+  }
+}
 
-    li:hover {
-      //   transform: translateY(-2px);
-      background-color: rgb(27, 25, 25);
+.dropDown {
+  list-style-type: none;
+  max-height: 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  overflow-y: hidden;
+  transition: max-height 0.7s ease; /* Add a smooth transition effect */
+  z-index: 3;
 
-      .dropDown {
-        max-height: 600px;
-        border-radius: 0;
-      }
+  > a {
+    display: flex;
+    width: 100%;
+  }
+
+  > a > li {
+    width: 100%;
+    border-radius: 0px;
+    padding: 16px;
+    color: white;
+    background-color: var(--include-purple);
+
+    flex-grow: 1;
+  }
+
+  > a > li:hover {
+    background-color: rgb(33, 33, 33);
+  }
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  a > .btn {
+    background: none;
+    border: none;
+    text-decoration: none;
+
+    font-size: 1rem;
+    padding: 12px;
+    border-radius: 8px;
+    color: var(--color-white);
+
+    @include mixins.tablet {
+      font-size: 0.6rem;
     }
   }
 
-  .contact {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-
-    a > .btn {
-      background: none;
-      border: none;
-      text-decoration: none;
-
-      font-size: 1rem;
-      padding: 12px;
-      border-radius: 8px;
-      color: var(--font-white);
-
-      @include mixins.tablet {
-        font-size: 0.6rem;
-      }
-    }
-
-    a > .btn:hover {
-      background-color: var(--include-purple);
-    }
+  a > .btn:hover {
+    background-color: var(--include-purple);
   }
 }
