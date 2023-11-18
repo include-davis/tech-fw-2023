@@ -8,5 +8,7 @@ import styles from '@/styles/components/personal/skillset.module.scss';
 */
 
 export default function Skills() {
-  return <section className={styles.skills}>skills</section>;
+  return <section className={styles.skills}>
+    <hr></hr>
+  </section>;
 }
