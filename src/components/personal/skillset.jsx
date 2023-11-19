@@ -9,6 +9,30 @@ import styles from '@/styles/components/personal/skillset.module.scss';
 
 export default function Skills() {
   return <section className={styles.skills}>
-    <hr></hr>
+    <div className={styles.header}>
+        <h2>What are some of my skills? 🤔</h2>
+      </div>
+    <div className={styles.skillsHero}>
+      <div className = {styles.skillsItems}>
+        <h2>🎨</h2>
+        <h3>HTML</h3>
+        <p>2 Years</p>
+      </div>
+      <div className = {styles.skillsItems}>
+        <h2>📝</h2>
+        <h3>CSS</h3>
+        <p>2 Years</p>
+      </div>
+      <div className = {styles.skillsItems}>
+        <h2>☕️</h2>
+        <h3>Java</h3>
+        <p>2 Years</p>
+      </div>
+      <div className = {styles.skillsItems}>
+        <h2>🧑‍🍳</h2>
+        <h3>Cooking</h3>
+        <p>Master Chef</p>
+      </div>
+    </div>
   </section>;
 }

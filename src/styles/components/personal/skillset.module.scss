@@ -1,0 +1,45 @@
+.skills {
+    display: flex;
+    flex-direction: column;
+    padding: 48px;
+    background-color: rgb(255, 194, 202);
+    gap: 8px;
+
+    >hr{
+        height: 4px;
+        width: 100%;
+        background-color: rgb(250, 223, 227);
+        width: 50%;
+        margin: 20px auto;
+    }
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 32px;
+    gap: 8px;
+    padding-top: 48px;
+  }
+
+  .skillsHero{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: white;
+    border-radius: 24px;
+    gap: 48px;
+    padding: 80px;
+    margin-top: 0;
+    margin-left: 320px;
+    margin-right: 320px;
+    background-color: #fff7f8;
+  }
+
+  .skillsItems{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }

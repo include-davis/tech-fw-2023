@@ -1,8 +1,9 @@
 .about{
     display: flex;
     flex-direction: column;
-    background-color: rgb(250, 223, 227);
+    //background-color: rgb(250, 223, 227);
     padding: 48px;
+    background: linear-gradient(to bottom, #fff7f8, rgb(255, 194, 202)); 
 }
 
 .header{
@@ -29,6 +30,7 @@
     >h2{
         padding-bottom: 8px;
         color:#E75480;
+
     }
 
     >h1{
@@ -45,6 +47,7 @@
         height: 4px;
         background-color:#FFE3E8;
         border-radius: 10px;
+        border-color: black;
     }
 }
 
