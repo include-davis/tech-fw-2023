@@ -54,14 +54,9 @@ export default function Skills() {
         </div>
         </div>
       </div>
-{/* 
-HTML: 3 stars 4 years
-CSS: 3 stars 4 years
-Javascript: 1 star 2 years
-Java: 3 stars 1 year
-C: 1 star less than 1 year
-React: 1 star less than 1 year
- */}
     </div>
+
+    
+
   </section>;
 }

@@ -1,5 +1,10 @@
 // import SCSS file as styles for this component
 import styles from '@/styles/components/personal/footer.module.scss';
+import { FaLinkedin } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
+import { FaHashtag } from 'react-icons/fa';
+
+
 
 export default function Footer() {
   // Make a footer!
@@ -20,19 +25,15 @@ export default function Footer() {
     <footer className={styles.footer}>
       <section>
         <div>
-          <img className={styles.mainLogo} alt="#include logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Number_sign.svg/220px-Number_sign.svg.png"/>
+          <FaHashtag className={styles.logo} />
         </div>
       </section>
 
       <section className={styles.info}>
-        <div>
-        <p>Made by Anna</p>
-        <div className={styles.socials}>
-          {/* <li className={styles.icon}> SOCIAL MEDIA ICONS + REDIRECTING </li> */}
-          <a className={styles.link} target="_blank" href="https://github.com/anna-c2"><img className={styles.logo} alt="github logo" src="https://1000logos.net/wp-content/uploads/2021/05/GitHub-logo.png"/></a>
-          <a className={styles.link} target="_blank" href="https://www.linkedin.com/in/anna-cai2/"><img className={styles.logo} alt="linkedin logo" src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png"/></a>
-        </div>
-        </div>
+          <div className={styles.socials}>
+          <a className={styles.link} target="_blank" href="https://github.com/anna-c2"> <FaGithub className={styles.logo} /> </a>
+          <a className={styles.link} target="_blank" href="https://www.linkedin.com/in/anna-cai2/"><FaLinkedin className={styles.logo} /></a>
+        </div>     
       </section>
     </footer>
   );

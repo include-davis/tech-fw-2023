@@ -3,6 +3,7 @@ import styles from '@/styles/components/personal/about.module.scss';
 export default function About() {
     return (
       <div className={styles.main}>
+        
         <div className={styles.intro}>
           <img className={styles.profilePic} src="https://static.vecteezy.com/system/resources/previews/005/544/718/non_2x/profile-icon-design-free-vector.jpg" />
           <h1 className={styles.name}>ANNA CAI</h1>
@@ -10,7 +11,7 @@ export default function About() {
           <p className={styles.descr}>Hello, I'm a first year computer science major interested in web development.</p>
          
           
-        </div>
+        </div>  
         <div>
         <div className={styles.bigContainer}>
           <div className={styles.container}>
@@ -23,7 +24,7 @@ export default function About() {
             </ul> 
           </div>
         </div>
-        </div>     
+    </div>  
       </div>
     )
 }
