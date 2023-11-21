@@ -1,4 +1,5 @@
 // import styles from styling folder!
+import styles from '@/styles/components/personal/skillset.module.scss';
 
 /* Think about what you want to include for skills
     1. Some ideas might be coding languages, frameworks, libraries, etc

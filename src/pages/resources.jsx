@@ -9,19 +9,19 @@ const content = [
   },
   {
     week: 2,
-    tags: ["additionalLinks", "flexbox", "position", "responsiveness"],
+    tags: ["additionalLinks", "flexbox", "position", "responsiveness", "about"],
   },
   {
     week: 3,
-    tags: [],
+    tags: ["additionalLinks"],
   },
   {
     week: 4,
-    tags: [],
+    tags: ["additionalLinks"],
   },
   {
     week: 5,
-    tags: [],
+    tags: ["additionalLinks"],
   },
 ];
 

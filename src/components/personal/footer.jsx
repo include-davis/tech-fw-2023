@@ -1,4 +1,5 @@
 // import SCSS file as styles for this component
+import styles from "@/styles/components/personal/footer.module.scss";
 
 export default function Footer() {
   // Make a footer!
