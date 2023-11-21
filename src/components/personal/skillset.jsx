@@ -1,4 +1,4 @@
-import styles from '@/styles/components/personal/about.module.scss'
+import styles from '@/styles/components/personal/skillset.module.scss'
 import { FiSmile } from 'react-icons/fi'
 
 /* Think about what you want to include for skills

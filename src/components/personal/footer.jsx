@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '@/styles/components/personal/about.module.scss'
+import styles from '@/styles/components/personal/footer.module.scss'
 import { FiMail, FiInstagram, FiGithub, FiHeart } from 'react-icons/fi';
 
 export default function Footer() {

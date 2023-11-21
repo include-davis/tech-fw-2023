@@ -1,31 +1,29 @@
 // use class selectors to target classes
 
-.footer {
-  // apply some properties
-  display: flex;
+.footer{
+  text-align: center;
+  background-color: rgb(115, 7, 67 );
+  color: rgb(255, 239, 241);
+  position: absolute;
   width: 100%;
-}
-
-// choose elements with logo class within .footer class elements
-.logo {
-  color: black;
-}
-
-.info {
-  // apply properties for .info
-  display: flex;
-  > p {
-    // change up the text size and style how you want
-    font-size: 1px;
+  .logo{
+      margin: 1rem;
   }
-}
-
-.socials {
-  // apply properties for .socials
-  display: flex;
-}
-
-.icon {
-  // apply properties for icons
-  font-size: big;
+  .info {
+      margin: 1rem;
+  }
+  .footerIcons{
+      margin: 1rem;
+      font-size: 2rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 1rem;
+      li {
+          display: inline-block;
+      }
+      li:hover{
+          color: rgb(233, 130, 151);
+      }
+  }
 }
