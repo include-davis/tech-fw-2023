@@ -9,6 +9,10 @@ export default function Form() {
 
    //TODO: do the same but with an age variable instead
   const [age, setAge] = useState(21);
+
+  const subAge = () => {
+    setAge((age - 1))
+  }
   
   return (
     <div className={styles.container}>
@@ -17,6 +21,9 @@ export default function Form() {
       {/* add in an onChange attribute and use setAge to increment the current age by 1 */}
       <button className={styles.btn} onClick={() => setAge((prevAge) => prevAge + 1)}>
         Increment age
+      </button>
+      <button className={styles.btn} onClick={subAge}>
+        Decrement age
       </button>
       <p>
         Hello, {name}. You are {age}.

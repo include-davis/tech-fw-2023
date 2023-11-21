@@ -3,10 +3,11 @@ import Flexbox from "@/components/week 2/flexbox.jsx";
 import Position from "@/components/week 2/position.jsx";
 import Responsiveness from "@/components/week 2/responsiveness.jsx";
 import About from "@/components/week 2/about-example.jsx";
+
+// week 4
 import Map from "@/components/week3/map.jsx";
 import Form from "@/components/week3/state.jsx";
 
-// week 3
 
 import data from "@/data/data.json";
 import styles from "@/styles/week/week.module.scss";
@@ -47,7 +48,6 @@ const weekContent = {
       tags: ["about"],
     },
   ],
-<<<<<<< Updated upstream
   3: [],
   4: [
     {
