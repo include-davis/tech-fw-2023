@@ -1,12 +1,12 @@
 
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import styles from '@/styles/components/personal/about.module.scss'
-import Icons from '@/components/personal/icons'
-import Footer from './footer';
-import Skills from './skillset';
 import { FiHeart } from 'react-icons/fi'
 
+
 export default function About() {
+  const [clicks, setClicks] = useState(0);
+
   return (
     <div className={styles.aboutWrapper}>
         <section className={styles.mainInfo}>
@@ -25,13 +25,16 @@ export default function About() {
           </li>
           <li>
             <img src='https://stardewvalleywiki.com/mediawiki/images/f/fd/Brown_Chicken.png'></img>
-            <p>try hovering on these chickens or on the fruits below! :)</p>
+            <p>try hovering on these chickens to see a funny animation! :)</p>
+          </li>
+          <li>
+            <img src='https://stardewvalleywiki.com/mediawiki/images/2/22/White_Chicken.png'></img>
+            <section className={styles.buttonText}>
+              <button onClick={() => {setClicks(clicks+1);}}>click me!</button>
+              <text>you've clicked the button {clicks} times</text>
+            </section>
           </li>
         </ul>
-
-        <Icons></Icons>
-        {/* <Skills></Skills> */}
-      {/* <Footer></Footer> */}
     </div>
   )
 }
