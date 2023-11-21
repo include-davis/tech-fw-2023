@@ -36,8 +36,39 @@ const weekContent = {
       tags: ["responsiveness"],
     },
   ],
+<<<<<<< Updated upstream
   3: [],
   4: [],
+=======
+  3: [
+    {
+      component: <Map key="map"/>,
+      title: "Map",
+      desc: "Example of map function",
+      tags: ["map"],
+    },
+    {
+      component: <Form key="form"/>,
+      title: "Form",
+      desc: "Example using useState",
+      tags: ["form"],
+    },
+  ],
+  4: [
+    {
+      component: <Map key="map" />,
+      title: "Map Function Example",
+      desc: "Follow along with the comments in the code to create a list using map.",
+      tags: ["map"],
+    },
+    {
+      component: <Form key="form" />,
+      title: "State Example",
+      desc: "Follow along with the comments in the code to create a simple form with useState.",
+      tags: ["state"],
+    },
+  ],
+>>>>>>> Stashed changes
   5: [],
 };
 

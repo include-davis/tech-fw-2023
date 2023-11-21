@@ -1,0 +1,25 @@
+.container {
+  width: 400px;
+  height: 200px;
+  padding: 24px;
+  background-color: rgb(95, 95, 163);
+  border-radius: 16px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+  }
+}
+.header {
+  color: rgb(49, 49, 53);
+  text-align: center;
+}
