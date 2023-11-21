@@ -7,12 +7,12 @@ $light-purple: #e3bde7;
     padding-bottom: 30px;
     text-align: center;
 
-    .name{
+    >.name{
         margin: 30px;
         color: #3e303f;
         
     }
-    .descr{
+    >.descr{
         color: #9e74a2;
         margin: 30px;
     }
@@ -20,9 +20,10 @@ $light-purple: #e3bde7;
 .profilePic{
     border-radius: 50%;
     height: 200px;
-    -webkit-box-shadow:0 0 20px #9e74a2;
-    -moz-box-shadow: 0 0 20px #9e74a2;
-    box-shadow:0 0 20px #9e74a2;
+    width: 200px;
+    -webkit-box-shadow:0 0 30px #714475;
+    -moz-box-shadow: 0 0 30px #9e74a2;
+    box-shadow:0 0 30px #9e74a2;
 }
 
 .bigContainer{
@@ -30,7 +31,8 @@ $light-purple: #e3bde7;
     justify-content: center;
     flex-direction: row;
     padding: 20px;
-    background-image: url("https://images.template.net/115305/free-pastel-sea-background-74tk8.jpeg");
+    // background-image: url("https://images.template.net/115305/free-pastel-sea-background-74tk8.jpeg");
+    background-color: $light-purple;
     background-size:cover;
 }
 
@@ -52,15 +54,15 @@ $light-purple: #e3bde7;
     color: #eed7f1;
     background-color: #8f6295;
 
-    .bullet{
+    >.bullet{
         margin: 10px;
     }
     
-    .bullet:before{
+    >.bullet:before{
         content: '❤︎'; margin-left: -20px; margin-right: 10px;
     }
 
-    a:hover{
+    >a:hover{
         color: rgb(89, 179, 179);
     }
 }

@@ -1,4 +1,10 @@
 import styles from '@/styles/components/personal/skillset.module.scss';
+/*
+TO-DO:
+1. Make responsive to different sized screens
+2. Make a component to get rid of repetitiveness.
+3. Border animation
+*/
 
 /* Think about what you want to include for skills
     1. Some ideas might be coding languages, frameworks, libraries, etc
@@ -9,6 +15,19 @@ import styles from '@/styles/components/personal/skillset.module.scss';
 export default function Skills() {
   return <section className={styles.skills}>
     <div className={styles.container}>
+        {/* <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+          </ul> */}
+      <div className={styles.box}>
       <h1 className={styles.sectionName}>SKILLS</h1>
       <div className={styles.languages}>
       <div className={styles.skill}>
@@ -53,6 +72,7 @@ export default function Skills() {
           <h3 className={styles.years}>Less Than 1 Year</h3>
         </div>
         </div>
+      </div>
       </div>
     </div>
 

@@ -5,15 +5,14 @@ export default function About() {
       <div className={styles.main}>
         
         <div className={styles.intro}>
-          <img className={styles.profilePic} src="https://static.vecteezy.com/system/resources/previews/005/544/718/non_2x/profile-icon-design-free-vector.jpg" />
+          <img className={styles.profilePic} src="/personal/me.jpg" />
           <h1 className={styles.name}>ANNA CAI</h1>
           <h3 className={styles.descr}>First Year Computer Science Major</h3>
           <p className={styles.descr}>Hello, I'm a first year computer science major interested in web development.</p>
-         
           
         </div>  
         <div>
-        <div className={styles.bigContainer}>
+        {/* <div className={styles.bigContainer}>
           <div className={styles.container}>
             <h1 className={styles.header}>Hobbies</h1>
             <ul>
@@ -23,7 +22,7 @@ export default function About() {
               <li className={styles.bullet}>Online shopping</li>
             </ul> 
           </div>
-        </div>
+        </div> */}
     </div>  
       </div>
     )
