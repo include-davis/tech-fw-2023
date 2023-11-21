@@ -66,6 +66,10 @@ export default function About() {
               </ul>
             </div>
           </div>
+          <div className={styles.aboutmepicture}>
+            <img src={"/personal/about-me-image-2.jpg"} alt={"erika picture"}
+            className={styles.mepicture}/>
+          </div>
         </div>
         <div className={styles.kuromirowtop}>
           <img src={"/personal/kuromi-img.png"} alt={"kuromi"}
