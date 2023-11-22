@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import styles from '@/styles/components/personal/projects.module.scss';
+import { FaGithub } from "react-icons/fa6";
+
 /*
 TO-DO:
 1. Make responsive to different sized screens
@@ -45,6 +47,7 @@ export default function Projects() {
                 </div>
                 <img className={styles.projectPic} alt="project preview" src="/personal/foodtriv.png"/>
             </div>
+
             <div className={styles.project}>
                 <div className={styles.projectDescr}>
                 <h2 className={styles.projectName}>Minesweeper</h2>
@@ -60,6 +63,7 @@ export default function Projects() {
                 </div>
                 <img className={styles.projectPic} alt="project preview" src=""/>
             </div>
+
             <div className={styles.project}>
             <div className={styles.projectDescr}>
                 <h2 className={styles.projectName}>Asteroids Game</h2>
