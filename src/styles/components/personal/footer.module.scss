@@ -1,31 +1,129 @@
-// use class selectors to target classes
+// // use class selectors to target classes
 
-.footer {
-  // apply some properties
-  display: flex;
-  width: 100%;
+// .footer {
+//   // apply some properties
+//   display: flex;
+//   width: 100%;
+// }
+
+// // choose elements with logo class within .footer class elements
+// .logo {
+//   color: black;
+// }
+
+// .info {
+//   // apply properties for .info
+//   display: flex;
+//   > p {
+//     // change up the text size and style how you want
+//     font-size: 1px;
+//   }
+// }
+
+// .socials {
+//   // apply properties for .socials
+//   display: flex;
+// }
+
+// .icon {
+//   // apply properties for icons
+//   font-size: big;
+// }
+.bg{
+  background-color:rgb(241, 236, 241);
 }
 
-// choose elements with logo class within .footer class elements
-.logo {
-  color: black;
+.contact{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bolder;
+  font-weight: 900;
+  font-size: 70px;
+  position: relative;
+  top: -100px; left: 44%;
+  text-decoration: underline;
+  text-decoration-color: rgba(225, 144, 57, 0.918);
+  
 }
 
-.info {
-  // apply properties for .info
-  display: flex;
-  > p {
-    // change up the text size and style how you want
-    font-size: 1px;
-  }
+.content_box1 {
+  box-sizing: content-box;
+  width: 42%;
+  height: 500px;
+  padding-top: -1000rem;
+  padding-bottom: -1000px;
+  padding-left: 250px;
+  padding-right: -100px;
+  border: 2px solid rgba(255, 255, 255, 0.502);
+  position: relative;
+  top: -100px; left: 390px;
+  border-radius: 20px;
+  background-color: white;
 }
 
-.socials {
-  // apply properties for .socials
-  display: flex;
+.c1{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  font-weight: 600;
+  font-size: 50px;
+  position: relative;
+  bottom: -160px; left: -25%;
 }
 
-.icon {
-  // apply properties for icons
-  font-size: big;
+.p1{
+  font-weight: 30px;
+  font-weight: 100;
+  position: relative;
+  bottom: -180px; left: -180px; 
+  font-size: 15px;
+}
+
+.box1{
+  border-style: solid;
+  box-sizing: content-box;
+  width: 13%;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 9px;
+  border: 2px solid black;
+  border-radius: 18px;
+  position: relative;
+  bottom: -50px; left:500px;
+  font-size: x-large;  
+  
+}
+
+.box1:hover{
+  background-color: rgb(61, 62, 63);
+}
+
+.linkdin{
+  position: relative;
+  bottom: -230px; left:500px;
+  font-size: 55px;
+  text-decoration: underline;
+  text-decoration-color: rgba(225, 144, 57, 0.918);
+
+}
+.FaGithubSquare{
+  position: relative;
+  bottom: -164px; left:400px;
+  font-size: 55px;
+  text-decoration: underline;
+  
+
+}
+.IoIosMail{
+  position: relative;
+  bottom: -95px; left:300px;
+  font-size: 55px; 
+  text-decoration: underline;
+  
+
+}
+.FaInstagram{
+  position: relative;
+  bottom: -30px; left:210px;
+  font-size: 55px; 
+  text-decoration: underline;
+  
 }

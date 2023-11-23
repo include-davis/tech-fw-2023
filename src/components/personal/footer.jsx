@@ -1,31 +1,51 @@
-// import SCSS file as styles for this component
-import styles from "@/styles/components/personal/footer.module.scss";
+
+import React from 'react';
+import styles from '@/styles/components/personal/footer.module.scss';
+import { FaLinkedin,FaGithubSquare,FaInstagram } from "react-icons/fa";
+import { IoIosMail } from "react-icons/io";
 
 export default function Footer() {
-  // Make a footer!
-
-  /* Steps
-    1. Import #include logo for your footer: Can choose logo for yourself
-    2. Add your name to the footer
-    3. Add social media icons to the footer
-    4. Add links to your social media icons
-
-    List of helpful tags:
-    <img />: Image
-    <a />: Links
-    <li> </li>: List elements (MUST BE WRAPPED AROUND UL/OL TAG)
-    <div> </div>: 
-  */
   return (
-    <footer className={styles.footer}>
-      <section className={styles.logo}>logo</section>
 
-      <section className={styles.info}>
-        <p>Made by #your name here#</p>
-        <ul className={styles.socials}>
-          <li className={styles.icon}> SOCIAL MEDIA ICONS + REDIRECTING </li>
-        </ul>
-      </section>
-    </footer>
+    <div className={styles.bg}>
+    
+      <div className={styles.contact}>
+        <strong>Contact</strong>
+      </div>
+
+      <div className={styles.content_box1}>
+        <div className={styles.c1}>
+          <strong>Get in touch</strong>
+        </div>
+
+        <div className={styles.p1}>
+          <p>
+            I would love to hear about your project and how I<br/>
+            could help. Please fill in this form, and I'll get back<br/>
+            to you as soon as possible. <br/>
+          </p>
+
+          <div className={styles.linkdin}> 
+          <FaLinkedin/>
+          </div>
+
+          <div className={styles.FaGithubSquare}> 
+          <FaGithubSquare/>
+          </div>
+
+          <div className={styles.IoIosMail}> 
+          <IoIosMail/>
+          </div>
+
+          <div className={styles.FaInstagram}> 
+          <FaInstagram/>
+          </div>
+
+      </div>
+
+        <p className={styles.box1}>Submit</p>
+      </div>
+    
+    </div>
   );
 }

@@ -1,6 +1,7 @@
 import Skills from '@/components/personal/skillset';
 import About from '@/components/personal/about';
 import Footer from '@/components/personal/footer';
+import Project from '@/components/personal/project';
 import React from 'react';
 
 export default function Personal() {
@@ -8,11 +9,9 @@ export default function Personal() {
     <div>
       <About />
       <Skills />
+      <Project />
       <Footer />
       
-      <About>
-
-      </About>
     </div>
   );
 }

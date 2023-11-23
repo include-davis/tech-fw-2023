@@ -1,13 +1,5 @@
-// good work! Your page is not responsive right now so I'll check back in a week for that. Also try using a flexbox for ease of arranging some of your elements!
-
-// some things I noticed:
-// glad to see you understood how relative positioning works but you don't need to use position: relative for every element. I think you are trying to implement spacing by shifting the position from the default; if that's the case, I would recommend using paddings and margins instead as they are a lot easier to manipulate, especially in responsive designs. 
-// Additionally, we only specify positioning for elements that need something different from the default, for example, if you want to use absolute positioning for a child element. otherwise, you can let the default document flow take control.
-
-// also, the different units in CSS have generally used for certain kinds of elements for consistency: rem for fonts and line spacing, px for spacing (like padding/margin) and % for everything else.
-
-.bg{
-    background-color:rgb(241, 236, 241);
+.bg {
+    background-color: rgb(241, 236, 241);
 }
 
 *.h{
@@ -81,11 +73,21 @@
     font-weight: 900;
     font-size: 70px;
     position: relative;
-    top: -170px; left: 45%;
+    top: -240px; left: 45%;
     text-decoration: underline;
     text-decoration-color: rgba(225, 144, 57, 0.918);
+// // the following styles will also go in your skillset.module.css
+// .skill{
+//     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+//     font-weight: bolder;
+//     font-weight: 900;
+//     font-size: 70px;
+//     position: relative;
+//     top: -240px; left: 45%;
+//     text-decoration: underline;
+//     text-decoration-color: rgba(225, 144, 57, 0.918);
     
-}
+// }
 
 /* Define a box within a content box */
 .content_box {
@@ -98,10 +100,26 @@
     padding-right: -100px;
     border: 2px solid rgba(255, 255, 255, 0.502);
     position: relative;
-    top: -100px; left: 350px;
-    border-radius: 20px;
+    top: -220px; left: 350px;
+    border-radius: 10px;
     background-color: white;
 }
+
+// /* Define a box within a content box */
+// .content_box {
+//     box-sizing: content-box;
+//     width: 42%;
+//     height: 650px;
+//     padding-top: 80px;
+//     padding-bottom: -500px;
+//     padding-left: 300px;
+//     padding-right: -100px;
+//     border: 2px solid rgba(255, 255, 255, 0.502);
+//     position: relative;
+//     top: -00px; left: 350px;
+//     border-radius: 20px;
+//     background-color: white;
+// }
 
 .s{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -111,15 +129,15 @@
     position: relative;
     top: -10px; left:17%;
     color: black;
-    
 }
+// }
 
-.pic1{
+// .pic1{
  
-    position: relative;
-    top: 10px; left: -200px; 
-    width: 500px;
-    height: 500px;
+//     position: relative;
+//     top: 10px; left: -200px; 
+//     width: 500px;
+//     height: 500px;
 
 }
 .pic2{
@@ -136,7 +154,7 @@
 }
 .pic4{
     position: relative;
-    top: -1100px; left: 100px; 
+    top: -1200px; left: 100px; 
     width: 500px;
     height: 500px;
 }
@@ -153,8 +171,211 @@
     height: 500px;
 }
 
+.project{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    font-weight: 900;
+    font-size: 70px;
+    position: relative;
+    top: -2200px; left: 15%;
+    text-decoration: underline;
+    text-decoration-color: rgba(225, 144, 57, 0.918);
+    
+}
 
 
+.contact{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    font-weight: 900;
+    font-size: 70px;
+    position: relative;
+    top: -100px; left: 44%;
+    text-decoration: underline;
+    text-decoration-color: rgba(225, 144, 57, 0.918);
+    
+}
+
+.content_box1 {
+    box-sizing: content-box;
+    width: 42%;
+    height: 500px;
+    padding-top: -1000rem;
+    padding-bottom: -1000px;
+    padding-left: 250px;
+    padding-right: -100px;
+    border: 2px solid rgba(255, 255, 255, 0.502);
+    position: relative;
+    top: -100px; left: 390px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.c1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-weight: 600;
+    font-size: 50px;
+    position: relative;
+    bottom: -160px; left: -25%;
+}
+
+.p1{
+    font-weight: 30px;
+    font-weight: 100;
+    position: relative;
+    bottom: -180px; left: -180px; 
+    font-size: 15px;
+}
+
+.box1{
+    border-style: solid;
+    box-sizing: content-box;
+    width: 13%;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 9px;
+    border: 2px solid black;
+    border-radius: 18px;
+    position: relative;
+    bottom: -50px; left:500px;
+    font-size: x-large;  
+    
+}
+
+.box1:hover{
+    background-color: rgb(61, 62, 63);
+}
+
+.linkdin{
+    position: relative;
+    bottom: -230px; left:500px;
+    font-size: 55px;
+    text-decoration: underline;
+    text-decoration-color: rgba(225, 144, 57, 0.918);
+
+}
+.FaGithubSquare{
+    position: relative;
+    bottom: -164px; left:400px;
+    font-size: 55px;
+    text-decoration: underline;
+    
+
+}
+.IoIosMail{
+    position: relative;
+    bottom: -95px; left:300px;
+    font-size: 55px; 
+    text-decoration: underline;
+    
+
+}
+.FaInstagram{
+    position: relative;
+    bottom: -30px; left:210px;
+    font-size: 55px; 
+    text-decoration: underline;
+    
+}
+
+
+
+
+// .contact{
+//     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+//     font-weight: bolder;
+//     font-weight: 900;
+//     font-size: 70px;
+//     position: relative;
+//     top: -100px; left: 44%;
+//     text-decoration: underline;
+//     text-decoration-color: rgba(225, 144, 57, 0.918);
+    
+// }
+
+// .content_box1 {
+//     box-sizing: content-box;
+//     width: 42%;
+//     height: 500px;
+//     padding-top: -1000rem;
+//     padding-bottom: -1000px;
+//     padding-left: 250px;
+//     padding-right: -100px;
+//     border: 2px solid rgba(255, 255, 255, 0.502);
+//     position: relative;
+//     top: -100px; left: 390px;
+//     border-radius: 20px;
+//     background-color: white;
+// }
+
+// .c1{
+//     font-family: Georgia, 'Times New Roman', Times, serif;
+//     font-weight: bolder;
+//     font-weight: 600;
+//     font-size: 50px;
+//     position: relative;
+//     bottom: -160px; left: -25%;
+// }
+
+// .p1{
+//     font-weight: 30px;
+//     font-weight: 100;
+//     position: relative;
+//     bottom: -180px; left: -180px; 
+//     font-size: 15px;
+// }
+
+// .box1{
+//     border-style: solid;
+//     box-sizing: content-box;
+//     width: 13%;
+//     padding-top: 6px;
+//     padding-bottom: 6px;
+//     padding-left: 9px;
+//     border: 2px solid black;
+//     border-radius: 18px;
+//     position: relative;
+//     bottom: -50px; left:500px;
+//     font-size: x-large;  
+    
+// }
+
+// .box1:hover{
+//     background-color: rgb(61, 62, 63);
+// }
+
+// .linkdin{
+//     position: relative;
+//     bottom: -230px; left:500px;
+//     font-size: 55px;
+//     text-decoration: underline;
+//     text-decoration-color: rgba(225, 144, 57, 0.918);
+
+// }
+// .FaGithubSquare{
+//     position: relative;
+//     bottom: -164px; left:400px;
+//     font-size: 55px;
+//     text-decoration: underline;
+    
+
+// }
+// .IoIosMail{
+//     position: relative;
+//     bottom: -95px; left:300px;
+//     font-size: 55px; 
+//     text-decoration: underline;
+    
+
+// }
+// .FaInstagram{
+//     position: relative;
+//     bottom: -30px; left:210px;
+//     font-size: 55px; 
+//     text-decoration: underline;
+    
+// }
 
 
 

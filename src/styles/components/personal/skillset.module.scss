@@ -1,0 +1,72 @@
+.bg{
+    background-color:rgb(241, 236, 241);
+}
+
+// the following styles will also go in your skillset.module.css
+.skill{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    font-weight: 900;
+    font-size: 70px;
+    position: relative;
+    top: -240px; left: 45%;
+    text-decoration: underline;
+    text-decoration-color: rgba(225, 144, 57, 0.918);
+    
+}
+
+/* Define a box within a content box */
+.content_box {
+    box-sizing: content-box;
+    width: 42%;
+    height: 650px;
+    padding-top: 80px;
+    padding-bottom: -500px;
+    padding-left: 300px;
+    padding-right: -100px;
+    border: 2px solid rgba(255, 255, 255, 0.502);
+    position: relative;
+    top: -200px; left: 350px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+
+.pic1{
+ 
+    position: relative;
+    top: 10px; left: -200px; 
+    width: 500px;
+    height: 500px;
+
+}
+.pic2{
+    position: relative;
+    top: -500px; left: 50px; 
+    width: 500px;
+    height: 500px;
+}
+.pic3{
+    position: relative;
+    top: -600px; left: -250px; 
+    width: 500px;
+    height: 500px;
+}
+.pic4{
+    position: relative;
+    top: -1100px; left: 100px; 
+    width: 500px;
+    height: 500px;
+}
+.pic5{
+    position: relative;
+    top: -2000px; left: 400px; 
+    width: 500px;
+    height: 500px;
+}
+.pic6{
+    position: relative;
+    top: -2100px; left: 400px; 
+    width: 500px;
+    height: 500px;
+}
