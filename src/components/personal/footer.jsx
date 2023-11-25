@@ -1,4 +1,6 @@
 // import SCSS file as styles for this component
+import styles from'@/styles/components/personal/footer.module.scss';
+import Image from "next/image";
 
 export default function Footer() {
   // Make a footer!
@@ -17,10 +19,19 @@ export default function Footer() {
   */
   return (
     <footer className={styles.footer}>
-      <section className={styles.logo}>logo</section>
+      <section className={styles.logo}>
+        <Image
+          src="/Vector.svg"
+          width={40}
+          height={40}
+          sizes={"{max-width: 1048px} 30px, 40px"}
+          alt="logo"
+          className={styles.logo}
+        /></section>
+
 
       <section className={styles.info}>
-        <p>Made by #your name here#</p>
+        <p>Made by Vivica</p>
         <ul className={styles.socials}>
           <li className={styles.icon}> SOCIAL MEDIA ICONS + REDIRECTING </li>
         </ul>
