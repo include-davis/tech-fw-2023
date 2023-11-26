@@ -1,43 +1,51 @@
 import React, { Component, useState } from "react";
 import styles from "@/styles/components/personal/navbar.module.scss";
 import Link from "next/link";
-
+import Skills from "@/components/personal/skillset";
+/*
 const nav = [
   { link: "Home", href: "" },
-  { link: "Skills", href: "" },
+  { link: "Skills", href: "skillset_skillsHeadingText" },
   { link: "Projects", href: "" },
   { link: "Contact Me", href: "" },
 ];
-
+*/
 const dropDown_items = [
-  "CowChow Rewards",
-  "Connect N",
-  "Rock Paper Scissors",
-  "More",
+  { link: "CowChow Rewards", href: "" },
+  { link: "Connect N", href: "" },
+  { link: "Rock Paper Scissors", href: "" },
+  { link: "More", href: "" },
 ];
 
 export default function Navbar() {
-  const [isDropdownOpen, openDropdown] = useState(false); //use useState for dropdown menu
+  //const [isDropdownOpen, openDropdown] = useState(false); //TODO - original attempt did not work LOL
+  // use useState for dropdown menu - will appear under Projects navtitle
+
+  // based off useState workshop slides + navbar src code
+  const toggleDropdown = () => openDropdown(true);
+  const closeDropdown = () => openDropdown(false);
 
   return (
     /* styles.navbar = div for entire navbar */
     <nav className={styles.navbar}>
       {/*<div className={styles.logo}>KASHVI'S PORTFOLIO</div>*/}
       <ul className={styles.nav_titles}>
-        {/* not sure if map function is being used correctly here? tried to go based off how the #include website's navbar works (per the source code)*/}
-        {nav.map((title) => {
-          // what im trying to do: take in each element (title) from nav const and return it as a list element that is also a hyperlink (so its clickable)
-          return (
-            <li>
+        <li className={styles.links}>Home</li>
+        <li className={styles.links}>Skills</li>
+        <li className={styles.links}>
+          Projects
+          {/*{dropDown_items.map((title) => {
+            return (
               <Link
                 href={`/${title.href.toLowerCase()}`}
                 className={styles.link}
               >
                 {title.link}
               </Link>
-            </li>
-          );
-        })}
+            );
+          })}{" "} */}
+        </li>
+        <li className={styles.links}>Contact Me</li>
       </ul>
     </nav>
   );
