@@ -13,12 +13,16 @@
     border-radius: 10%;
     //border: #6D6875 solid 5px;
     width: 50%;
+    justify-content: space-between;
+    height: 400px;
+    
     
 }
 .title {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 3.6rem;
-    padding-top: 16px;
+    padding-top: 120px;
+    padding-bottom: 40px;
     color: #6D6875;
 }
 
@@ -29,7 +33,6 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.8rem;
     list-style: none;
-    
     width: 50%;
     color: #F5CDA7;
     > p {
