@@ -5,11 +5,10 @@
   align-items: center;
   justify-content: center;
   height: 80px;
-  padding: 16px;
+  padding: 24px;
   background-color: rgb(0, 0, 0);
   color: white;
 }
-//TODO: adjust color scheme
 //TODO: figure out how to get .logo to stay on left side like the logo in the main #include navbar
 /*
 .logo {
@@ -28,16 +27,20 @@
 }
 
 .links {
-  font-family: "Poppins", sans-serif;
   padding: 8px;
+  font-family: "Roboto Mono", monospace;
+  font-weight: bold;
 }
 
 .links:hover {
   color: rgb(231, 150, 216);
-  border-radius: 8px;
-  border: none;
 }
 
-.dropdown {
+.dropdownItem {
+  display: flex;
   list-style-type: none;
+  max-height: 80px;
+  margin-bottom: 75px;
+  flex-direction: column;
+  position: absolute;
 }

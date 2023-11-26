@@ -4,7 +4,7 @@ import Link from "next/link";
 import Skills from "@/components/personal/skillset";
 
 <link
-  href="https://fonts.googleapis.com/css2?family=Poppins&family=Trispace:wght@300&display=swap"
+  href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Trispace:wght@300&display=swap"
   rel="stylesheet"
 ></link>;
 
@@ -17,18 +17,21 @@ const nav = [
 ];
 */
 const dropDown_items = [
-  { link: "CowChow Rewards", href: "" },
-  { link: "Connect N", href: "" },
-  { link: "Rock Paper Scissors", href: "" },
-  { link: "More", href: "" },
+  {
+    link: "CowChow Rewards",
+    href: "https://www.figma.com/proto/tGwJKonLfpPaPIi6Q1y9CP/DI---UC-Davis-Rewards?type=design&node-id=123-152&t=FWvk2p2E3goookza-1&scaling=scale-down&page-id=78%3A6&starting-point-node-id=123%3A161&mode=design",
+  },
+  { link: "Connect N", href: "https://github.com/kashdw/connectN" },
+  {
+    link: "Rock Paper Scissors",
+    href: "https://github.com/kashdw/RockPaperScissors-2.0",
+  },
+  { link: "More", href: "https://github.com/kashdw" },
 ];
 
-// DOCUMENTATION: https://legacy.reactjs.org/docs/events.html#mouse-events
-
 export default function Navbar() {
-  const [isDropdownOpen, openDropdown] = useState(false); //TODO - original attempt did not work LOL
-  // use useState for dropdown menu - will appear under Projects navtitle
-
+  const [isDropdownOpen, openDropdown] = useState(false);
+  // attempting to use useState for dropdown menu - will appear under Projects navtitle
   // based off useState workshop slides + navbar src code
   const toggleDropdown = () => openDropdown(true);
   const closeDropdown = () => openDropdown(false);
@@ -42,7 +45,7 @@ export default function Navbar() {
         <li className={styles.links}>Skills</li>
         <li
           className={styles.links}
-          onMouseEnter={toggleDropdown}
+          onMouseEnter={toggleDropdown} // DOCUMENTATION: https://legacy.reactjs.org/docs/events.html#mouse-events
           onMouseLeave={closeDropdown}
         >
           Projects
@@ -50,9 +53,7 @@ export default function Navbar() {
             <ul className={styles.dropdown}>
               {dropDown_items.map((title) => (
                 <li className={styles.dropdownItem}>
-                  <Link href={`/${title.href.toLowerCase()}`}>
-                    {title.link}
-                  </Link>
+                  <Link href={`/${title.href}`}>{title.link}</Link>
                 </li>
               ))}
             </ul>
