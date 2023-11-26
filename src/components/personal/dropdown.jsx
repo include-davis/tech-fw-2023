@@ -2,10 +2,6 @@ import React, { Component, useState } from "react";
 import styles from "@/styles/components/personal/dropdown.module.scss";
 import Link from "next/link";
 import { useRef } from "react";
-<link
-  href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Trispace:wght@300&display=swap"
-  rel="stylesheet"
-></link>;
 
 const dropDown_items = [
   {
@@ -25,11 +21,11 @@ export default function DropDown() {
   const [dropdown, setDropDown] = useState(false);
   return (
     <div>
-      <ul
+      <ul // if dropdown is toggled, render styling of projectDropdownToggled
         className={
           dropdown ? styles.projectDropdownToggled : styles.projectDropdown
         }
-        onClick={() => setDropDown(!dropdown)} // arrow function?
+        onClick={() => setDropDown(!dropdown)}
       >
         {dropDown_items.map((title) => {
           return (

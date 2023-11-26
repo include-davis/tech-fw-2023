@@ -16,6 +16,11 @@ const nav_titles = [
 
 // split up into two files - navbar.jsx and dropdown.jsx bc i was losing my mind a bit :D
 // useState hook used in dropdown
+
+// TODO: issue with dropdown - currently can't click on anything in dropdown menu because it disappears when moving mouse from "Projects" title
+// TODO: dropdown only appears when hovering exactly on "Projects" link - want to make it so hovering anywhere in its box toggles dropdown
+// TODO: right now navbar_titles are not centered - might be issue with .logo div - maybe just delete it?
+
 export default function Navbar() {
   const [dropdown, toggleDropdown] = useState(false);
 
@@ -35,8 +40,7 @@ export default function Navbar() {
                 <li key={title.link} className={styles.titles}>
                   <Link
                     href={title.href}
-                    // DOCUMENTATION: https://legacy.reactjs.org/docs/events.html#mouse-events
-                    onMouseEnter={() => toggleDropdown(true)}
+                    onMouseEnter={() => toggleDropdown(true)} // DOCUMENTATION: https://legacy.reactjs.org/docs/events.html#mouse-events
                     onMouseLeave={() => toggleDropdown(false)}
                   >
                     {title.link}
