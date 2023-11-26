@@ -1,22 +1,9 @@
-// import SCSS file as styles for this component
+import React from 'react';
 import styles from'@/styles/components/personal/footer.module.scss';
 import Image from "next/image";
+import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
-  // Make a footer!
-
-  /* Steps
-    1. Import #include logo for your footer: Can choose logo for yourself
-    2. Add your name to the footer
-    3. Add social media icons to the footer
-    4. Add links to your social media icons
-
-    List of helpful tags:
-    <img />: Image
-    <a />: Links
-    <li> </li>: List elements (MUST BE WRAPPED AROUND UL/OL TAG)
-    <div> </div>: 
-  */
   return (
     <footer className={styles.footer}>
       <section className={styles.logo}>
@@ -24,16 +11,29 @@ export default function Footer() {
           src="/Vector.svg"
           width={40}
           height={40}
-          sizes={"{max-width: 1048px} 30px, 40px"}
+          sizes="{max-width: 1048px} 30px, 40px"
           alt="logo"
           className={styles.logo}
-        /></section>
-
-
+        />
+      </section>
       <section className={styles.info}>
-        <p>Made by Vivica</p>
-        <ul className={styles.socials}>
-          <li className={styles.icon}> SOCIAL MEDIA ICONS + REDIRECTING </li>
+        <p>made by vivica</p>
+        <ul className={styles.footerIcons}>
+          <li>
+            <a href="YOUR_LINK_HERE" target="_blank" rel="noopener noreferrer">
+              <FaLinkedin />
+            </a>
+          </li>
+          <li>
+            <a href="YOUR_LINK_HERE" target="_blank" rel="noopener noreferrer">
+              <FaGithub />
+            </a>
+          </li>
+          <li>
+            <a href="YOUR_LINK_HERE" target="_blank" rel="noopener noreferrer">
+              <FaInstagram />
+            </a>
+          </li>
         </ul>
       </section>
     </footer>
