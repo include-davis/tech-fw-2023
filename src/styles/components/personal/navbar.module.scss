@@ -6,7 +6,8 @@
   justify-content: center;
   height: 80px;
   padding: 16px;
-  background-color: rgb(231, 150, 216);
+  background-color: rgb(0, 0, 0);
+  color: white;
 }
 //TODO: adjust color scheme
 //TODO: figure out how to get .logo to stay on left side like the logo in the main #include navbar
@@ -27,11 +28,16 @@
 }
 
 .links {
+  font-family: "Poppins", sans-serif;
   padding: 8px;
 }
 
 .links:hover {
-  background-color: rgb(199, 199, 199);
+  color: rgb(231, 150, 216);
   border-radius: 8px;
   border: none;
+}
+
+.dropdown {
+  list-style-type: none;
 }
