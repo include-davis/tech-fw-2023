@@ -2,7 +2,8 @@ import React, { Component, useState } from "react";
 import styles from "@/styles/components/personal/navbar.module.scss";
 import Link from "next/link";
 import Skills from "@/components/personal/skillset";
-
+import { useRef } from "react";
+import Footer from "@/components/personal/footer";
 <link
   href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Trispace:wght@300&display=swap"
   rel="stylesheet"
@@ -36,13 +37,27 @@ export default function Navbar() {
   const toggleDropdown = () => openDropdown(true);
   const closeDropdown = () => openDropdown(false);
 
+  // source: https://stackoverflow.com/questions/58525269/jump-to-a-specific-section-in-a-page-react
+  const section1 = useRef(Skills.skillsSection);
+  const section2 = useRef(null);
+  const section3 = useRef(Footer.footer);
+
+  const scrollToSection = (eleRef) => {
+    // does not work rn ARGH - come back to
+    window.scrollTo({
+      behavior: "smooth",
+    });
+  };
+
   return (
     /* styles.navbar = div for entire navbar */
     <nav className={styles.navbar}>
       {/*<div className={styles.logo}>KASHVI'S PORTFOLIO</div>*/}
       <ul className={styles.nav_titles}>
         <li className={styles.links}>Home</li>
-        <li className={styles.links}>Skills</li>
+        <li className={styles.links} onClick={() => scrollToSection(section1)}>
+          Skills
+        </li>
         <li
           className={styles.links}
           onMouseEnter={toggleDropdown} // DOCUMENTATION: https://legacy.reactjs.org/docs/events.html#mouse-events
@@ -59,7 +74,11 @@ export default function Navbar() {
             </ul>
           )}
         </li>
-        <li className={styles.links}>Contact Me</li>
+        <li
+          className={styles.links} /*onClick={() => scrollToSection(section3)}*/
+        >
+          Contact Me
+        </li>
       </ul>
     </nav>
   );
