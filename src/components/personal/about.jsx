@@ -10,18 +10,18 @@ export default function About() {
   return (
     <div className={styles.page}>
       <div className={styles.text}>
-        <p className={styles.jobtitle}>
+        <h2 className={styles.jobtitle}>
           Computer Science and Engineering Student
-        </p>
+        </h2>
 
         <h1 className={styles.hello}>
           Hello, my name is Nandhana Selvam
         </h1>
 
-        <h2 className={styles.hello_description}>
+        <p className={styles.hello_description}>
           I am a third year Computer Science and Engineering student at
           UC Davis!
-        </h2>
+        </p>
         {/* DONE: Since this is a button, I recommend using the <button> tag instead and if you have a link you want to add in here then you can do <a><button></button></a> or ultimalteyl just use <a> and style that instead */}
         <a href="mailto:nandhanaselvam@gmail.com"className={styles.contact_button}>
           <button>
