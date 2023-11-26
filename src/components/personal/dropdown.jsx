@@ -21,13 +21,24 @@ const dropDown_items = [
 ];
 
 export default function DropDown() {
+  // based on slides
+  const [dropdown, setDropDown] = useState(false);
   return (
     <div>
-      <ul className={styles.projectDropdown}>
+      <ul
+        className={
+          dropdown ? styles.projectDropdownToggled : styles.projectDropdown
+        }
+        onClick={() => setDropDown(!dropdown)} // arrow function?
+      >
         {dropDown_items.map((title) => {
           return (
             <li key={title.link}>
-              <Link href={title.href} className={styles.dropDown_titles}>
+              <Link
+                href={title.href}
+                className={styles.dropDown_titles}
+                onClick={() => setDropDown(!dropdown)}
+              >
                 {title.link}
               </Link>
             </li>

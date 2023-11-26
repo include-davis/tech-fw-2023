@@ -17,6 +17,8 @@ const nav_titles = [
 // split up into two files - navbar.jsx and dropdown.jsx bc i was losing my mind a bit :D
 // useState hook used in dropdown
 export default function Navbar() {
+  const [dropdown, toggleDropdown] = useState(false);
+
   return (
     <div>
       <nav className={styles.navbar}>
@@ -27,6 +29,23 @@ export default function Navbar() {
         </div>
         <ul className={styles.navbar_titles}>
           {nav_titles.map((title) => {
+            if (title.link === "Projects") {
+              // for Projects link, toggle dropdown when hovered
+              return (
+                <li key={title.link} className={styles.titles}>
+                  <Link
+                    href={title.href}
+                    // DOCUMENTATION: https://legacy.reactjs.org/docs/events.html#mouse-events
+                    onMouseEnter={() => toggleDropdown(true)}
+                    onMouseLeave={() => toggleDropdown(false)}
+                  >
+                    {title.link}
+                  </Link>
+                  {dropdown && <DropDown></DropDown>}
+                </li>
+              );
+            }
+
             return (
               <li key={title.link} className={styles.titles}>
                 <Link href={title.href}>{title.link}</Link>
@@ -35,7 +54,6 @@ export default function Navbar() {
           })}
         </ul>
       </nav>
-      <DropDown></DropDown>
     </div>
   );
 }
