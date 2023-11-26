@@ -3,12 +3,35 @@
   position: relative;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   height: 80px;
-  padding: 24px;
+  padding: 16px;
   background-color: rgb(231, 150, 216);
 }
 //TODO: adjust color scheme
+//TODO: figure out how to get .logo to stay on left side like the logo in the main #include navbar
+/*
 .logo {
+  display: flex;
   justify-content: flex-start;
+}
+*/
+.nav_titles {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  list-style: none; // hides bullet points of li elements
+  font-size: 1.1rem;
+  gap: 64px;
+}
+
+.link {
+  padding: 8px;
+}
+
+.link:hover {
+  background-color: rgb(199, 199, 199);
+  border-radius: 8px;
+  border: none;
 }
