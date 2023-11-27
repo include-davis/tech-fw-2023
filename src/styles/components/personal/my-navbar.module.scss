@@ -1,0 +1,32 @@
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-bottom: 2%;
+    background-color: rgb(250, 242, 230);
+}
+
+.nav_menu {
+    margin: 8px 48px;
+    padding: 16px 16px;
+    border-radius: 5px;
+    color: rgb(179, 137, 75);
+}
+
+.nav_items {
+    margin: 8px 48px;
+    padding: 16px 16px; 
+    border-radius: 5px; 
+    color: rgb(89, 0, 22)
+}
+
+// nice use of hover
+.nav_items:hover, .nav_menu:hover {
+    background-color: rgb(248, 235, 217); 
+}
+
+// .socials-drop-menu {
+
+// }

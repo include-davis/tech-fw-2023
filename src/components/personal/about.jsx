@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import { AiOutlineMenu } from 'react-icons/ai'
+import React, { Component, useState } from 'react';
 import styles from "@/styles/components/personal/about.module.scss";
 import Image from "next/image";
+import Navbar from './my-navbar.jsx';
 
 // impressive. loved to see how creative you got with this!
 // structure is really good, classnames are meaningful, appreciate the use of Image, and the code is really clean.
@@ -11,9 +11,6 @@ import Image from "next/image";
 export default function About() {
     return (
       <section className={styles.section}>
-        <nav className={styles.nav}>
-          <div className={styles.nav_menu}><AiOutlineMenu size={28}/></div>
-        </nav>
         <div className={styles.body}>
           <div className={styles.about}>
             <h2 className={styles.profession}>UI/UX Designer</h2>
