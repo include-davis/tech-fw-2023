@@ -10,7 +10,7 @@ import styles from '@/styles/components/personal/skillset.module.scss';
 export default function Skills() {
   return <section className={styles.skills_page}>
     <h1 className={styles.title}>
-    skills
+    Skills
     </h1>
     
     <ul className={styles.skills_list}>

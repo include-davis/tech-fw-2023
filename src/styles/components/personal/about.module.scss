@@ -67,15 +67,19 @@
     //border: 2px solid #FAA381;
     color: white;
     border-radius: 16px;
-    transition: background-color 0.3s;
+    transition: box-shadow 0.4s ease;
+    transition: background-color 0.4s;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .contact_button button:hover {
     background-color: #FF8C70; 
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
 }
 
 .contact_button {
     align-self: center;
+    
 }
 
 

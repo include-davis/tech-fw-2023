@@ -1,5 +1,7 @@
 import styles from '@/styles/components/personal/header.module.scss';
 import React, { useState, useRef } from 'react';
+import { IoIosMenu } from "react-icons/io";
+import { IoMenu } from "react-icons/io5";
 
 const DropdownMenu = () => {
     const dropdownRef = useRef(null);
@@ -25,7 +27,7 @@ const DropdownMenu = () => {
     return (
         <div className={styles.menu_container}>
             <button onClick={onClick} className = {styles.menu_trigger}>
-                <span>Menu</span>
+                <span><IoMenu /></span>
             </button>
             <nav ref = {dropdownRef} className = {`${styles.menu} ${isActive ? styles.active : styles.inactive}`}>
                 <ul>

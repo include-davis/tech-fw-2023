@@ -28,7 +28,7 @@ export default function Footer() {
 
         <ul className={styles.socials}>
           <li className={styles.icon}> 
-            <a href = "www.linkedin.com/in/nandhanaselvam">
+            <a href = "https://www.linkedin.com/in/nandhanaselvam/" target="_blank" rel="noopener noreferrer">
               <AiFillLinkedin className={styles.linkedin_icon}/>
             </a>
           </li>
@@ -40,7 +40,7 @@ export default function Footer() {
           </li>
 
           <li className={styles.icon}>
-            <a href="https://github.com/nandhanaselvam">
+            <a href="https://github.com/nandhanaselvam" target="_blank" rel="noopener noreferrer">
               <AiFillGithub className={styles.github_icon}/>
             </a>
           </li>

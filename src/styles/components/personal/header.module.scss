@@ -3,15 +3,15 @@
     //border: 2px dotted red;
     display: flex;
     justify-content: flex-end;
+    right: 16px;
+    top: 16px;
   }
 
   .menu {
-    background: #ffffff;
+    background: white;
     border-radius: 8px;
     position: absolute;
-    top: 60px;
-    right: 0px;
-    //left: 0px;
+    top: 56px;
     width: 300px;
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
     opacity: 0;
@@ -42,15 +42,21 @@
   
   .menu li a {
     text-decoration: none;
-    color: #333333;
+    color: #6D6875;
     padding: 15px 20px;
     display: block;
     //border: 2px dotted red;
+    transition: background-color 0.3s;
+  }
+
+  .menu li a:hover {
+    background-color: #FFCDB2;
   }
 
   .menu_trigger {
-    background: #ffffff;
-    border-radius: 90px;
+    background: #FFB4A2;
+    color: white;
+    border-radius: 16px;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
@@ -60,16 +66,22 @@
     border: none;
     vertical-align: middle;
     transition: box-shadow 0.4s ease;
+    transition: background-color 0.4s;
     //border: 2px dotted red;
   }
   
   .menu_trigger:hover {
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+    background-color: #FF8C70; 
   }
   
   .menu_trigger span {
-    font-weight: 700;
+    //font-weight: 700;
     vertical-align: middle;
-    font-size: 14px;
-    margin: 0 10px;
+    font-size: 1.3rem;
+    margin: 0 8px;
+    font-family: Gill Sans, sans-serif;
+    //border: 2px dotted red;
   }
+
+  
