@@ -16,6 +16,9 @@ export default function Map() {
       <h1 className={styles.header}>My Favorite Things Are: </h1>
       <ul>{list(myFavThings)}</ul>
       {/* create an unordered list that calls on our list function */}
+      <ul className={styles.favorites}>
+        
+      </ul>
     </section>
   );
 }
