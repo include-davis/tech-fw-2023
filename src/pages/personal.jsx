@@ -6,10 +6,10 @@ import React from 'react';
 
 // ordered; write in order as you want them to appear
 const navLinks = [
-  {name: "Home", href: "/home"}, 
-  {name: "About", href: "/about"}, 
-  {name: "Contact", href: "/contact"}, 
-  {name: "Services", href: "/services"}
+  {name: "home", href: "/home"}, 
+  {name: "about", href: "/about"}, 
+  {name: "contact", href: "/contact"}, 
+  {name: "services", href: "/services"}
 ]
 
 export default function Personal() {

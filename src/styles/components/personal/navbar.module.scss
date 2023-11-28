@@ -2,7 +2,7 @@
 
 .nav {
   display: flex;
-  height: 150px;
+  height: 100px;
   background-color: var(--bg-light-purple);
   justify-content: space-between;
   align-items: center;
@@ -22,23 +22,25 @@
   align-items: center;
   justify-content: center;
 
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   list-style-type: none;
   text-decoration: none;
-  overflow-y: hidden;
   transition: max-height 0.5s ease-in-out;
+  overflow-y: hidden;
 
-  gap: 16px;
+  gap: 24px;
 
   @include mixins.phone {
     position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 100;
     width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    top: 100%;
-    left: 0;
     height: calc(100vh - 100%);
-    // display: none;
+    // // display: none;
     background-color: aquamarine;
     max-height: 0;
     gap: 0;
@@ -51,7 +53,9 @@
 
 .navLink {
   font-size: 1rem;
-  transition: transform 0.3s ease-in-out;
+  transition: background-color 0.3s;
+  padding: 16px 40px;
+  border-radius: 8px;
  
   @include mixins.phone {
     width: 100%;
@@ -59,18 +63,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--include-purple);
-    color: var(--color-white);
+    background-color: rgb(228, 228, 228);
+    color: rgb(62, 62, 62);
     text-align: center;
+
+    padding: none;
+    border-radius: 0;
   }
 }
 
 .navLink:hover {
-  transform: translateY(-2px);
-  text-decoration: underline;
+  background-color: rgb(175, 135, 193);
 
   @include mixins.phone {
-    background-color: gray;
+    background-color: rgb(196, 196, 196);
     transform: none;
     text-decoration: none;
   }
