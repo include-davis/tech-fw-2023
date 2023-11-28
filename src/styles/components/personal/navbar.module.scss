@@ -18,16 +18,12 @@
 
 .links {
   display: flex;
-  position: absolute;
-  top: 100%;
-  left: 0;
 
   align-items: center;
   justify-content: center;
 
   list-style-type: none;
   text-decoration: none;
-  max-height: 0;
   overflow-y: hidden;
   transition: max-height 0.5s ease-in-out;
 
@@ -44,6 +40,7 @@
     height: calc(100vh - 100%);
     // display: none;
     background-color: aquamarine;
+    max-height: 0;
     gap: 0;
   }
 }

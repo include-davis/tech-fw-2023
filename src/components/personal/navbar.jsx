@@ -29,12 +29,12 @@ export default function Navbar({links}) {
         <div className={styles.mobileMenu} onClick={handleOpen}>
           {isOpen ? <RxCross2 /> : <MdMenu />}
         </div>
-        <ul className={"${styles.links} ${isOpen ? styles.active : ''}"}>
+        <ul className={`${styles.links} ${isOpen ? styles.active : ''}`}>
           {links.map((link, index) => {
             // const {name, href} = link;
             return(
-              <li className={styles.navLink} key={'Link ${index+1}'}>
-                <Link href={'${link.href}'}>
+              <li className={styles.navLink} key={`Link ${index+1}`}>
+                <Link href={`${link.href}`}>
                   {link.name}
                 </Link>
               </li>
