@@ -10,7 +10,6 @@
   background-color: rgb(242, 224, 242);
   padding-top: 100px;
   padding-bottom: 130px;
-  border-radius: 8px;
   animation-fill-mode: forwards;
   animation-iteration-count: 1, infinite;
 }
@@ -60,11 +59,12 @@
 
 .mepicture {
   width: 64px;
+  border-radius: 4px;
 }
 
 .clubNames, .interestNames {
   font-size: 1.1rem;
-  margin-top: 4px;
+  margin-top: 2px;
   text-align: start;
 }
 
