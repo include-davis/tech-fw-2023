@@ -1,3 +1,4 @@
+@use 'src/styles/mixins.scss';
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400&display=swap');
 
 .skills{
@@ -19,6 +20,16 @@
 }
 
 
+.inline{
+  //display: inline-block;
+  width: auto;
+
+      @include mixins.phone{
+          display: flex;
+          flex-direction: row;
+      }
+ }
+
 h1{
   font-weight: 400;
   color: #6E5FDC;
@@ -31,6 +42,15 @@ h1{
   margin-left: auto;
   margin-right: auto;
   width: 150px;
+  
+  @include mixins.phone{
+    display: flex;
+    order: 2;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 0px;
+  }
+  
 }
 
 .textContainer{
@@ -82,10 +102,19 @@ h2{
 
   .helloKitty{
     display: flex;
-    height: 150px;
-    width: 150px;
+    height: auto;
+    max-width: 150px;
+    width: 100%;
     float: left;
     margin: 24px;
+
+    @include mixins.phone{
+      width: 75px;
+      display: flex;
+      height: 75px;
+      order: 1;
+      margin: 0px;
+    }
   }
 
   .chocoCat{
@@ -94,6 +123,14 @@ h2{
     width: 150px;
     float: right;
     margin: 24px;
+
+    @include mixins.phone{
+      width: 75px;
+      display: flex;
+      height: 75px;
+      order: 3;
+      margin: 0px;
+    }
   }
 
 }

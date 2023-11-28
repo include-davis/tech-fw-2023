@@ -1,0 +1,96 @@
+@use 'src/styles/mixins.scss';
+
+.nav {
+    display: flex;
+    //height: 150px;
+    align-items: center;
+    background-color: #AEBCFA;
+    justify-content: space-between;
+    padding: var(--pd-md);
+    position: relative;
+
+}
+
+.rightSide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    list-style-type: none;
+    text-decoration: none;
+
+    gap: 16px;
+
+    overflow-y: hidden;
+    transition: max-height 0.5s ease-in-out;
+    
+
+    
+    @include mixins.phone {
+        //display: none;
+        width: 100%;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        height: calc(100vh - 100%);
+        background-color: #E2ECFF;
+        
+        gap: 0;
+        max-height: 0;
+    }
+}
+
+.links.active{
+    max-height: calc(100vh - 100%);
+}
+
+.navLink{
+    font-size: 1rem;
+    transition: transform 0.7s ease-in-out;
+    
+
+    @include mixins.phone{
+        background-color: #E2ECFF;
+        color: var(--color-black);
+        width: 100%;
+        
+
+        height: calc(100vh - 100%);
+        transition: none;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.navLink:hover {
+    transform: translateY(-1px);
+    text-decoration: underline;
+
+    @include mixins.phone{
+        text-decoration: none;
+        transform: none;
+        background-color:#6E5FDC;
+        ;
+    }
+}
+
+.mobileMenu {
+    display: none;
+    font-size: 1rem;
+    
+    
+    
+    @include mixins.phone{
+        display: flex;
+        
+    }
+}

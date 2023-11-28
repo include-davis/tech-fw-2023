@@ -6,17 +6,19 @@ import styles from '@/styles/components/personal/skillset.module.scss';
     2. You can also include soft skills like communication, teamwork, etc
     3. Could also put in some of your hobbies or interests
 */
-import styles from '@/styles/components/personal/skillset.module.scss/'
 
 
 export default function Skills() {
   return <section className={styles.skills}>
     
     <div className={styles.body}>
+
+      <div className={styles.inline}>
         <h1>Skills</h1>
 
           <img className={styles.helloKitty} src={"/personal/hellokitty.png"} alt={"Hello Kitty"}/>
           <img className={styles.chocoCat} src={"/personal/chocoCat.png"} alt={"Choco Cat"}/>
+      </div>
 
           <div className={styles.textContainer}>
             <div className={styles.textHTML}>
