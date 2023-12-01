@@ -1,19 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+
 .Container {
-    background-color: aquamarine;
+    //background-color: aquamarine;
+    border-style:double;
+    border-color: black;
+    background: -webkit-linear-gradient(black, rgb(176, 189, 195), #fcfcf1, rgb(252, 249, 251));
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: flex-end;
+    column-gap: 10%;
+}
+
+.title {
+    font-family: "Dancing Script", cursive;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    text-decoration: underline overline;
 }
 
 .buttonsContainer {
-    //border-radius: 1px;
-    border-style:double;
-    border-color: black;
     width: 50%;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: flex-start;
     column-gap: 10%;
+}
+
+.button {
+    padding-right: 10px;
+    padding-left: 10px;
+    font-family: "Dancing Script", cursive;
+    background-color: rgb(255, 255, 191);
+    font-size: 3rem;
 }
 
 .projectsContainer {

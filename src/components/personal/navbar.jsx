@@ -24,10 +24,11 @@ export default function NavBar_Personal() {
 
     return (
         <div className={navbar_personal.Container}>
+            <div className={navbar_personal.title}>Welcome!</div>
             <div className={navbar_personal.buttonsContainer}>
-                <button>Home</button>
+                <button className={navbar_personal.button}>Home</button>
                 <div className={navbar_personal.projectsContainer}>
-                    <button onClick={onClick}>Projects</button>
+                    <button onClick={onClick} className={navbar_personal.button}>Projects</button>
                     <Dropdown clickState={clickState} />
                     </div>
                 </div>
