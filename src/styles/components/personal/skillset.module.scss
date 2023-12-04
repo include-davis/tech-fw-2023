@@ -4,21 +4,28 @@
     justify-content: center;
     padding: 40px 0;
     height: 33vh;
+    background-image: url('https://cdn.pixabay.com/photo/2016/11/29/11/39/computer-1869236_1280.jpg');
+    height: 300px;
+    padding-bottom: 300px;
+    padding-top: 150px;
   }
 
   .skillsBox {
     width: 90%; 
     margin: auto; 
     text-align: center;
-    padding: 20px;
-    border: 2px solid #333;
-    background-color: #fff;
+    padding: 50px;
+    border: 2px solid white;
+    background-color: black;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
     border-radius: 15px; 
+    
+    
 
     h1 {
       margin-bottom: 20px; 
       font-size: 2rem;
+      color: white;
     }
   }
 
