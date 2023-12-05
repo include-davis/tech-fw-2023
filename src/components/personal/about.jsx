@@ -20,12 +20,7 @@ export default function About() {
         <strong>UI/UX DESIGNER</strong>
       </span>
 
-      <div>
-        <p className={styles.font}>
-          Hello, my name <br />
-          is Krishna Gupta
-        </p>
-      </div>
+      
       <div>
         <p className={styles.font}>
           Hello, my name <br />
