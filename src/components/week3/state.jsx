@@ -4,8 +4,8 @@ import styles from "@/styles/components/week3/state.module.scss";
 
 export default function Form() {
   //TODO: REMOVE THESE DECLARATIONS
-  const name = "Hello"; // TODO: create a state variable called 'name' with a proper setter and set its inital value to your name
-  const age = 0; //TODO: do the same but with an age variable instead
+  const name = "Elysia"; // TODO: create a state variable called 'name' with a proper setter and set its inital value to your name
+  const age = 19; //TODO: do the same but with an age variable instead
 
   return (
     <div className={styles.container}>

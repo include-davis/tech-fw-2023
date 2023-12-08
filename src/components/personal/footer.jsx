@@ -18,12 +18,11 @@ export default function Footer() {
   */
   return (
     <footer className={styles.footer}>
-      <section className={styles.logo}>logo</section>
-
+      <section className={styles.logo}></section>
       <section className={styles.info}>
-        <p>Made by #your name here#</p>
+        <p>Made by Elysia Oh</p>
         <ul className={styles.socials}>
-          <li className={styles.icon}> SOCIAL MEDIA ICONS + REDIRECTING </li>
+          <li className={styles.icon}><a href= "https://www.linkedin.com/in/elysia-oh/">LinkedIn</a></li>
         </ul>
       </section>
     </footer>
