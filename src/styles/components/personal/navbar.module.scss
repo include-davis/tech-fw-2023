@@ -1,0 +1,87 @@
+@use 'src/styles/mixins.scss';
+
+.nav {
+    display: flex;
+    background-color: var(--include-purple);
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--pd-md);
+    position: relative;
+}
+
+.rightSide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links{
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    list-style-type: none;
+    text-decoration: none;
+
+    overflow-y: hidden;
+    transition: max-height 0.5s ease;
+
+    gap: 16px;
+
+    @include mixins.phone{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        height: calc(100vh - 100%);
+        background-color: aquamarine;
+        max-height: 0;
+        gap: 0;
+    }
+}
+
+.links.active{
+    max-height: calc(100vh - 100%);
+}
+
+
+.navLink{
+    font-size: 1rem;
+    transition: transform 0.3s ease-in-out;
+
+    @include mixins.phone{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        color: var(--color-white);
+    }
+}
+
+.navLink:hover{
+    transform: translateY(-1px);
+    text-decoration: underline;
+
+    @include mixins.phone{
+        background-color: gray;
+        transform: none;
+        text-decoration: none;
+    }
+}
+
+.mobileMenu{
+    color: white;
+    display: none;
+    font-size: 2rem;
+
+    @include mixins.phone{
+        display: flex;
+    }
+}
