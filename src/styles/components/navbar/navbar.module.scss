@@ -11,13 +11,24 @@
 
   background-color: black;
 
-  @include mixins.phone {
-    justify-content: space-between;
-  }
+  //@include mixins.phone {
+    //justify-content: space-between;
 }
+.navobjects{
+  display:flex;
+  margin:8px 32px;
+  padding:16px 16px;
+  color:aqua;
+  border-radius:7px;
 
+}
 .logo:hover {
-  filter: brightness(0.8);
+  background-color:bisque;
+}
+.nav_menu{
+  border-radius:7px;
+  padding:18px 18px;
+  margin:8px 32px;
 }
 
 .links {
@@ -25,7 +36,6 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  list-style: none;
   font-size: 1.2rem;
 
   gap: 36px;

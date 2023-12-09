@@ -3,16 +3,22 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "@/styles/components/navbar/navbar.module.scss";
 
+const navobjects =["Services","Socials,","Help"];
 const nav = [
-  { link: "Home", href: "" },
-  { link: "Workshops", href: "workshops" },
-  { link: "Resources", href: "resources" },
-  { link: "Personal", href: "personal" },
+  { link: "Home", href: "/home" },
+  { link: "Services", route: "/services" },
+  { link: "Socials", href: "/resources" },
+  { link: "Personal", href: "/personal" },
 ];
 
-const dropDown_items = [1, 2, 3, 4, 5];
-export default function Navbar() {
-  const [active, setActive] = useState(false);
+export default function Navbar({links}) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const socials=(array)=>{
+    return (array.map(elements))=> <div className={styles.social}>
+      {elements}
+    </div>
+    }
 
   const dropDown = () => {
     return (
