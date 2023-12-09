@@ -11,6 +11,9 @@ import Form from "@/components/week3/state.jsx";
 import data from "@/data/data.json";
 import styles from "@/styles/week/week.module.scss";
 
+// week 5
+import Submit from "@/components/week 5/backend-example";
+
 // Insert weekly components in separate variables; Render based on week param.
 const weekContent = {
   1: [
@@ -62,7 +65,14 @@ const weekContent = {
       tags: ["state"],
     },
   ],
-  5: [],
+  5: [
+    {
+      component: <Submit key="submit"/>,
+      title: "Fetch API",
+      desc: "",
+      tags: ["backend"],
+    }
+  ],
 };
 
 export default function WorkshopContent({ week }) {
