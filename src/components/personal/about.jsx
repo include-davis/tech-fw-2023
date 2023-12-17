@@ -1,4 +1,5 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
+import { useEffect, useRef } from "react";
 import styles from "@/styles/components/personal/about.module.scss";
 
 export default function About() {
