@@ -1,7 +1,7 @@
-import React, { Component, useState } from 'react';
+import React, { Component, useState } from "react";
+import { useEffect, useRef } from "react";
 import styles from "@/styles/components/personal/about.module.scss";
 import Image from "next/image";
-import Navbar from './my-navbar.jsx';
 
 // impressive. loved to see how creative you got with this!
 // structure is really good, classnames are meaningful, appreciate the use of Image, and the code is really clean.
