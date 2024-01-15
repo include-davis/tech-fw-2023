@@ -6,7 +6,9 @@
 
 .container {
     width: 100%;
-    background-image: url("./about-bg.jpg");
+    background-image: url("./background.jpg");
+    //background: -webkit-linear-gradient(#f4ab89, #efb5cc, #f0c3a2, #fceadf);
+    //background-image: linear-gradient(to bottom right, #fcfcf1, #73d2e7, #96d79f, #fcbf78);
     padding-top: 100px;
     padding-bottom: 100px;
     justify-content: center;
@@ -17,12 +19,15 @@
     margin: auto;
     width: 80%;
     padding: 20px;
-    //background-color: rgb(27, 24, 58);
-    border-radius: 25px;
+    //background-color: rgb(11, 11, 11);
+    //background-image: linear-gradient(to right, #fcfcf1, #ffd2fe, #d796d3, rgb(1, 1, 1));
+    background-image: linear-gradient(to right, #fcfcf1, #ffd2fe, #d796d3, rgb(1, 1, 1));
+
+    //border-radius: 25px;
     //background-image: url("./about-bg.jpg");
     //background: -webkit-linear-gradient(black, #e1b769, rgb(148, 113, 31), black);
     //background: -webkit-linear-gradient(rgb(255, 255, 255), #e1b769, rgb(241, 225, 211));
-    background: -webkit-linear-gradient(rgb(10, 10, 10), rgb(241, 211, 230), rgb(241, 211, 230), black);
+    //background: -webkit-linear-gradient(rgb(10, 10, 10), rgb(241, 211, 230), rgb(241, 211, 230), black);
     //background: -webkit-linear-gradient(rgb(176, 189, 195), #fcfcf1, rgb(252, 249, 251));
     display: flex;
     flex-direction: row;
@@ -30,15 +35,24 @@
     align-items: center;
 }
 
+
 .selfie {
     width: 20%;
     aspect-ratio: 1 / 1;
     background-image: url("./about-selfie.jpg");
     background-position: center;
     border-radius: 25px;
+    transition: background-image 1.2s linear;
+    background-size: cover;
+
 }
 
+.selfie:hover {
+    background-image: url("./profile.jpg");
+  }
+
 .text{
+    background-color: rgb(66, 66, 66);
     width: 70%;
 }
 
@@ -54,15 +68,16 @@
 
 .titleText {
     margin-right: 20px;
-    font-family: "Dancing Script", cursive;
-    color: rgb(247, 247, 208);
+    font-family: "Garamond", serif;
+    //font-family: "Dancing Script", cursive;
+    color: rgb(142, 195, 219);
     font-size: 2rem;
 }
 
 .titleName {
     margin-right: 20px;
     font-family: "Dancing Script", cursive;
-    color: rgb(255, 255, 191);
+    color: -webkit-linear-gradient(rgb(176, 189, 195), pink, rgb(252, 249, 251));
     font-size: 3rem;
 }
 
@@ -73,8 +88,9 @@
     font-family: "Garamond", serif;
     line-height: 150%;
     font-size: 1.5rem;
-    color: rgb(0, 0, 0);
-    text-shadow: aliceblue 1px 0 4px;
+    //color: rgb(0, 0, 0);
+    color: aliceblue;
+    text-shadow: rgb(0, 0 ,0) 1px 0 4px;
     text-decoration: underline;
 }
 

@@ -9,29 +9,32 @@
     background-color: rgb(0, 0, 0);
     padding: 50px;
     border-style:double;
-    border-color:beige;
+    border-color:rgb(123, 123, 196);
 }
 
 .skills_title {
     margin: auto;
     font-family: "Dancing Script", cursive;
-    color: rgb(255, 255, 191);
+    color: rgb(254, 254, 244);
     font-size: 3rem;
-    text-decoration: underline overline;
+    text-decoration: underline;
+    text-shadow: rgb(104, 68, 68) 1px 0 4px;
 }
 
 .skills_container {
     margin: auto;
     padding: 50px;
-    border-radius: 25px;
+    //border-radius: 25px;
     width: 80%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     column-gap: 2%;
-    border-style: dotted;
-    border-color: aquamarine;
-    background-color: rgb(235, 235, 235);
+    //border-style: dotted;
+    //border-color: aquamarine;
+    background-image: linear-gradient(to right, rgb(235, 235, 235), #b39ab4);
+
+    //background-color: rgb(235, 235, 235);
 }
 
 .skills_set {
