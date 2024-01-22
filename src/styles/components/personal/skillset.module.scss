@@ -1,0 +1,35 @@
+.skills_container {
+    //border: solid black 5px; 
+    background-color: white; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%; 
+    height: 30rem; 
+}
+.pro_lang_container {
+    //border: solid black 1px; 
+    background-color: white; 
+    text-align: center; 
+    padding: 9rem 6rem; 
+    margin-left: 5rem;
+    box-shadow: 0.5rem 0.5rem 0.5rem; 
+}
+
+.nat_lang_container {
+    //border: solid black 2px; 
+    background-color: white; 
+    text-align: center; 
+    padding: 9rem 6rem; 
+    box-shadow: 0.5rem 0.5rem 0.5rem; 
+}
+
+.hobbies_container {
+    //border: solid black 2px; 
+    margin-top: 1rem; 
+    background-color: white; 
+    text-align: center; 
+    margin-right: 5rem; 
+    padding: 9rem 6rem; 
+    box-shadow: 0.5rem 0.5rem 0.5rem; 
+}

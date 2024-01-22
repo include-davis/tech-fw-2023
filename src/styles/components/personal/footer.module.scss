@@ -4,6 +4,14 @@
   // apply some properties
   display: flex;
   width: 100%;
+  background-color: #A6CF98;  
+  //pink: #FF3B9D; 
+  margin-top: 1rem; 
+  width: 100%; 
+  height: 10rem; 
+  align-items: center; 
+  flex-direction: column;
+  
 }
 
 // choose elements with logo class within .footer class elements
@@ -16,16 +24,19 @@
   display: flex;
   > p {
     // change up the text size and style how you want
-    font-size: 1px;
+    font-size: 10px;
   }
 }
 
 .socials {
   // apply properties for .socials
   display: flex;
+  font-size: 5rem; 
+  align-items: center;
+  
 }
 
 .icon {
   // apply properties for icons
-  font-size: big;
+  font-size: 5rem; //big ? 
 }

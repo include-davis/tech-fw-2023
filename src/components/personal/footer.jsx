@@ -1,4 +1,9 @@
 // import SCSS file as styles for this component
+import styles from "@/styles/components/personal/footer.module.scss";
+
+import { VscGithubAlt } from "react-icons/vsc";
+import { BiLogoGmail } from "react-icons/bi";
+import { FaYoutube } from "react-icons/fa";
 
 export default function Footer() {
   // Make a footer!
@@ -14,17 +19,35 @@ export default function Footer() {
     <a />: Links
     <li> </li>: List elements (MUST BE WRAPPED AROUND UL/OL TAG)
     <div> </div>: 
-  */
+
+    <img src="" alt = "logo"/>
+  */ 
   return (
     <footer className={styles.footer}>
-      <section className={styles.logo}>logo</section>
+      <div> 
+      <section className={styles.logo}>
+        
+      </section>
+      </div>
 
+      <div> 
       <section className={styles.info}>
-        <p>Made by #your name here#</p>
+        <p>Made by Emily</p>
         <ul className={styles.socials}>
-          <li className={styles.icon}> SOCIAL MEDIA ICONS + REDIRECTING </li>
+          <li>
+            <VscGithubAlt> </VscGithubAlt>
+          </li>
+
+          <li>
+            <BiLogoGmail> </BiLogoGmail>
+            </li> 
+
+          <li>
+            <FaYoutube> </FaYoutube>
+          </li> 
         </ul>
       </section>
+      </div> 
     </footer>
   );
 }
