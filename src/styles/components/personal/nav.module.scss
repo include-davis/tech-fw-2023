@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:wght@600&display=swap');
+
+
+.logo {
+    margin-left:4rem; 
+}
+
+.navbar {
+    height: 6rem; 
+    background-color: #88A98B;
+    width: 100%; 
+    color: #f5f5f5; 
+    align-items: center;
+    display: flex; 
+    justify-content: space-between;
+
+    .navbar:hover {
+        display: block;
+    }   
+}
+
+.navlinks {
+    list-style-type: none;
+    display: flex; 
+    justify-content: space-between;  
+    column-gap: 3em; 
+    font-size: 1.25rem;
+    font-family: 'Arimo', sans-serif;
+    margin-right: 4rem;
+    
+    > li:hover {
+        //hover over links in the navigation bar 
+        text-decoration: underline; 
+        text-decoration-thickness: 0.3rem;
+        text-underline-offset: 0.5rem; 
+        color: #38503a; 
+        transition-duration: 0.4s;
+    }
+}
+
+.nav_list:hover {
+    text-decoration: underline;
+}
+
+
+.dropDown {
+    position: absolute;
+    width: 100%; 
+    height: auto; 
+    display: flex; 
+    flex-direction: column; 
+    list-style-type: none;
+    top: 11rem;
+    right: 0rem; 
+    background-color: #f5f5f5; 
+    color: #405d42; 
+    transition: ease-in-out; 
+    transition-property: height;
+    transition-delay: 0.4s; 
+    max-height: 37rem; 
+    //background-color: #405d42; 
+    background-image: linear-gradient(180deg, #88A98B, #405d42); 
+    z-index: 1; /* set higher z-index value */
+    //display: none; //this is why the dropdown is gone 
+
+
+    > a > li {
+        // changes the links within the dropdown 
+        color: #f5f5f5; 
+        //background-color: #405d42; 
+
+        padding-top: 1rem; 
+        padding-bottom: 1rem; 
+        flex-grow: 1;
+        justify-content: center;   
+        padding-left: 1rem;
+    }
+
+    > a > li:hover {
+        //when the mouse hovers over the links within the dropdown 
+        background-color: #f5f5f5;
+        color: #405d42;  
+        padding-top: 1rem; 
+        padding-bottom: 1rem; 
+        width: 100%; 
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .logo {
+        margin-left: 1rem; 
+        height: 2rem;
+        width: 2rem; 
+    }
+    .navbar {
+        height: 3rem;
+    } 
+
+    .nav_list {
+        color: transparent;
+    }
+}
