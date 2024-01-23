@@ -27,7 +27,7 @@
     column-gap: 3em; 
     font-size: 1.25rem;
     font-family: 'Arimo', sans-serif;
-    margin-right: 4rem;
+    margin-right: 4rem; 
     
     > li:hover {
         //hover over links in the navigation bar 
@@ -36,6 +36,10 @@
         text-underline-offset: 0.5rem; 
         color: #38503a; 
         transition-duration: 0.4s;
+
+        .dropDown {
+            max-height: 50rem; 
+        }
     }
 }
 
@@ -43,12 +47,11 @@
     text-decoration: underline;
 }
 
-
 .dropDown {
     position: absolute;
     width: 100%; 
-    height: auto; 
     display: flex; 
+    background-image: linear-gradient(180deg, #88A98B, #405d42); 
     flex-direction: column; 
     list-style-type: none;
     top: 11rem;
@@ -56,14 +59,11 @@
     background-color: #f5f5f5; 
     color: #405d42; 
     transition: ease-in-out; 
-    transition-property: height;
-    transition-delay: 0.4s; 
-    max-height: 37rem; 
-    //background-color: #405d42; 
-    background-image: linear-gradient(180deg, #88A98B, #405d42); 
-    z-index: 1; /* set higher z-index value */
-    //display: none; //this is why the dropdown is gone 
-
+    transition-property: max-height;
+    transition-delay: 0.2s; 
+    max-height: 0rem; 
+    z-index: 1; 
+    overflow-y: hidden; 
 
     > a > li {
         // changes the links within the dropdown 
