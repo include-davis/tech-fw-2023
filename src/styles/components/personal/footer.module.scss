@@ -1,42 +1,56 @@
 // use class selectors to target classes
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:wght@600&display=swap');
 
 .footer {
   // apply some properties
   display: flex;
-  width: 100%;
-  background-color: #A6CF98;  
-  //pink: #FF3B9D; 
-  margin-top: 1rem; 
+  //background-color: #405d42; //   dfe3db;  
+  background-image: linear-gradient(180deg, #f5f1ef, #405d42); 
   width: 100%; 
-  height: 10rem; 
+  height: 15rem; 
   align-items: center; 
-  flex-direction: column;
-  
+  flex-direction: row;
+  column-gap: 25em;
 }
 
 // choose elements with logo class within .footer class elements
 .logo {
-  color: black;
+  padding-left: 1rem; 
 }
 
 .info {
   // apply properties for .info
   display: flex;
+  flex-direction: column;
+  align-items: center;
   > p {
     // change up the text size and style how you want
-    font-size: 10px;
-  }
+    font-size: 1rem;
+    color: #dfe3db; 
+    }
 }
 
 .socials {
   // apply properties for .socials
   display: flex;
-  font-size: 5rem; 
-  align-items: center;
-  
+  font-size: 3rem; 
+  align-items: right;
+  list-style-type: none;
+  column-gap: 3rem;
+  padding: 2rem; 
+  color: white; 
 }
 
-.icon {
-  // apply properties for icons
-  font-size: 5rem; //big ? 
+@media screen and (max-width: 700px) {
+  .footer {
+    width: 100%; 
+    row-gap: 0rem; 
+  }
+  .socials {
+    font-size: 3rem; 
+    display: flex;
+    flex-direction: column;
+    column-gap: 1rem; 
+  }
 }

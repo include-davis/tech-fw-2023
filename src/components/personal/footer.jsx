@@ -1,5 +1,7 @@
 // import SCSS file as styles for this component
 import styles from "@/styles/components/personal/footer.module.scss";
+import Link from "next/link";
+import Image from "next/image";
 
 import { VscGithubAlt } from "react-icons/vsc";
 import { BiLogoGmail } from "react-icons/bi";
@@ -26,28 +28,38 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div> 
       <section className={styles.logo}>
+        <Link href = "https://includedavis.com/about" target = "_blank">
+                <Image className= {styles.logo} src = "/Vector.svg" width = {80} height = {80} sizes = {"{max-width: 1048px} 30px, 40px"} alt = "logo"/>
+        </Link>
         
       </section>
       </div>
 
-      <div> 
       <section className={styles.info}>
-        <p>Made by Emily</p>
         <ul className={styles.socials}>
           <li>
-            <VscGithubAlt> </VscGithubAlt>
+            <a href = "https://github.com/melichul" target = "_blank"> 
+              <VscGithubAlt> </VscGithubAlt>
+            </a>
           </li>
 
           <li>
-            <BiLogoGmail> </BiLogoGmail>
-            </li> 
+            <a href="mailto:ecgomezvazquez@ucdavis.edu" target = "_blank"> 
+              <BiLogoGmail> </BiLogoGmail>
+            </a>   
+          </li> 
 
           <li>
-            <FaYoutube> </FaYoutube>
+            <a href="https://www.youtube.com/" target = "_blank"> 
+              <FaYoutube> </FaYoutube>
+            </a>
           </li> 
+
         </ul>
+        
+        <p> made by emily </p>
+
       </section>
-      </div> 
     </footer>
   );
 }
