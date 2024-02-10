@@ -15,14 +15,15 @@
 
 .about_info_container {
     //background-color: #f5f5f5; //#f5f5f5
-    height: 25rem; 
-    width: 80%; 
+//    height: 25rem; 
+//    width: 80%; 
     border-radius: 30px;
     display: flex; 
     flex-direction: row;
     row-gap: 100px; 
     align-items: center;
     position: relative; 
+    
 
     .underlineDecor {
         color: #864AF9; //405d42 // purple 492E87
@@ -36,6 +37,7 @@
         color: black; 
         font-size: 1.2rem; 
         font-family: 'Arimo', sans-serif; 
+        text-align: center;
     }
 
     .name {
@@ -44,11 +46,13 @@
         font-family: 'Vollkorn', serif;
         //font-family: 'Vollkorn', serif;
         color: #405d42; 
+        text-align: center;
     }
     .desc {
         font-family: 'Courier Prime', monospace; //'Arimo', sans-serif;
         font-size: 1.3rem; 
         margin-top: 10px;
+        text-align: center;
     }
 } 
 
